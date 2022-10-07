@@ -7,20 +7,16 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  /* color: inherit; */
+  color: white !important;
+  text-decoration: none !important;
+}
+
+body{
+  overflow-x: hidden !important;
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
