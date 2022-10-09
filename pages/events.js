@@ -1,5 +1,6 @@
 import EventCard from "../components/EventCard"
 import PastEvents from "../components/PastEvents"
+import PastKeynoteSpeakers from "../components/PastKeynoteSpeakers"
 
 export default function Events() {
     return (
@@ -12,6 +13,7 @@ export default function Events() {
                     <EventCard></EventCard>
                 </div>
                 <PastEvents></PastEvents>
+                <PastKeynoteSpeakers></PastKeynoteSpeakers>
             </div>
         </div>
     )
