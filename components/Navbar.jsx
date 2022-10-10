@@ -15,11 +15,11 @@ import LoginButton from "./LoginButton";
 
 const NavMenu = [
   { title: "Home", url: "/" },
-  { title: "Events", url: "/" },
-  { title: "About us", url: "/" },
-  { title: "Community", url: "/" },
-  { title: "Gallery", url: "/" },
-  { title: "Contact us", url: "/" },
+  { title: "Events", url: "/events" },
+  { title: "About us", url: "/about" },
+  { title: "Community", url: "/community" },
+  { title: "Gallery", url: "/gallery" },
+  { title: "Contact us", url: "/contact" },
 ];
 
 export const useStyles = makeStyles((theme) => ({
