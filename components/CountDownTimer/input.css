@@ -1,0 +1,110 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-home{
+        background-color: #330000;
+        animation: animate 30s linear infinite;
+        background-size: cover;
+        background-position: center center;
+    }
+    .content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .content h1{
+        font-size: 70px;
+        margin-bottom: 0px;
+    }
+    .content h1 span{
+        @apply font-bold
+        text-orange-400;
+    }
+    .content p{
+        @apply px-10
+        py-4
+        text-gray-200
+    }
+    .dash{
+        color: rgb(255, 111, 0);
+    }
+    .outer{
+        position: absolute;
+        left:0px;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .timer-circle1 {
+        @apply flex
+        outline outline-1 outline-gray-400
+        bg-black bg-opacity-30
+        w-[7.5rem]
+        h-[7.5rem]
+        rounded-tl-3xl
+        rounded-br-3xl
+        md:w-[8.5rem]
+        md:h-[8.5rem]
+        lg:w-[9.5rem]
+        lg:h-[9.5rem];
+    }
+    .timer-circle2 {
+        @apply flex
+        outline outline-1 outline-gray-400
+        bg-black bg-opacity-30
+        w-[7.5rem]
+        h-[7.5rem]
+        rounded-tr-3xl
+        rounded-bl-3xl
+        md:w-[8.5rem]
+        md:h-[8.5rem]
+        lg:w-[9.5rem]
+        lg:h-[9.5rem];
+    }
+    .timer-circle1 div , .timer-circle2 div {
+        @apply text-white m-auto text-center;
+    }
+    .timer-count {
+        @apply block font-extrabold text-4xl md:text-5xl lg:text-6xl;
+    }
+    .timer-type {
+        @apply block text-base font-medium;
+    }
+}
+    @keyframes animate {
+        0%,100%{
+            background-image: url("https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=");
+        }
+        20%{
+            background-image: url("https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=");
+        }
+        25%{
+            background-image: url("https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        }
+        45%{
+            background-image: url("https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        }
+        50%{
+            background-image: url("https://images.unsplash.com/photo-1548567117-02328f050eaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        }
+        70%{
+            background-image: url("https://images.unsplash.com/photo-1548567117-02328f050eaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        }
+        75%{
+            background-image: url("https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        }
+        96%{
+            background-image: url("https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        }
+    }
