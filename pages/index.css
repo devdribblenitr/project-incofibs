@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;400;700&display=swap');
+
+
+footer{
+    position: absolute;
+    height: 485px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #232323;
+    border-radius: 0px;
+}
+footer .card{
+    position: absolute;
+width: 375px;
+height: 285px;
+left: 102px;
+top: 73px;
+
+background: #181818;
+border-radius: 12px;
+}
+footer .card h2{
+    /*font-weight: 700px;*/
+    position: absolute;
+height: 19.48px;
+left: 11.49%;
+right: 78.11%;
+top: 109px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 19px;
+/* or 95% */
+
+text-transform: uppercase;
+
+color: #FFFFFF;   
+}
+footer .card p{
+    position: absolute;
+width: 251px;
+height: 102px;
+left: 164px;
+top: 155.08px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: justify;
+
+color: rgba(255, 255, 255, 0.4);
+}
+
+footer .card .social-links{
+    box-sizing: border-box;
+
+position: absolute;
+width: 29.31px;
+height: 29.31px;
+left: 164px;
+top: 291.77px;
+
+border: 1px solid #EEEEEE;
+border-radius: 14.6551px;
+}
