@@ -1,5 +1,5 @@
 import React from "react";
-import teacher from "../assets/teacher.jpg";
+import teacher from "../public/teacher.jpg";
 import Image from 'next/image';
 
 
