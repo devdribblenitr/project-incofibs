@@ -1,7 +1,7 @@
-import ContactUs from "../components/ContactUs.jsx";
+import Contactus from "../components/Contact.jsx";
 
 function contactUs() {
-  return <ContactUs />;
+  return <Contactus />;
 }
 
 export default contactUs;
