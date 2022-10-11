@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className='display-1'>Home Page</h1>
       </main>
-   <Footer/>
+   {/* <Footer/> */}
     </div>
   )
 }
