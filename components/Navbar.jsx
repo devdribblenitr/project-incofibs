@@ -10,27 +10,27 @@ import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
 import logo from "../public/logoBranding.png";
 import { useEffect, useState } from "react";
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from "@material-ui/styles";
+import LoginButton from "./LoginButton";
 
 const NavMenu = [
   { title: "Home", url: "/" },
-  { title: "Events", url: "/" },
-  { title: "About us", url: "/" },
-  { title: "Community", url: "/" },
-  { title: "Gallery", url: "/" },
-  { title: "Contact us", url: "/" },
+  { title: "Events", url: "/events" },
+  { title: "About us", url: "/about" },
+  { title: "Community", url: "/community" },
+  { title: "Gallery", url: "/gallery" },
+  { title: "Contact us", url: "/contact" },
 ];
 
 export const useStyles = makeStyles((theme) => ({
   menu: {
     "& .MuiPaper-root": {
-      background: "linear-gradient(241.86deg, #C249FF 0.95%, #AA1EF1 34.48%, #9611D9 56.15%, #7A00B8 86.07%)",
-      padding: "20px 10px"
-    }
-  }
+      background:
+        "linear-gradient(241.86deg, #C249FF 0.95%, #AA1EF1 34.48%, #9611D9 56.15%, #7A00B8 86.07%)",
+      padding: "20px 10px",
+    },
+  },
 }));
-
-
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -60,12 +60,23 @@ const Navbar = () => {
 
   return (
     <div>
-      <AppBar sx={{ background: "rgb(24, 24, 24) !important", color: "white !important" }} position="static">
+      <AppBar
+        sx={{
+          background: "rgb(24, 24, 24) !important",
+          color: "white !important",
+        }}
+        position="static"
+      >
         <Toolbar>
           <Link href="/">
             <Box sx={{ flexGrow: { lg: 0, md: 0, sm: 1, xs: 1 } }}>
               <Typography>
-                <img className="logoNavBar" src={logo.src} alt="Logo" style={{height: "45px"}} />
+                <img
+                  className="logoNavBar"
+                  src={logo.src}
+                  alt="Logo"
+                  style={{ height: "45px" }}
+                />
               </Typography>
             </Box>
           </Link>
@@ -101,7 +112,6 @@ const Navbar = () => {
               }}
               sx={{ display: { sm: "block", md: "none" }, padding: 0 }}
             >
-           
               {NavMenu.map((item, i) => (
                 <MenuItem
                   key={i}
@@ -116,7 +126,14 @@ const Navbar = () => {
                   }}
                   onClick={handleCloseNavMenu}
                 >
-                  <Typography sx={{ padding: 3, lineHeight: "50px"  }}><Link className="text-decoration-none text-white" href={`/${item.url}`}>{item.title}</Link></Typography>
+                  <Typography sx={{ padding: 3, lineHeight: "50px" }}>
+                    <Link
+                      className="text-decoration-none text-white"
+                      href={`/${item.url}`}
+                    >
+                      {item.title}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
 
@@ -135,18 +152,20 @@ const Navbar = () => {
                 }}
                 onClick={handleCloseNavMenu}
               >
-                {<Button
-                //   onClick={openOauth}
-                  sx={{
-                    borderRadius: "40px",
-                    borderColor: "#ffffffba",
-                    color: "#ffffffba",
-                  }}
-                  variant="contained"
+                {
+                  <Button
+                    //   onClick={openOauth}
+                    sx={{
+                      borderRadius: "40px",
+                      borderColor: "#ffffffba",
+                      color: "#ffffffba",
+                    }}
+                    variant="contained"
                   // disabled={true}
-                >
-                  Log In
-                </Button>}
+                  >
+                    Log In
+                  </Button>
+                }
               </MenuItem>
             </Menu>
           </Box>
@@ -160,33 +179,43 @@ const Navbar = () => {
               color: "#ffffffba",
             }}
           >
-           
             {NavMenu.map((item, i) => (
-              <Typography sx={{ padding: 3, cursor: "pointer", lineHeight: "50px" }} key={i}>
-                <Link className="text-decoration-none text-white" href={`/${item.url}`}>{item.title}</Link>
+              <Typography
+                sx={{ padding: 3, cursor: "pointer", lineHeight: "50px" }}
+                key={i}
+              >
+                <Link
+                  className="text-decoration-none text-white"
+                  href={`/${item.url}`}
+                >
+                  {item.title}
+                </Link>
               </Typography>
             ))}
           </Box>
-          <Box
+          {/* <Box
             sx={{
               fontSize: "24px",
               flexGrow: 0,
               display: { xs: "none", sm: "none", md: "flex" },
             }}
           >
-            {<Button
-                  // onClick={openOauth}
-                  sx={{
-                    borderRadius: "40px",
-                    borderColor: "#ffffffba",
-                    color: "#ffffffba",
-                  }}
-                  variant="outlined"
-                  // disabled={true}
-                >
-                  Log In
-                </Button>}
-          </Box>
+            {
+              <Button
+                // onClick={openOauth}
+                sx={{
+                  borderRadius: "40px",
+                  borderColor: "#ffffffba",
+                  color: "#ffffffba",
+                }}
+                variant="outlined"
+                // disabled={true}
+              >
+                Log In
+              </Button>
+            }
+          </Box> */}
+          <LoginButton />
         </Toolbar>
       </AppBar>
     </div>
