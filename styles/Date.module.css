@@ -1,8 +1,8 @@
 .dateCard{
-    width: 500px;
+    width: 530px;
     padding: 16px;
 }
-@media screen and (min-width: 1032px){
+@media screen and (min-width: 1092px){
     .textCustomcenter{
         text-align: center;
     }

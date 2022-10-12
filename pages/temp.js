@@ -1,9 +1,8 @@
 import React from 'react'
-import ImportantDate from '../components/ImportantDate'
+// import ImportantDate from '../components/ImportantDate'
+import Tracks from '../components/Tracks'
 export default function temp() {
   return (
-    <div className='bg-green-200'>
-      <ImportantDate></ImportantDate>
-    </div>
+      <Tracks />
   )
 }
