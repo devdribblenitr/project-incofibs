@@ -8,7 +8,7 @@ export default function IndividualTrack({ track }) {
                 {
                     track.map((item) => {
                         return (
-                            <div className='text-white py-4 text-xl border-b px-4' style={{borderColor: "#0d3848"}}>
+                            <div className='text-white py-4 text-xl border-b px-4' style={{borderColor: "#0d3848"}} key={item}>
                                 {item}
                             </div>
                         )
