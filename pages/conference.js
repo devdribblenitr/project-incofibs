@@ -1,5 +1,5 @@
 import React from 'react'
-import ConferenceVenue from  '../components/Community'
+import ConferenceVenue from  '../components/ConferenceVenue'
 
 const conference = () => {
   return (
