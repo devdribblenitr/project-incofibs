@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
