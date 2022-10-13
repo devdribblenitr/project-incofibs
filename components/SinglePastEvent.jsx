@@ -3,7 +3,7 @@ import React from 'react'
 function SinglePastEvent() {
     return (
         <div className='py-2'>
-            <div className='md:flex bg-slate-200 justify-between rounded-md p-2 border-b-4 border-slate-300' style={{backgroundColor: "#e5e5e5"}}>
+            <div className='md:flex bg-slate-200 justify-between rounded-md p-2 border-b-4 border-slate-300'>
                 <div className='flex flex-wrap'>
                     <div className='p-4 w-fit h-fit'>
                         <img src="https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='w-16 rounded-full h-16' />
