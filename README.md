@@ -1,4 +1,4 @@
-Built using **Next.js**, **Firebase**, **Material UI** and **Bootstrap**
+Built using **Next.js**, **Firebase**, **Material UI** and **Tailwind CSS**
 
 ## Local Setup Instructions :rocket:
 

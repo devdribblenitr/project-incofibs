@@ -1,0 +1,9 @@
+.dateCard{
+    width: 530px;
+    padding: 16px;
+}
+@media screen and (min-width: 1092px){
+    .textCustomcenter{
+        text-align: center;
+    }
+}
