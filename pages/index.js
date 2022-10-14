@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/free-brands-svg-icons'
+import Profile from './Profile'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className='display-1'>Home Page</h1>
       </main>
+      <Profile />
    {/* <Footer/> */}
    <Footer/>
     </div>
