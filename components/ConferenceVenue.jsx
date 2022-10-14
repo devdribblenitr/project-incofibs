@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Conference = () => {
   return (
-    <div className="w-full bg-[#204b55] py-6  px-4">
+    <div className="w-full bg-conferenceColor py-6  px-4">
       <div>
         <h1 className="max-w-[1240px] mx-auto text-center my-1 text-4xl text-gray-300 mt-14 mb-2 font-bold">
           Conference Venue
