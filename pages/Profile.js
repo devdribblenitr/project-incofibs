@@ -122,15 +122,6 @@ export default function Profile() {
             />
           </div>
         </section>
-        <aside>
-          <Image
-            className="border rounded"
-            src={profilePic}
-            alt="profile"
-            width={400}
-            height={400}
-          />
-        </aside>
       </div>
     </>
   );
