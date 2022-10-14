@@ -14,7 +14,7 @@ export default function Payment() {
         </Link>
         <hr />
       </div>
-      <div className="flex bg-slate-700 text-slate-200 float-left p-6 h-screen w-3/4 absolute top-0 right-0 z-20">
+      <div className="flex bg-slate-700 text-slate-200 float-left p-6 h-screen w-3/4 z-20">
         <form action="" className="w-5/6">
           <div className="flex my-2">
             <label className="w-24">Amount :</label>
