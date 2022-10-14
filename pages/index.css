@@ -1,14 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* **********footer styling********** */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;400;700&display=swap');
 
-body{
-    overflow-x: hidden !important;
-}
+
 footer{
     position: absolute;
     height: 485px;
