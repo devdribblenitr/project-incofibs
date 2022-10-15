@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        conferenceColor:'#204b55',
+        communityColor:'#c59d5f',
+        communityColor2:'#102a42',
         primary: {
           50: "#fafaf9",
           100: "#f5f5f4",

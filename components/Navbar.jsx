@@ -11,14 +11,15 @@ import Link from "next/link";
 import logo from "../public/logoBranding.png";
 import { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/styles";
+import LoginButton from "./LoginButton";
 
 const NavMenu = [
   { title: "Home", url: "/" },
-  { title: "Events", url: "/" },
-  { title: "About us", url: "/" },
-  { title: "Community", url: "/" },
-  { title: "Gallery", url: "/" },
-  { title: "Contact us", url: "/" },
+  { title: "Events", url: "/events" },
+  { title: "About us", url: "/about" },
+  { title: "Community", url: "/community" },
+  { title: "Gallery", url: "/gallery" },
+  { title: "Contact us", url: "/contact" },
 ];
 
 export const useStyles = makeStyles((theme) => ({
@@ -160,7 +161,7 @@ const Navbar = () => {
                       color: "#ffffffba",
                     }}
                     variant="contained"
-                    // disabled={true}
+                  // disabled={true}
                   >
                     Log In
                   </Button>
@@ -192,7 +193,7 @@ const Navbar = () => {
               </Typography>
             ))}
           </Box>
-          <Box
+          {/* <Box
             sx={{
               fontSize: "24px",
               flexGrow: 0,
@@ -213,7 +214,8 @@ const Navbar = () => {
                 Log In
               </Button>
             }
-          </Box>
+          </Box> */}
+          <LoginButton />
         </Toolbar>
       </AppBar>
     </div>
