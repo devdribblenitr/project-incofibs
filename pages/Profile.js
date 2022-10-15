@@ -14,7 +14,7 @@ export default function Profile() {
         </Link>
         <hr />
       </div>
-      <div className="flex bg-slate-700 text-slate-200 float-left p-6 h-screen w-3/4 absolute top-0 right-0 z-10">
+      <div className="flex bg-slate-700 text-slate-200 float-left p-6 h-screen w-3/4 z-10">
         <section className="w-4/5">
           <div className="flex my-2">
             <label className="w-16">Name :</label>
