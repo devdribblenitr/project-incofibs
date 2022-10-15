@@ -12,6 +12,7 @@ module.exports = {
         communityColor2:'#102a42',
         primary: {
           50: "#fafaf9",
+          60: "#e84c3d",
           100: "#f5f5f4",
           200: "#e7e5e4",
           300: "#d6d3d1",
@@ -23,7 +24,11 @@ module.exports = {
           900: "#1c1917",
         },
       },
+      spacing:{
+        '128':'4.375rem'
+      }
     },
+
     fontFamily: {
       body: [
         "Inter",
@@ -60,6 +65,12 @@ module.exports = {
         "Noto Color Emoji",
       ],
     },
+    borderRadius:{
+      hello:'80px',
+      bye:'20px',
+      br10:'10px',
+      br25:'25px',
+    }
   },
   plugins: [],
 };
