@@ -8,6 +8,10 @@ import { Logout, PaymentOutlined } from '@mui/icons-material';
 
 function Account() {
     const [active, setActive] = useState(false);
+
+    const name="Ayush Shaw"
+    const email = "incofibs@gmail.com"
+
     return(
         <div className='ml-auto bg-slate-200 rounded-md'>
             <div className='flex w-fit ease-in-out duration-200 justify-end'>
@@ -17,7 +21,7 @@ function Account() {
                         <div className='pl-2 pr-4 h-fit'>
                         <AccountCircleIcon></AccountCircleIcon>
                         </div>
-                        <div className='h-fit pl-4 pr-6 text-lg'>Ayush Shaw
+                        <div className='h-fit pl-4 pr-6 text-lg'>{name}
                         </div>
                     </div>
                     :""
@@ -26,8 +30,11 @@ function Account() {
             </div>
             {active?
             <>
-            <ul className='p-4 border-t border-t-neutral-400' style={{color: "#444"}}>
-                <li className='py-3 flex'>
+            <div className='px-2 text-center py-2 bg-emerald-400 text-white'>
+                {email}
+            </div>
+            <ul className='p-4 border-t-neutral-400' style={{color: "#444"}}>
+                <li className='pb-3 flex'>
                     <PermIdentityIcon />
                     <div className='px-2'>Dashboard</div>
                 </li>
