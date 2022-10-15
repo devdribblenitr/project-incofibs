@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function Profile() {
   return (
     <>
-      <div className="bg-slate-500 text-slate-100 float-left w-1/4 p-6 h-screen">
+      <div className="bg-gray-900 text-slate-100 float-left w-1/4 p-6 h-screen">
         <Link href="/Profile">
           <a className="text-3xl m-8">Profile</a>
         </Link>
-        <hr />
+        <hr className="my-2" />
         <Link href="/Payment">
-          <a className="text-3xl m-8">Payment</a>
+          <a className="text-3xl">Payment</a>
         </Link>
-        <hr />
+        <hr className="my-2" />
       </div>
       <div className="flex bg-slate-700 text-slate-200 float-left p-6 h-screen w-3/4 z-10">
         <section className="w-4/5">
