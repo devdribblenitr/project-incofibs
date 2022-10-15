@@ -1,5 +1,6 @@
 import { width } from "@mui/system";
 import React from "react";
+import Link from "next/link";
 
 const ContactInfo = () => {
   const boxStyle = {
@@ -30,7 +31,7 @@ const ContactInfo = () => {
         </div>
         <div className="px-4 pt-4">
           <div style={boxStyle} className="rounded-xl lg:w-[500px] h-24 m-4">
-            <div className="flex pl-7 pt-5">
+            <div className="flex pl-7 pt-3">
               <svg
                 width="24"
                 height="38"
@@ -54,7 +55,7 @@ const ContactInfo = () => {
             style={boxStyle}
             className="rounded-xl md:w-[300px] lg:w-[500px] h-24 m-4"
           >
-            <div className="flex pl-5 pt-5">
+            <div className="flex pl-5 pt-3">
               <div>
                 <svg
                   width="36"
@@ -91,7 +92,7 @@ const ContactInfo = () => {
           </div>
 
           <div style={boxStyle} className="rounded-xl lg:w-[500px] h-24 m-4">
-            <div className="flex pl-5 pt-5">
+            <div className="flex pl-5 pt-3">
               <svg
                 width="40"
                 height="43"
@@ -118,7 +119,9 @@ const ContactInfo = () => {
           For membership of the Indian Immunology society and other details,
           please visit
         </p>
-        <a href="/">www.xyz.org</a>
+        <Link href="/">
+          <a>www.xyz.org</a>
+        </Link>
       </div>
     </div>
   );
