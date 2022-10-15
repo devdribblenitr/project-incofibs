@@ -1,0 +1,76 @@
+.diamond-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+  }
+  .box {
+    margin-top: 200px;
+  }
+  
+  .diamond-shape {
+    position: absolute;
+    width: 302px;
+    object-fit: contain;
+    margin: 0px 0px 0px 0px;
+}
+  .diamond-shape {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      transform: rotate(-45deg);
+      transform-origin: 50% 50%;
+      
+      overflow: hidden;
+  }
+  
+  
+  @media (min-width: 768px) {
+      .diamond-shape {
+          width: 350px;
+          height: 350px;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .diamond-shape {
+          width: 420px;
+          height: 420px;
+      }
+  }
+  
+  
+  .diamond-shape img {
+      transform: rotate(45deg);
+  }
+  
+  
+.diamond-shape .bg {
+    position: absolute;
+    width: 302px;
+    margin: -57px 0px 0 -57px;
+}
+
+@media (min-width: 768px) {
+    .diamond-shape .bg {
+        width: 510px;
+        margin: -57px 0px 0 -57px;
+    }
+}
+
+.diamond-shape .bg {
+    position: absolute;
+    width: 302px;
+}
+
+@media (min-width: 768px) {
+    .diamond-shape .bg {
+        width: 510px;
+    }
+}
+@media (min-width: 992px) {
+    .diamond-shape .bg {
+        width: 680px;
+    }
+}
