@@ -3,7 +3,7 @@ import React, { FC, useState, useEffect } from 'react';
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
 import { Button } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ProfileHover from './profileHover';
+// import ProfileHover from './profileHover';
 // import { BuiltInProviderType } from 'next-auth/providers';
 
 const LoginButton = () => {
@@ -47,6 +47,8 @@ const LoginButton = () => {
             // <ProfileHover/>
         );
     }
+
+    
 
     return (
         <button onClick={() => signIn(providers.google.id)} className='border-[1px] border-white px-3 py-1 rounded-3xl hover:opacity-60'>LOG IN</button>
