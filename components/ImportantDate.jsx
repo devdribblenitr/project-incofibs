@@ -2,7 +2,7 @@ import React from 'react'
 import DateCard from './DateCard'
 export default function ImportantDate() {
   return (
-    <div style={{ backgroundImage: "linear-gradient(0deg, rgba(18,55,73,0.75), rgba(18,55,73,0.75)), url(Rectangle99.png)", backgroundSize: "cover"}} className="py-8 md:py-24">
+    <div style={{ backgroundImage: "linear-gradient(0deg, rgba(18,55,73,0.75), rgba(18,55,73,0.75)), url(Rectangle99.png)", backgroundSize: "cover", backgroundAttachment: 'fixed'}} className="py-8 md:py-24">
       <div className="mx-auto">
         <div className='w-full p-4'>
           <div className='flex justify-center'>
