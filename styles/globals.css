@@ -11,11 +11,11 @@ body{
 }
 footer{
     position: bottom;
-    height: 450px;
+    /* height: 450px; */
     left: 0%;
     right: 0%;
     top: 0px;
-    background: #232323;
+    background: #022a36;
     border-radius: 0px;
     display:flex;
     justify-content: space-around;
@@ -27,13 +27,13 @@ height: 280px;
 left: 102px;
 top: 73px;
 
-background: #181818;
+background: #01212b;
 border-radius: 12px;
 }
 footer .base-box{
     position: relative;
 width: 100%;
-height: 60px;
+height: 65px;
 top: 65px;
 color: aqua;
 background: #181818;
