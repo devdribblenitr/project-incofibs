@@ -15,7 +15,7 @@ footer{
     left: 0%;
     right: 0%;
     top: 0px;
-    background: #232323;
+    background: #022a36;
     border-radius: 0px;
     display:flex;
     justify-content: space-around;
@@ -27,7 +27,7 @@ height: 280px;
 left: 102px;
 top: 73px;
 
-background: #181818;
+background: #01212b;
 border-radius: 12px;
 }
 footer .base-box{
