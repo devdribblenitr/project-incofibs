@@ -12,6 +12,7 @@ import ConferenceTracks from '../components/ConferenceTracks'
 import ConferenceProgram from '../components/ConferenceProgram'
 import ContactInfo from '../components/ContactInfo'
 import  ConferenceVenue from '../components/ConferenceVenue'
+import RegistrationCards from '../components/RegistrationCards'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
 
       </main>
       <ImportantDate/>
+      <RegistrationCards/>
       <ConferenceTracks/>
       <ConferenceVenue/>
       <ContactInfo/>
