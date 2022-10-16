@@ -1,3 +1,9 @@
+import Link from 'next/link'
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import CallRoundedIcon from '@mui/icons-material/CallRounded';
 
 function Footer() {
   return (
@@ -15,19 +21,19 @@ function Footer() {
                   <div >
                     <div className="grid grid-cols-5 gap-2 pl-14 pt-24 pr-14" >
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <Link href=""><TwitterIcon></TwitterIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <Link href=""><LinkedInIcon></LinkedInIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <Link href=""><FacebookIcon></FacebookIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <Link href=""><InstagramIcon></InstagramIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <Link href=""><CallRoundedIcon></CallRoundedIcon></Link>
                       </div>
                     </div>
                   </div>
@@ -40,19 +46,19 @@ function Footer() {
                   <div >
                     <div className="grid grid-cols-5 gap-2 pl-14 pt-24 pr-14">
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <Link href=""><TwitterIcon></TwitterIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <Link href=""><LinkedInIcon></LinkedInIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <Link href=""><FacebookIcon></FacebookIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <Link href=""><InstagramIcon></InstagramIcon></Link>
                       </div>
                       <div className="social-links">
-                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <Link href=""><CallRoundedIcon></CallRoundedIcon></Link>
                       </div>
                     </div>
                   </div>
