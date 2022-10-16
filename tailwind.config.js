@@ -12,9 +12,10 @@ module.exports = {
 
       },
       colors: {
-        conferenceColor:'#204b55',
-        communityColor:'#c59d5f',
-        communityColor2:'#102a42',
+        conferenceColor: "#204b55",
+        communityColor: "#c59d5f",
+        communityColor2: "#102a42",
+        bgColor: "#022A36",
         primary: {
           50: "#fafaf9",
           60: "#e84c3d",
