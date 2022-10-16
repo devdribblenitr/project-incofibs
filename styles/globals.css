@@ -11,7 +11,7 @@ body{
 }
 footer{
     position: bottom;
-    height: 450px;
+    /* height: 450px; */
     left: 0%;
     right: 0%;
     top: 0px;
@@ -33,7 +33,7 @@ border-radius: 12px;
 footer .base-box{
     position: relative;
 width: 100%;
-height: 60px;
+height: 65px;
 top: 65px;
 color: aqua;
 background: #181818;
