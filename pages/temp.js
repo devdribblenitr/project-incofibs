@@ -2,6 +2,7 @@ import React from 'react'
 import ImportantDate from '../components/ImportantDate'
 import ConferenceTracks from '../components/ConferenceTracks'
 import  Account  from '../components/Account'
+import Footer from '../components/Footer'
 export default function temp() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function temp() {
     </div>
     <ImportantDate />
     <ConferenceTracks />
+    <Footer />
     </>
   )
 }
