@@ -9,6 +9,30 @@
 body{
     overflow-x: hidden !important;
 }
+.account_userprofile{
+    position: absolute;
+    top: 85px;
+    right: 25px;
+    z-index: 9;
+    padding: 15px 10px 5px 10px;
+    border-radius: 5px;
+    /* display: none !important; */
+}
+.account_userprofile_list:hover{
+    background-color: rgb(210, 215, 221);
+    cursor: pointer;
+}
+.account_userprofile_logout{
+    color:rgb(58, 58, 58) !important;
+    cursor: pointer;
+}
+.account_userprofile_logout:hover{
+    background-color: rgb(210, 215, 221);
+}
+
+.account_userprofile_list{
+    padding: 6px 2px;
+}
 footer{
     position: bottom;
     /* height: 450px; */
