@@ -49,7 +49,7 @@ const LoginButton = () => {
                    <>{session.user?.name}<ExpandMoreIcon/></>
                    {console.log(session.user)}
                 </Button>
-            <Account active={active}/>
+            <Account logOut={() => signOut()} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image}/>
                 </div>
             // <ProfileHover/>
         );
