@@ -67,15 +67,21 @@ function Footer() {
               </div>
               <div className="card">
                 <h1 className="pt-6">InCoFIBS 2k23 </h1>
-                <h1 className="pt-7">LIFE SCIENCE Dept</h1>
+                <h1 className="pt-7 pb-4">LIFE SCIENCE Dept</h1>
                 <br />
                 <div className="pl-12 pt-2"><hr align="center" width="85%" /></div>
                 <div className="row">
                   <div className="grid grid-cols-3 gap-4 place-items-center content-evenly 
             pt-6 pr-6 pl-6">
-                    <img src="diamond.jpeg" />
-                    <img src="diamond.jpeg" />
-                    <img src="logo.jpeg" />
+                    <div className='border-r w-full border-white'>
+                    <img src="rectangle1.png"/>
+                    </div>
+                    <div className='border-r border-white w-full'>
+                    <img src="rectangle1.png"/>
+                    </div>
+                    <div>
+                    <img src="rectangle2.png"/>
+                    </div>
                   </div>
                 </div>
               </div>
