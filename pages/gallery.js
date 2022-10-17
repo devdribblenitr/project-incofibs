@@ -3,7 +3,7 @@ const gallery = () => {
   return (
     <div className="galleryyy">
       <div className="gallery">
-  <h1 > Gallery</h1>
+  <h1>Gallery</h1>
   <div className="container">
 
     <div className="gallery-container w-3 h-2">

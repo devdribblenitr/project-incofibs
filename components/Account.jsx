@@ -6,9 +6,8 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Logout, PaymentOutlined } from '@mui/icons-material';
 
-function Account() {
-    const [active, setActive] = useState(false);
-
+function Account({active}) {
+    
     const name="Ayush Shaw"
     const email = "incofibs@gmail.com"
 
@@ -26,7 +25,7 @@ function Account() {
                     </div>
                     :""
                 }
-                <AccountIcon active = {active} toggle= {()=>{setActive(!active);}}></AccountIcon>
+                {/* <AccountIcon active={active} toggle={()=>{setActive(!active);}}></AccountIcon> */}
             </div>
             {active?
             <>
