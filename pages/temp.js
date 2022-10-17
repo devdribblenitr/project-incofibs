@@ -7,7 +7,7 @@ export default function temp() {
   return (
     <>
     <div style={{position: "absolute", top: "50px", right: "0px"}} >
-      <Account></Account>
+      <Account/>
       
     </div>
     <ImportantDate />
