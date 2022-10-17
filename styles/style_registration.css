@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+.registrationCards h3{
+  position:relative;
+width: 160px;
+height: 26px;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 160% */
+
+
+color: #474747;
+}
+.registrationCards hr{
+  border-radius: 0;
+  border-style: solid;
+  border-color: #F5F5DC;
+}
+
+.registrationCards {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.registrationCards .class-header{
+  color: #FFFFFF;
+}
+.registrationCards .grid {
+  border-radius: 0 30px 0 30px;
+  display: grid;
+  width: 114em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.registrationCards .grid-item {
+  background-color: #fff;
+border-radius: 0 30px 0 30px;
+  overflow: hidden;
+  box-shadow: 0 3.5rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.registrationCards .grid-item:hover {
+  transform: translateY(-0.5%);
+  transform: translateX(0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+.registrationCards .card-content {
+  padding: 0;
+}
+
+.registrationCards .card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
+.registrationCards .card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color:#FFFFFF;
+  margin-bottom: 2.5rem;
+}
+
+.registrationCards .card-btn {
+  display: block;
+  margin-left: 27%;
+  width: 50%;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #E84C3D;
+  border-radius: 50px;
+  border-color:#D9E3E3;
+  border: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.registrationCards .card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.registrationCards .card-btn:hover,
+.registrationCards .card-btn:active {
+  background-color: #c2cffc;
+}
+
+.registrationCards .card-btn:hover span,
+.registrationCards .card-btn:active span {
+  margin-left: 1.5rem;
+    background-color: #E84C3D;
+}
+
+
+.registrationCards .Bird-container{
+  padding:0;
+  border: 0;
+  margin: 0;
+  padding: 15px;
+  background-color: #123749;
+  border-radius: 0 30px 0 30px;
+}
+
+@media only screen and (max-width: 60em) {
+  .registrationCards {
+    padding: 3rem;
+  }
+
+  .registrationCards .grid {
+    grid-gap: 3rem;
+  }
+}

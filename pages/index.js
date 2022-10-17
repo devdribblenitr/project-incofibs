@@ -3,11 +3,16 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css' 
 
-
-
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/free-brands-svg-icons'
 import Profile from './Profile'
+import HeroSection from '../components/Herosection'
+import ImportantDate from '../components/ImportantDate'
+import ConferenceTracks from '../components/ConferenceTracks'
+import ConferenceProgram from '../components/ConferenceProgram'
+import ContactInfo from '../components/ContactInfo'
+import  ConferenceVenue from '../components/ConferenceVenue'
+import RegistrationCards from '../components/RegistrationCards'
 
 export default function Home() {
   return (
@@ -22,11 +27,17 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <h1 className='display-1'>Home Page</h1>
+
       </main>
-      <Profile />
-   {/* <Footer/> */}
-   <Footer/>
+      <ImportantDate/>
+      <RegistrationCards/>
+      <ConferenceTracks/>
+      <ConferenceVenue/>
+      <ContactInfo/>
+      <ConferenceProgram/>
+      <Footer/>
+      {/* <HeroSection/> */}
+
     </div>
   )
 }
