@@ -23,7 +23,21 @@ const LoginButton = () => {
     }, []);
 
     if (status === 'loading') {
-        return <h1>Loading...</h1>;
+        return <Button
+        sx={{
+            borderRadius: "40px",
+            fontSize: "0.7rem",
+            borderColor: "#ffffffba",
+            color: "#ffffffba",
+            "&:hover": {
+              borderColor: "#ffffff",
+              color: "white",
+            },
+        }}
+        variant="outlined"
+        >
+           Loading...
+        </Button>;
     }
 
     console.log({ providers });
@@ -46,8 +60,7 @@ const LoginButton = () => {
                 variant="outlined"
                 // disabled={true}
                 >
-                   <>{session.user?.name}<ExpandMoreIcon/></>
-                   {console.log(session.user)}
+                   <>Profile<ExpandMoreIcon/></>
                 </Button>
             <Account logOut={() => signOut()} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image}/>
                 </div>
@@ -58,7 +71,23 @@ const LoginButton = () => {
     
 
     return (
-        <button onClick={() => signIn(providers.google.id)} className='border-[1px] border-white px-3 py-1 rounded-3xl hover:opacity-60'>LOG IN</button>
+        <Button
+        onClick={() => signIn(providers.google.id)}
+        sx={{
+            borderRadius: "40px",
+            fontSize: "0.7rem",
+            borderColor: "#ffffffba",
+            color: "#ffffffba",
+            "&:hover": {
+              borderColor: "#ffffff",
+              color: "white",
+            },
+        }}
+        variant="outlined"
+        // disabled={true}
+        >
+           Log In
+        </Button>
     )
 }
 
