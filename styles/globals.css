@@ -32,6 +32,7 @@ body{
 
 .account_userprofile_list{
     padding: 6px 2px;
+    color: #123749d6 !important;
 }
 footer{
     position: bottom;
