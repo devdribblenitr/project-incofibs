@@ -53,22 +53,22 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="grid gap-2 grid-cols-12">
-                <div className="mt-5 sinside_dashboard_span col-span-6 md:col-span-4">
-                      <span className="">Name:</span>Mohammad Sahil
+                <div className="mt-5 inside_dashboard_span col-span-6 md:col-span-4">
+                      <span className="">Designation:</span>Student
                 </div>
-                <div className="mt-5 sinside_dashboard_span col-span-6 md:col-span-4">
-                      <span className="">Name:</span>Mohammad Sahil
+                <div className="mt-5 inside_dashboard_span col-span-12 md:col-span-8">
+                      <span className="">Address:</span>Prayagraj, Uttar Pradesh, India, 211004
                 </div>
-                <div className="mt-5 sinside_dashboard_span col-span-6 md:col-span-4">
-                      <span className="">Name:</span>Mohammad Sahil
+                <div className="mt-5 inside_dashboard_span col-span-12 md:col-span-12">
+                      <span className="">Are you submitting any paper for presentation:</span>Yes
                 </div>
-                <div className="mt-5 sinside_dashboard_span col-span-6 md:col-span-4">
-                      <span className="">Name:</span>Mohammad Sahil
+                <div className="mt-5 inside_dashboard_span col-span-12 md:col-span-12">
+                      <span className="">Title of the Paper:</span>Severity of Allergic Contact Dermatitis: Significant or Insignificant
                 </div>
-                <div className="mt-5 sinside_dashboard_span col-span-6 md:col-span-4">
-                      <span className="">Name:</span>Mohammad Sahil
+                <div className="mt-5 inside_dashboard_span col-span-12 md:col-span-12">
+                      <span className="">Details of Accompanying Person, if any:</span>Mohammad Sahil, 7607861998
                 </div>
-                <div className="mt-5 sinside_dashboard_span col-span-6 md:col-span-4">
+                <div className="mt-5 inside_dashboard_span col-span-6 md:col-span-4">
                       <span className="">Name:</span>Mohammad Sahil
                 </div>
             </div>
