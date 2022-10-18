@@ -1,29 +1,21 @@
-import React from 'react';
-import gig from './gig.css';
+import React from 'react'
 
 const Incofibs = () => {
-    return ( 
-    <>
-    <div className="mt-28 ml-16 sm:ml-0  flex flex-col sm:flex-row justify-center items-center space-default space-y-10 space-x-10">
-    {/* <div className="diamond-content"> */}
-        <div class="diamond-shape rounded-3xl h-[250px] w-[250px]">
-            
-            <div class="bg"><img className="h-[250px] w-[250px]" src="https://res.cloudinary.com/dzbax077h/image/upload/v1665689632/WhatsApp_Image_2022-10-14_at_1.03.32_AM_sgmtyi.jpg" class="img-fluid"/></div>
+  return (<div>
+    <div>
+        <div className=' flex flex-row items-center justify-start h-14 md:mb-24 md:max-h-40'>
+            <img  className='rounded-br-full' src="https://res.cloudinary.com/dzbax077h/image/upload/v1665689632/WhatsApp_Image_2022-10-14_at_1.03.32_AM_sgmtyi.jpg"></img>
         </div>
-    {/* </div> */}
-    <div className='bg-blue-900 h-[400px] w-[400px] rounded-3xl -rotate-45 z-10 '>
-        <h1 className='text-3xl font-serif text-red-500 text-center rotate-45 mt-8 ml-56'>ABOUT CONFERENCE</h1>
-        <p className='text-center text-white text-lg rotate-45 pr-4 mt-3'> elit. Laborum id laboriosam fuga sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet id nam accusantium molestiae quasi. Voluptate animi aliquam odio magnam voluptates et! Eum labore nesciunt facere illo ea. Commodi, eius repellat?</p>
+        <h1 className='text-8xl font-sans text-right mr-20 lg:mr-28 mt-28 lg:mt-0 z-10'>About</h1>
+        <h1 className='text-8xl font-sans text-right mr-20 lg:mr-28  text-blue-900 md:mt-3'>InCoFIBS</h1>
     </div>
-    {/* <div className="diamond-content"> */}
-    <div class="diamond-shape rounded-3xl h-[250px] w-[250px]">
-        <div class="bg"><img className="h-[250px] w-[250px]" src="https://res.cloudinary.com/dzbax077h/image/upload/v1665689632/WhatsApp_Image_2022-10-14_at_1.03.32_AM_sgmtyi.jpg" class="img-fluid"/></div>
+    <div className='flex flex-row items-center justify-end mt-5 md:mt-8 ml-3'>
+    <div className='text-center bg-slate-200 max-w-screen-lg text-lg md:text-2xl pt-10 pl-20 pb-24 md:pb-10 rounded-bl-full'>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ex, sunt voluptas mollitia quis accusantium aspernatur, ut magnam sit cumque molestiae labore ratione, nihil eius quas consequuntur distinctio. Ea, numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis natus ullam, earum distinctio quaerat quo corrupti at voluptatem similique facilis animi saepe delectus necessitatibus reprehenderit voluptatibus perferendis laboriosam consectetur? </p>
     </div>
-    {/* </div> */}
     </div>
-   
-    </>
-     );
+    </div>
+  )
 }
- 
-export default Incofibs;
+
+export default Incofibs
