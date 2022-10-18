@@ -5,6 +5,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Logout, PaymentOutlined } from '@mui/icons-material';
+import Link from "next/link";
 
 function Account({active, name, email, image, logOut}) {
 
@@ -31,17 +32,29 @@ function Account({active, name, email, image, logOut}) {
             {email}
         </div>
         <ul className='p-4 border-t-neutral-400' style={{color: "#444"}}>
-            <li className='account_userprofile_list pb-3 flex'>
-                <PermIdentityIcon />
-                <div className='px-2'>Dashboard</div>
+            <li>
+                <Link href='/'>
+                    <div className='account_userprofile_list pb-3 flex'>
+                        <PermIdentityIcon />
+                        <div className='px-2'>Dashboard</div>
+                    </div>
+                </Link>
             </li>
-            <li className='account_userprofile_list py-3 flex'>
-                <NotificationsNoneIcon />
-                <div className='px-2'>Notification</div>
+            <li>
+                <Link href='/'>
+                <div className='account_userprofile_list py-3 flex'>
+                    <NotificationsNoneIcon />
+                    <div className='px-2'>Notification</div>
+                </div>
+                </Link>
             </li>
-            <li className='account_userprofile_list pt-3 flex'>
-                <PaymentOutlined />
-            <div className='px-2'>Payment</div>
+            <li>
+                <Link href='/'>
+                    <div className='account_userprofile_list pt-3 flex'>
+                        <PaymentOutlined />
+                        <div className='px-2'>Payment</div>
+                    </div>
+                </Link>
             </li>
         </ul>
         <div onClick={() => logOut()} className='account_userprofile_logout py-3 flex border-t border-t-slate-400 px-4'>
