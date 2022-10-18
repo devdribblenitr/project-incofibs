@@ -9,9 +9,17 @@ function Footer() {
   return (
     <footer>
       <div className="w-full">
-        <ul className="flex justify-center flex-wrap pt-8 max-w-4xl mx-auto">
+        <ul className="flex justify-center flex-wrap pt-8  max-w-3xl mx-auto">
           <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>EVENTS</li>
           <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>GALLERY</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>ABOUT US</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>Contact US</li>
+        </ul>
+        <ul className="flex justify-center flex-wrap pb-8  max-w-4xl mx-auto" style={{borderBottom: "2px solid #01212a"}}>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>EVENTS</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>GALLERY</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>ABOUT US</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>Contact US</li>
           <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>ABOUT US</li>
           <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>Contact US</li>
         </ul>
@@ -80,13 +88,13 @@ function Footer() {
                   <div className="grid grid-cols-3 gap-4 place-items-center content-evenly 
             pt-6 pr-6 pl-6">
                     <div className='border-r w-full border-white'>
-                    <img src="rectangle1.png"/>
+                    <img src="Rectangle1.png"/>
                     </div>
                     <div className='border-r border-white w-full'>
-                    <img src="rectangle1.png"/>
+                    <img src="Rectangle1.png"/>
                     </div>
                     <div>
-                    <img src="rectangle2.png"/>
+                    <img src="Rectangle2.png"/>
                     </div>
                   </div>
                 </div>
