@@ -9,6 +9,12 @@ function Footer() {
   return (
     <footer>
       <div className="w-full">
+        <ul className="flex justify-center flex-wrap pt-8 max-w-4xl mx-auto">
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>EVENTS</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>GALLERY</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>ABOUT US</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>Contact US</li>
+        </ul>
         <div className="row">
           <div className=" space-x-40">
             <div className="grid xl:flex grid-cols-1 xl:grid-cols-2 gap-4  place-items-center content-evenly xl:w-fit xl:mx-auto 
