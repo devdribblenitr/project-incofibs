@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      border:{
+        conf:'lg'
+      },
+      width:{
+        wid:'200px',
+      },
       padding:{
         ConferencePadding:'15px',
 

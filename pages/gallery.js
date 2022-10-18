@@ -1,8 +1,9 @@
 
 const gallery = () => {
   return (
-    <div className="gallery">
-  <h1 > Gallery</h1>
+    <div className="galleryyy">
+      <div className="gallery">
+  <h1>Gallery</h1>
   <div className="container">
 
     <div className="gallery-container w-3 h-2">
@@ -65,6 +66,7 @@ const gallery = () => {
 
   </div>
 </div>
+    </div>
   )
 }
 
