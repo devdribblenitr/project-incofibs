@@ -80,13 +80,13 @@ function Footer() {
                   <div className="grid grid-cols-3 gap-4 place-items-center content-evenly 
             pt-6 pr-6 pl-6">
                     <div className='border-r w-full border-white'>
-                    <img src="rectangle1.png"/>
+                    <img src="Rectangle1.png"/>
                     </div>
                     <div className='border-r border-white w-full'>
-                    <img src="rectangle1.png"/>
+                    <img src="Rectangle1.png"/>
                     </div>
                     <div>
-                    <img src="rectangle2.png"/>
+                    <img src="Rectangle2.png"/>
                     </div>
                   </div>
                 </div>
