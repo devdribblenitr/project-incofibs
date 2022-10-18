@@ -34,7 +34,7 @@ const HeroSection = () => {
             />
           </Carousel.Item>
         </Carousel> */}
-        <Carousel infiniteLoop={true} interval={3000} autoPlay={true}renderIndicator={false} axis='vertical' showArrows={false} showIndicators={false} showStatus={false}>
+        <Carousel infiniteLoop={true} interval={3000} autoPlay={true}renderIndicator={false} axis='horizontal' showArrows={false} showIndicators={false} showStatus={false}>
                 <div>
                     <img src="https://c0.wallpaperflare.com/preview/440/715/681/dark-green-green-elaf-dark-background.jpg"
                     className="d-block w-100 h-screen lg:w-full lg:h-screen " />
