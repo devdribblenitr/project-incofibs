@@ -9,6 +9,12 @@ function Footer() {
   return (
     <footer>
       <div className="w-full">
+        <ul className="flex justify-center flex-wrap pt-8 max-w-4xl mx-auto">
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>EVENTS</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>GALLERY</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>ABOUT US</li>
+          <li className='w-36 text-center py-4 footer-link-color ease-in-out duration-200'>Contact US</li>
+        </ul>
         <div className="row">
           <div className=" space-x-40">
             <div className="grid xl:flex grid-cols-1 xl:grid-cols-2 gap-4  place-items-center content-evenly xl:w-fit xl:mx-auto 
@@ -67,15 +73,21 @@ function Footer() {
               </div>
               <div className="card">
                 <h1 className="pt-6">InCoFIBS 2k23 </h1>
-                <h1 className="pt-7">LIFE SCIENCE Dept</h1>
+                <h1 className="pt-7 pb-4">LIFE SCIENCE Dept</h1>
                 <br />
                 <div className="pl-12 pt-2"><hr align="center" width="85%" /></div>
                 <div className="row">
                   <div className="grid grid-cols-3 gap-4 place-items-center content-evenly 
             pt-6 pr-6 pl-6">
-                    <img src="diamond.jpeg" />
-                    <img src="diamond.jpeg" />
-                    <img src="logo.jpeg" />
+                    <div className='border-r w-full border-white'>
+                    <img src="rectangle1.png"/>
+                    </div>
+                    <div className='border-r border-white w-full'>
+                    <img src="rectangle1.png"/>
+                    </div>
+                    <div>
+                    <img src="rectangle2.png"/>
+                    </div>
                   </div>
                 </div>
               </div>
