@@ -3,6 +3,7 @@ import React, { FC, useState, useEffect } from 'react';
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
 import { Button } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import Account from './Account';
 
 // import ProfileHover from './profileHover';
@@ -60,7 +61,7 @@ const LoginButton = () => {
                 variant="outlined"
                 // disabled={true}
                 >
-                   <>Profile<ExpandMoreIcon/></>
+                   <>Profile{active ? <ExpandLessIcon/> : <ExpandMoreIcon/>}</>
                 </Button>
             <Account logOut={() => signOut()} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image}/>
                 </div>
