@@ -16,7 +16,7 @@ function Account({active, name, email, image, logOut}) {
                 <div className='h-fit my-auto flex' style={{color: "#444"}}>
                     <div className='pl-2 pr-2 h-fit'>
                     {/* <AccountCircleIcon></AccountCircleIcon> */}
-                    <img src={image} className='h-10 w-10 rounded-full'></img>
+                    <img src={image} alt="user_image" className='h-10 w-10 rounded-full'></img>
                     </div>
                     <div className='mt-1 h-fit pr-6 text-lg'>{name}
                     </div>
@@ -27,7 +27,7 @@ function Account({active, name, email, image, logOut}) {
         </div>
         {active?
         <>
-        <div className='px-2 text-center py-2 bg-emerald-400 text-white'>
+        <div className='px-2 text-center py-2 text-white' style={{backgroundColor: "#E84C3D"}}>
             {email}
         </div>
         <ul className='p-4 border-t-neutral-400' style={{color: "#444"}}>
