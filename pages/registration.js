@@ -59,11 +59,31 @@ const Registration = () => {
     presentation: ["yes", "no"],
   };
 
-  const [editname, setEditname] = useState(false);
+  const [edit, setEdit] = useState({
+    name: false,
+    email: false,
+    designation: false,
+    address: false,
+    title: false,
+    accomodation: false,
+    gender: false,
+    presentation: false,
+    phonenumber: false,
+    accompany: false,
+    amount: false,
+    draft: false,
+    drawn: false,
+    bank: false,
+    place: false,
+    date: false,
+    transaction: false,
+    transfer: false,
+    Date: false,
+    account: false
+  });
 
   const func1 = (e) => {
     e.preventDefault();
-    setEditname(!editname);
   };
 
   const getData = (e) => {
@@ -91,15 +111,15 @@ const Registration = () => {
           <div class="container mx-auto">
             <div class="flex justify-center px-6 my-2">
               <div class="w-full xl:w-3/4 lg:w-11/12 flex">
-                <div class="w-full lg:w-7/12 bg-white  rounded-lg lg:rounded-l-none">
-                  <form class="px-8 pt-6 pb-8  bg-white rounded">
+                <div class="w-full bg-white  rounded-lg lg:rounded-l-none">
+                  <form class="px-8 pt-6 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
                     {Object.keys(inpval).map((key) => {
                       return (
                         <div key={key}>
                           {(key === "gender" ||
                             key === "accomodation" ||
                             key === "presentation") && (
-                            <div class="md:ml-2">
+                            <div class="lg:px-2">
                               <label class="block mb-2 text-sm font-bold text-gray-700">
                                 {heading[key]}
                               </label>
@@ -137,19 +157,38 @@ const Registration = () => {
                             key === "accomodation" ||
                             key === "presentation"
                           ) && (
-                            <div class="mb-4">
+                            <div class="mb-4 lg:px-2">
                               <div className="flex justify-between p-2">
                                 <label class="block mb-2 text-sm font-bold text-gray-700">
                                   {heading[key]}
                                 </label>
                               </div>
                               {
+                                ( key === 'email'?
                                 <input
-                                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  type="email"
+                                  name={`${key}`}
+                                  onChange={getData}
+                                  style={{borderRadius: "1.2rem"}}
+                                />
+                                : (key === 'date')?
+                                <input
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  type="date"
+                                  name={`${key}`}
+                                  onChange={getData}
+                                  style={{borderRadius: "1.2rem"}}
+                                />
+                                :
+                                <input
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
                                   type="text"
                                   name={`${key}`}
                                   onChange={getData}
+                                  style={{borderRadius: "1.2rem"}}
                                 />
+                                )
                               }
                             </div>
                           )}
@@ -192,8 +231,8 @@ const Registration = () => {
           <div class="container mx-auto">
             <div class="flex justify-center px-6 my-2">
               <div class="w-full xl:w-3/4 lg:w-11/12 flex">
-                <div class="w-full lg:w-7/12 bg-white  rounded-lg lg:rounded-l-none">
-                  <form class="px-8 pt-6 pb-8  bg-white rounded">
+                <div class="w-full bg-white  rounded-lg lg:rounded-l-none">
+                  <form class="px-8 pt-6 pb-8 grid grid-cols-1 lg:grid-cols-2 bg-white rounded">
                     {Object.keys(inpval).map((key) => {
                       return (
                         <div key={key}>
@@ -240,7 +279,7 @@ const Registration = () => {
                             key === "accomodation" ||
                             key === "presentation"
                           ) && (
-                            <div class="mb-4">
+                            <div class="mb-4 px-2">
                               <div className="flex justify-between p-2">
                                 <label
                                   class="block mb-2 text-sm font-bold text-gray-700"
@@ -248,9 +287,9 @@ const Registration = () => {
                                 >
                                   {heading[key]}
                                 </label>
-                                <button onClick={func1}>edit</button>
+                                <button onClick={(e)=>{e.preventDefault(); const edit2 = {...edit}; edit2[key] = !edit2[key]; setEdit(edit2)}} className="bg-green-500 py-1 font-semibold px-4  text-white hover:bg-green-600 active:bg-gradient-to-l duration-200 active:from-green-500 active:to-green-600" style={{borderRadius: "0.5rem"}}>edit</button>
                               </div>
-                              {!editname ? (
+                              {!edit[key] ? (
                                 <input
                                   class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                                   id="name"
@@ -259,14 +298,15 @@ const Registration = () => {
                                   value={inpval[key]}
                                 />
                               ) : (
-                                <input
-                                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                  id="name"
-                                  type="text"
-                                  name={`${key}`}
-                                  value={inpval[key]}
-                                  onChange={getData}
-                                />
+                                <p>{inpval[key]}</p>
+                                // <input
+                                //   class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                //   id="name"
+                                //   type="text"
+                                //   name={`${key}`}
+                                //   value={inpval[key]}
+                                //   onChange={getData}
+                                // />
                               )}
                             </div>
                           )}
