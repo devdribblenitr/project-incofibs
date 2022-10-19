@@ -88,7 +88,7 @@ function Footer() {
                   <div className="grid grid-cols-3 gap-4 place-items-center content-evenly 
             pt-6 pr-6 pl-6">
                     <div className='border-r w-full border-white'>
-                    <img src="Rectangle1.png"/>
+                    <img src="footer_incofibs.png"/>
                     </div>
                     <div className='border-r border-white w-full'>
                     <img src="Rectangle1.png"/>
