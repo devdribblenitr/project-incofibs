@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+
+
+.registration{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title{
+  width: 70%;
+  text-align: right;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: end;
+}
+
+.title h2{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.title p{
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+.registrationCards{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 40rem;
+ 
+  flex-wrap: wrap;
+}
+
+
+
+.card{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 0 2rem;
+  overflow: hidden;
+  width: 20rem;
+  box-shadow: 0rem 3.5rem 6rem rgba(0,0,0,0.1);
+  height: 25rem;
+  transition: all 400ms;
+  margin: 2.5rem 0;
+}
+
+.card:hover{
+  box-shadow: 0rem 4rem 8rem rgba(0,0,0,0.5);
+  transform: scale(102%);
+}
+
+.heading{
+  padding: 1.5rem 4.5rem;
+  background-color: #184353;
+  border-radius: 0 2rem;
+}
+
+.heading h1{
+  color: white;
+  font-size: 1.55rem;
+}
+
+.heading p{
+  color: orange;
+  font-size: 0.8rem;
+}
+
+.content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-start;
+  height: 100%;
+
+}
+
+.content ul li{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+
+.content h3{
+  font-size: 0.75rem;
+  margin-left: 30%;
+}
+
+.content p{
+  font: 0.85rem;
+  margin-left: 30%;
+}
+.content hr{
+  border: solid 0.5px rgba(0,0,0,0.1);
+}
+
+.content ul li:last-child hr{
+  border: none;
+}
+
+.icon{
+  width: 0.5rem;
+  margin-left: 1rem;
+  border: solid 1px rgba(0,0,0,0.25);
+}
+
+.icon h1{
+  
+  height: 60%;
+  
+  background-color: #E84C3D;
+}
+
+.icon h2{
+  
+  background-color: #ddd;
+  height: 40%;
+}
+
+/* @media (max-width:) {
+  
+} */
