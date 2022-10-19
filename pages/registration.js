@@ -4,7 +4,6 @@ import { useState } from "react";
 const Registration = () => {
   const [one, setOne] = useState(true);
   const [two, setTwo] = useState(false);
-  const [three, setThree] = useState(false);
 
   const [inpval, setInpval] = useState({
     name: "",
@@ -172,7 +171,7 @@ const Registration = () => {
                                   onChange={getData}
                                   style={{borderRadius: "1.2rem"}}
                                 />
-                                : (key === 'date')?
+                                : (key === 'date' || key== 'Date')?
                                 <input
                                   class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
                                   type="date"
@@ -287,27 +286,23 @@ const Registration = () => {
                                 >
                                   {heading[key]}
                                 </label>
-                                <button onClick={(e)=>{e.preventDefault(); const edit2 = {...edit}; edit2[key] = !edit2[key]; setEdit(edit2)}} className="bg-green-500 py-1 font-semibold px-4  text-white hover:bg-green-600 active:bg-gradient-to-l duration-200 active:from-green-500 active:to-green-600" style={{borderRadius: "0.5rem"}}>edit</button>
+                                <button onClick={(e)=>{e.preventDefault(); const edit2 = {...edit}; edit2[key] = !edit2[key]; setEdit(edit2)}} className="bg-green-500 py-1 font-semibold px-4  text-white hover:bg-green-600 active:bg-gradient-to-l duration-200 active:from-green-500 active:to-green-600" style={{borderRadius: "0.5rem"}}>{edit[key]?"done":"edit"}</button>
                               </div>
-                              {!edit[key] ? (
+                              <div style={{height: "68px"}} className="px-2 flex flex-col">
+                              {edit[key] ? (
                                 <input
-                                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-600 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" style={{borderRadius: "1.2rem"}}
                                   id="name"
-                                  type="text"
+                                  type={key=="date" || key=="Date"?"date": key=="email"?"email":"text"}
                                   name={`${key}`}
                                   value={inpval[key]}
+                                  onChange = {getData}
                                 />
                               ) : (
-                                <p>{inpval[key]}</p>
-                                // <input
-                                //   class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                //   id="name"
-                                //   type="text"
-                                //   name={`${key}`}
-                                //   value={inpval[key]}
-                                //   onChange={getData}
-                                // />
+                                  <p className="pt-2">{inpval[key]}</p>
+                                
                               )}
+                              </div>
                             </div>
                           )}
                         </div>
