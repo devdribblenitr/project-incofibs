@@ -23,7 +23,7 @@ const ContactInfo = () => {
           <path d="M0 0H117V3H0V0Z" fill="#184353" />
         </svg>
       </div>
-      <div className="md:flex md:align-middle">
+      <div className="flex justify-center align-middle">
         <div className="px-5 pt-8 xl:ml-20 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6885.651819019208!2d84.89957687894!3d22.250107339616974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201f72bbd561c3%3A0xab5c70e76a7b5a!2sNational%20Institute%20of%20Technology%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1665677952037!5m2!1sen!2sin"
