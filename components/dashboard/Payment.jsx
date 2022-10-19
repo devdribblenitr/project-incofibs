@@ -5,7 +5,7 @@ import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { useState } from "react";
 import dayjs from 'dayjs';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import FileUpload from "react-mui-fileuploader";
+// const FileUpload = require("react-mui-fileuploader");
 import logoBranding from '../../public/logoBranding.png'
 
 const Payment = () => {
@@ -70,28 +70,28 @@ const Payment = () => {
                     />
                 </LocalizationProvider>
               </div>
-              <div style={{marginTop: "15px"}}>
+              {/* <div style={{marginTop: "15px"}}>
                 <FileUpload
                     multiFile={true}
                     disabled={false}
                     title="Upload your payment reciept"
-                    header="Drag and drop your file here"
-                    leftLabel="or"
-                    rightLabel="to select files"
+                    header="Drag and drop your file here or click to upload"
+                    leftLabel=" "
+                    rightLabel=" "
                     buttonLabel="click here"
                     buttonRemoveLabel="Remove all"
                     maxFileSize={10}
                     maxUploadFiles={0}
                     maxFilesContainerHeight={357}
                     errorSizeMessage={'fill it or move it to use the default error message'}
-                    allowedExtensions={['jpg', 'jpeg']}
+                    allowedExtensions={['jpg', 'jpeg', 'png']}
                     onFilesChange={handleFilesChange}
                     onError={handleFileUploadError}
                     imageSrc={logoBranding.src}
                     bannerProps={{ elevation: 0, variant: "outlined" }}
                     containerProps={{ elevation: 0, variant: "outlined" }}
                   />
-              </div>
+              </div> */}
               <Button style={{marginTop: "25px",paddingTop: "10px", paddingBottom: "10px"}} fullWidth variant="outlined">Submit</Button>
               </div>
             </div>
