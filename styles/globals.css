@@ -221,3 +221,36 @@ footer .card .social-links a:hover
     border: 1px solid #ffffff !important;
     background-color: rgba(255, 255, 255, 0.04) !important;
 }
+/* .carouselCards{
+    height: 100vh;
+    width: 100vw;
+    background-color: red !important;
+    position: relative;
+}
+.carousel-root, .carousel, .carousel-slider{
+    height: 100vh;
+    width: 100vw;
+    background-color: red !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.carousel-slider img{
+    height: 100vh;
+    width: 100vw;
+} */
+.thumbs-wrapper{
+    display: none;
+}
+.CarouselCards, .CarouselCards img{
+    height: calc(100vh - 100px) !important;
+}
+.countDownCards{
+    /* mt-14 mb-4 pb-2 */
+    margin-top: 100px;
+}
+.herosection_new{
+    /* mb-calc(100vh - 100px) */
+    margin-bottom: calc(100vh - 100px) !important;
+}
