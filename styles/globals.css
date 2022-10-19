@@ -150,7 +150,7 @@ footer .card .social-links a:hover
 .dashboard_profile{
     background-color: #EEEEEE;
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
 }
 .dashboard_navbar{
     /* padding: ; */
@@ -194,4 +194,14 @@ footer .card .social-links a:hover
 .inside_dashboard_span span{
     padding-right: 15px;
     font-weight: 600;
+}
+.dashboard_content_no_notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #022a36cf;
 }

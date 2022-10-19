@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Dashboard = () => {
   return (
-    <div className="pt-5 dashboard_profile">
+    <div className="py-[2.5rem] dashboard_profile">
       <div className="grid gap-5 grid-cols-12">
           <div className="dashboard_navbar bg-white py-[25px] col-span-12 md:col-span-3">
             <Link href='/dashboard'>
@@ -68,8 +68,8 @@ const Dashboard = () => {
                 <div className="mt-5 inside_dashboard_span col-span-12 md:col-span-12">
                       <span className="">Details of Accompanying Person, if any:</span>Mohammad Sahil, 7607861998
                 </div>
-                <div className="mt-5 inside_dashboard_span col-span-6 md:col-span-4">
-                      <span className="">Name:</span>Mohammad Sahil
+                <div className="mt-5 inside_dashboard_span col-span-12 md:col-span-12">
+                      <span className="">Accommodation Required:</span>Yes
                 </div>
             </div>
           </div>
