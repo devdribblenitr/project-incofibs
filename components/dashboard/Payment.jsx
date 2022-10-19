@@ -6,6 +6,7 @@ import { useState } from "react";
 import dayjs from 'dayjs';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import FileUpload from "react-mui-fileuploader";
+import logoBranding from '../../public/logoBranding.png'
 
 const Payment = () => {
   const [valueDate, setValueDate] = useState(dayjs());
@@ -74,7 +75,7 @@ const Payment = () => {
                     multiFile={true}
                     disabled={false}
                     title="Upload your payment reciept"
-                    header="[Drag to drop]"
+                    header="Drag and drop your file here"
                     leftLabel="or"
                     rightLabel="to select files"
                     buttonLabel="click here"
@@ -86,7 +87,7 @@ const Payment = () => {
                     allowedExtensions={['jpg', 'jpeg']}
                     onFilesChange={handleFilesChange}
                     onError={handleFileUploadError}
-                    imageSrc={'path/to/custom/image'}
+                    imageSrc={logoBranding.src}
                     bannerProps={{ elevation: 0, variant: "outlined" }}
                     containerProps={{ elevation: 0, variant: "outlined" }}
                   />

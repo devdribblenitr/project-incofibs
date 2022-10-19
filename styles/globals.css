@@ -205,3 +205,10 @@ footer .card .social-links a:hover
     font-weight: 600;
     color: #022a36cf;
 }
+.css-p171ze-MuiPaper-root {
+    background-color: #022a36;
+}
+.MuiButton-outlinedSecondary:hover {
+    border: 1px solid #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+}
