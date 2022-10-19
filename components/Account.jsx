@@ -33,7 +33,7 @@ function Account({active, name, email, image, logOut}) {
         </div>
         <ul className='p-4 border-t-neutral-400' style={{color: "#444"}}>
             <li>
-                <Link href='/'>
+                <Link href='/dashboard'>
                     <div className='account_userprofile_list pb-3 flex'>
                         <PermIdentityIcon />
                         <div className='px-2'>Dashboard</div>
@@ -41,7 +41,7 @@ function Account({active, name, email, image, logOut}) {
                 </Link>
             </li>
             <li>
-                <Link href='/'>
+                <Link href='/dashboard/notification'>
                 <div className='account_userprofile_list py-3 flex'>
                     <NotificationsNoneIcon />
                     <div className='px-2'>Notification</div>
@@ -49,7 +49,7 @@ function Account({active, name, email, image, logOut}) {
                 </Link>
             </li>
             <li>
-                <Link href='/'>
+                <Link href='/dashboard/payment'>
                     <div className='account_userprofile_list pt-3 flex'>
                         <PaymentOutlined />
                         <div className='px-2'>Payment</div>
