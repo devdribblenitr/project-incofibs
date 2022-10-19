@@ -47,8 +47,8 @@ const Countdownclock = () => {
           {" "}
           2nd February 2023
         </button>
-        <div className="text-2xl lg:text-5xl mt-6 flex justify-center pl-4 sm:pl-0 mb-1">
-          INCOFIBS  2k23
+        <div className="text-2xl lg:text-6xl mt-6 flex justify-center pl-4 sm:pl-0 mb-1">
+          InCoFIBS  2<div className="text-[#e84c3d]">k</div>23
         </div>
         <div className="text-lg w-4/5 flex justify-center mb-1">
          International Conference on frontier in Biological Sciences

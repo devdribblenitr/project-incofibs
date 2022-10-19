@@ -1,24 +1,21 @@
-import React from 'react';
+import React from 'react'
+
 const Incofibs = () => {
-    return ( <>
-        
-        <div className='mb-20 flex flex-col items-center lg:my-10'>
-        <div className='mx-4 '>
-        <div className='flex flex-col items-center'>
-        <img className='center z-10 w-[400px] lg:ml-[400px] lg:absolute h-72 lg:h-96 rounded-3xl shadow-[0_35px_60px_-15px_rgba(0,0,0.9,0.9)]' src="https://res.cloudinary.com/dzbax077h/image/upload/v1665169731/conf_r2ahdf.jpg" alt='incofibs'/>  
+  return (<div>
+    <div>
+        <div className=' flex flex-row items-center justify-start h-14 md:mb-24 md:max-h-40'>
+            <img  className='rounded-br-full' src="https://res.cloudinary.com/dzbax077h/image/upload/v1665689632/WhatsApp_Image_2022-10-14_at_1.03.32_AM_sgmtyi.jpg"></img>
         </div>
-        <div className="rounded-3xl mt-10 mb-4 lg:mr-[400px] m-20 lg:mb-20">
-        <div className="flex flex-col space-y-4 bg-slate-100 p-5 py-20 lg:pl-20 lg:pr-44 text-center text-2xl rounded-3xl h-fit max-w-5xl shadow-2xl">
-        <div className='mx-4 bg-white font-serif text-6xl text-bold text-center lg:pr-20'>About InCoFibs</div><div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt repudiandae eos temporibus voluptate quibusdam animi nesciunt illo consequuntur enim, aspernatur ab labore hic. Ad a fugit iure sit in?</div>
-        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus quisquam rem cupiditate quos a omnis fugit fuga! Officiis nulla quod omnis, suscipit maiores unde.</div>
-        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. fugit fuga! Officiis nulla quod omnis, suscipit maiores unde.</div>
-        
-        </div>
-        </div>
-        </div>
-        </div>
-        </>
-     );
+        <h1 className='text-8xl font-sans text-right mr-20 lg:mr-28 mt-28 lg:mt-0 z-10'>About</h1>
+        <h1 className='text-9xl font-sans text-right mr-20 lg:mr-28  text-blue-900 md:mt-3'>InCoFIBS</h1>
+    </div>
+    <div className='flex flex-row justify-end mt-5 md:mt-8 mx-0 md:ml-3 ml-10'>
+    <div className='text-center justify-end bg-slate-200 max-w-screen-lg text-lg md:text-2xl pt-5 md:pt-10 pl-24 pr-10 pb-20 md:pb-10 rounded-bl-full'>
+        <p className='justify-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ex, sunt voluptas mollitia quis accusantium aspernatur, ut magnam sit cumque molestiae labore ratione, nihil eius quas consequuntur distinctio. Ea, numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis natus ullam, earum distinctio quaerat quo corrupti at voluptatem similique facilis animi saepe delectus necessitatibus reprehenderit voluptatibus perferendis laboriosam consectetur? </p>
+    </div>
+    </div>
+    </div>
+  )
 }
- 
-export default Incofibs;
+
+export default Incofibs

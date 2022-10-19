@@ -13,3 +13,6 @@
 .trackItem{
     border-bottom: 2px solid #0D3848;
 }
+.rounded-xl{
+    border-radius: 0.75rem;
+}

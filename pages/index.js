@@ -29,6 +29,7 @@ export default function Home() {
       <main className={styles.main}>
 
       </main>
+      <HeroSection/>
       <ImportantDate/>
       <RegistrationCards/>
       <ConferenceTracks/>
