@@ -5,7 +5,15 @@
 /* **********footer styling********** */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;400;700&display=swap');
- 
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../public/PlayfairDisplay-VariableFont_wght.ttf');
+  }
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
 body{
     overflow-x: hidden !important;
 }
@@ -253,4 +261,35 @@ footer .card .social-links a:hover
 .herosection_new{
     /* mb-calc(100vh - 100px) */
     margin-bottom: calc(100vh - 100px) !important;
+}
+
+/* ******* about section*******  */
+
+.heading_title{
+    position: relative;
+    font-size: 36px;
+    text-transform: capitalize !important;
+}
+.aboutinco p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.heading_title::after{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #E84C3D;
+    left: 20%;
+    bottom: -10px;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: 250ms ease-in-out;
+}
+.aboutinco, .aboutinco_outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
