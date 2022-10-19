@@ -43,12 +43,11 @@ const Countdownclock = () => {
   return (
     <div className="flex flex-col ">
       <div className="flex flex-col items-center justify-center text-white mb-4">
-        <button className="bg-primary-60 rounded-tl-bye rounded-br-bye text-lg p-2 ">
-          {" "}
+        <button className="bg-primary-60 rounded-tl-bye rounded-br-bye text-lg py-2 px-4">
           2nd February 2023
         </button>
         <div className="text-2xl lg:text-6xl mt-6 flex justify-center pl-4 sm:pl-0 mb-1">
-          InCoFIBS  2<div className="text-[#e84c3d]">k</div>23
+          InCoFIBS  2<div className="text-[#e84c3d] font-bold">k</div>23
         </div>
         <div className="text-lg w-4/5 flex justify-center mb-1">
          International Conference on frontier in Biological Sciences

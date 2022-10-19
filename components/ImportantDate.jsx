@@ -10,7 +10,7 @@ export default function ImportantDate() {
           </div>
           <div className="flex flex-wrap justify-center">
             <DateCard headline={"Abstract submission deadline"} date={"October 30, 2022"} alignment="left"></DateCard>
-            <DateCard headline={"Confirmation of Abstract Acceptance"} date={"November 10, 2022"} alignment="left" ></DateCard>
+            <DateCard headline={"Confirmation of Abstract"} date={"November 10, 2022"} alignment="left" ></DateCard>
           </div>
         </div>
       </div>
