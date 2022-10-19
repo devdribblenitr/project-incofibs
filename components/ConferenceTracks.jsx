@@ -17,7 +17,9 @@ export default function ConferenceTracks() {
     ]
   return (
     <div style={{ backgroundImage: "linear-gradient(0deg, rgba(18,55,73,0.75), rgba(18,55,73,0.75)), url(retangle98.png)", backgroundSize: "cover", backgroundAttachment: 'fixed'}} className="py-16">
-        <h1 className='text-4xl text-center pb-12 text-white'>CONFERENCE TRACKS</h1>
+        <div className="heading aboutinco pb-12">
+            <h1 className='text-4xl text-center playfair pb-3 heading_title text-white'>CONFERENCE TRACKS</h1>
+        </div>
         <div className='flex justify-center flex-wrap'>
             <IndividualTrack track={arr1}></IndividualTrack>
             <IndividualTrack track={arr2}></IndividualTrack>

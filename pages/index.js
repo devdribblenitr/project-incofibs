@@ -13,6 +13,7 @@ import ConferenceProgram from '../components/ConferenceProgram'
 import ContactInfo from '../components/ContactInfo'
 import  ConferenceVenue from '../components/ConferenceVenue'
 import RegistrationCards from '../components/RegistrationCards'
+import AboutIncofibs from '../components/AboutIncofibs'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
 
       </main>
       <HeroSection/>
+      <AboutIncofibs/>
       <ImportantDate/>
       <RegistrationCards/>
       <ConferenceTracks/>
