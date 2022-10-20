@@ -12,11 +12,11 @@
 }
 
 .title{
-  width: 70%;
+  width: 80%;
   text-align: right;
   margin-top: 5rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .title h2{
@@ -31,7 +31,7 @@
 
 .registrationCards{
   display: flex;
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins", sans-serif;
@@ -138,6 +138,14 @@
   height: 40%;
 }
 
-/* @media (max-width:) {
+@media (max-width:1366px) {
+  .registrationCards{
+    justify-content: space-around;
+  }
+}
+@media (max-width:768px) {
+  .registrationCards{
+    justify-content: center;
+  }
   
-} */
+}
