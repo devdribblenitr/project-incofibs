@@ -8,7 +8,7 @@ const AboutIncofibs = () => {
         <p className="py-12 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum accusantium excepturi error ab tenetur amet, sed veritatis quas aperiam qui provident nesciunt!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum accusantium excepturi error ab tenetur amet, sed veritatis quas aperiam qui provident nesciunt!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum accusantium excepturi error ab tenetur amet, sed veritatis quas aperiam qui provident nesciunt!</p>
-        <Button
+        {/* <Button
           style={{marginBottom: "20px"}}
           sx={{
               borderRadius: "40px",
@@ -23,7 +23,7 @@ const AboutIncofibs = () => {
           variant="outlined"
           >
             About NIT Rourkela
-          </Button>
+          </Button> */}
       </div>
     </div>
   )
