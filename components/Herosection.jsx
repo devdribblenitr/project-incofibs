@@ -1,7 +1,5 @@
 import Countdownclock from "./Countdownclock";
-import React, { Component } from 'react';
-import Herosectioncard from "./Herosectioncard";
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react';
 import CarouselCards from "./CarouselCards";
 
 const HeroSection = () => {
