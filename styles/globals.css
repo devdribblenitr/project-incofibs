@@ -304,3 +304,13 @@ footer .card .social-links a:hover
     background-color: #e84c3dd1;
     color: #fff !important;
 }
+.ConferenceProgram {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.ConferenceProgram button > p, .ConferenceProgram_button{
+    border-radius: 12px;
+}
+.ConferenceProgram_container{
+    border-radius: 24px;
+}

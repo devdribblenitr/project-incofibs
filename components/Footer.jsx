@@ -103,7 +103,7 @@ function Footer() {
           </div>
           <div className="flex space-y-40 w-full">
             <div className="base-box pt-5 place-items-center w-full">
-              <h3><p>@2023 Made with &#129505; by ABC Tech Team</p></h3>
+              <h3><p>@2023 Made with &#129505; by Team InCoFIBS</p></h3>
             </div>
           </div>
         </div>
