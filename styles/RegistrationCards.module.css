@@ -56,8 +56,8 @@
 }
 
 .card:hover{
-  box-shadow: 0rem 4rem 8rem rgba(0,0,0,0.5);
-  transform: scale(102%);
+  box-shadow: 0rem 4rem 8rem rgb(0 0 0 / 10%);
+    transform: translateY(-20px);
 }
 
 .heading{
