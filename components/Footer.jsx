@@ -55,7 +55,7 @@ function Footer() {
               </div>
               <div className="card">
                 <h2 className="pt-6 pl-14">ABOUT NIT Rourkela</h2>
-                <p className="pt-10 pl-14">NIT Rourkela is one of the country's premier national-level institutions for technical education, funded by the Government of India.Known for its technical education, its research is not far behind.</p>
+                <p className="pt-10 pl-14">NIT Rourkela is one of the countrys premier national-level institutions for technical education, funded by the Government of India.Known for its technical education, its research is not far behind.</p>
                 <div >
                   <div >
                     <div className="grid grid-cols-5 gap-2 pl-14 pt-24 pr-14">
