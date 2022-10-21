@@ -23,7 +23,7 @@ html {
   }
 body{
     overflow-x: hidden !important;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important; 
 }
 .account_userprofile{
     position: absolute;
