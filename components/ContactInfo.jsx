@@ -88,7 +88,7 @@ const ContactInfo = () => {
 
               <div className="ml-4">
                 <h1 className="text-lg">Email</h1>
-                <h1 className="text-lg">incofibs@nitrkl.ac.in</h1>
+                <h1 className="text-lg">IncoFIBS.2023@gmail.com</h1>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const ContactInfo = () => {
               </svg>
               <div className="ml-4">
                 <h1 className="text-lg">Phone</h1>
-                <h1 className="text-lg">+91 1234567890</h1>
+                <h1 className="text-lg">+91 7077277756</h1>
               </div>
             </div>
           </div>
