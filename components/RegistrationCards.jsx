@@ -136,7 +136,7 @@ const RegistrationCards = () => {
 
   return (
 
-    <div className={styles.registration}>
+    <div id="register" className={styles.registration}>
       
         <div className={styles.title}>
           <div className="flex flex-col">
