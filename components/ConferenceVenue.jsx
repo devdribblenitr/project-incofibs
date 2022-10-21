@@ -8,7 +8,7 @@ const Conference = () => {
     boxShadow:'50px',
   }
   return (
-    <div className="w-full white px-4 my-16">
+    <div id="conference_venue" className="w-full white px-4 my-16">
       <div>
         <div className="aboutinco">
           <h1 className="capitalize heading_title pb-3 playfair max-w-[1440px] text-[#000000bf] mx-auto text-center my-2 text-4xl  mb-2 font-normal ">
