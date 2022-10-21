@@ -298,3 +298,9 @@ footer .card .social-links a:hover
     align-items: center;
     height: 100%;
 }
+
+.button_cards:hover{
+    border: 2px solid rgb(232, 76, 61);
+    background-color: #e84c3dd1;
+    color: #fff !important;
+}

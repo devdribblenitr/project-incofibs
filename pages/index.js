@@ -27,9 +27,6 @@ export default function Home() {
     crossorigin="anonymous" referrerpolicy="no-referrer" />
       </Head>
       <Navbar />
-      <main className={styles.main}>
-
-      </main>
       <HeroSection/>
       <AboutIncofibs/>
       <ImportantDate/>
@@ -39,8 +36,6 @@ export default function Home() {
       <ContactInfo/>
       <ConferenceProgram/>
       <Footer/>
-      {/* <HeroSection/> */}
-
     </div>
   )
 }
