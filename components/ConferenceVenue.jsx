@@ -34,7 +34,7 @@ const Conference = () => {
       </div>
       <div className="flex flex-col py-2 xl:pt-6 mt-2 divide-y px-6">
           <p className="text-[#474747] font-normal md:text-lg text-lg mx-6 my-4   ">
-          NIT Rourkela is one of the country's premier national-level institutions for technical education and is funded by the Government of India.
+          NIT Rourkela is one of the countrys premier national-level institutions for technical education and is funded by the Government of India.
           </p>
           <p className="text-[#474747] font-normal md:text-lg text-lg mx-6 my-4  ">
           The campus is located at the eastern end of the Steel city of Rourkela amid the lush green hills of Sundergarh, at the confluence of river South Koel and Sankh forming Brahmani.
