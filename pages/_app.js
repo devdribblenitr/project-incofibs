@@ -14,7 +14,7 @@ export default function MyApp({
     <SessionProvider session={session}>
       {/* <Navbar /> */}
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      {/* <Footer />S */}
     </SessionProvider>
   )
 }
