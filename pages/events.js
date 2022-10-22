@@ -3,6 +3,53 @@ import PastEvents from "../components/PastEvents"
 import PastKeynoteSpeakers from "../components/PastKeynoteSpeakers"
 
 export default function Events() {
+    const pastEvent = [
+        {
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            name: "Conference on Genetically Modified Organisms",
+            desc: "A conference on GMO, their implications and ways to reduce concerns",
+            venue: "Rajendra Mishra Hall",
+            date: "12/01/2023"
+        },
+        {
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            name: "Conference on Genetically Modified Organisms",
+            desc: "A conference on GMO, their implications and ways to reduce concerns",
+            venue: "Rajendra Mishra Hall",
+            date: "12/01/2023"
+        },
+        {
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            name: "Conference on Genetically Modified Organisms",
+            desc: "A conference on GMO, their implications and ways to reduce concerns",
+            venue: "Rajendra Mishra Hall",
+            date: "12/01/2023"
+        },
+        
+    ]
+
+    const keynoteSpeakers = [
+        {
+            name: "Isaac Newton",
+            designation: "HOD Mechanical Department, NIT Rourkela",
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            name: "Nicolas Tesla",
+            designation: "HOD Electrical department, IIT Roorkee",
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            name: "Isaac Newton",
+            designation: "HOD Mechanical Department, IISER Kolkata",
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            name: "Nicolas Tesla",
+            designation: "HOD Electrical department",
+            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+    ]
     return (
         <div className="bg-gray-200 px-2">
             <div className=" mx-auto w-full lg:w-5/6">
@@ -13,9 +60,9 @@ export default function Events() {
                     <EventCard></EventCard>
                 </div> */}
                 
-                <PastKeynoteSpeakers heading="Keynote speakers"></PastKeynoteSpeakers>
-                <PastKeynoteSpeakers heading="Speakers and faculty"></PastKeynoteSpeakers>
-                <PastEvents></PastEvents>
+                <PastKeynoteSpeakers heading="Keynote speakers" speakers={keynoteSpeakers}></PastKeynoteSpeakers>
+                <PastKeynoteSpeakers heading="Speakers and faculty" speakers={keynoteSpeakers}></PastKeynoteSpeakers>
+                <PastEvents events={pastEvent}></PastEvents>
             </div>
         </div>
     )
