@@ -1,0 +1,43 @@
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+}
+
+.section{
+    width: 90%;
+}
+
+.section h1{
+    
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.imageGrid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+
+}
+
+
+.imageGrid div{
+    padding: 2%;
+    overflow: hidden;
+}
+
+.imageGrid div img{
+    transition: all 250ms;
+}
+
+.imageGrid div img:hover{
+    transform: scale(110%);
+
+}
