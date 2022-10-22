@@ -13,6 +13,7 @@ import ConferenceProgram from '../components/ConferenceProgram'
 import ContactInfo from '../components/ContactInfo'
 import  ConferenceVenue from '../components/ConferenceVenue'
 import RegistrationCards from '../components/RegistrationCards'
+import AboutIncofibs from '../components/AboutIncofibs'
 
 export default function Home() {
   return (
@@ -26,9 +27,8 @@ export default function Home() {
     crossorigin="anonymous" referrerpolicy="no-referrer" />
       </Head>
       <Navbar />
-      <main className={styles.main}>
-
-      </main>
+      <HeroSection/>
+      <AboutIncofibs/>
       <ImportantDate/>
       <RegistrationCards/>
       <ConferenceTracks/>
@@ -36,8 +36,6 @@ export default function Home() {
       <ContactInfo/>
       <ConferenceProgram/>
       <Footer/>
-      {/* <HeroSection/> */}
-
     </div>
   )
 }
