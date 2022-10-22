@@ -4,81 +4,95 @@ import React from 'react'
 
 import styles from '../styles/gallery.module.css'
 
-const images = [
+const sectionOneImages = [
   {
-    name:'IMAGE',
-    desc: 'Image'
+    url:'./gallery/1.jpg',
+    key: 1
+  },
+  {
+    url:'./gallery/2.jpg',
+    key:2
+  },
+  {
+    url:'./gallery/3.jpg',
+    key: 3
+  },
+  {
+    url:'./gallery/4.jpg',
+    key: 4
+  },
+  {
+    url:'./gallery/5.jpg',
+    key: 5,
+  },
+  {
+    url:'./gallery/6.jpg',
+    key: 6
+  }
+]
+
+const sectionTwoImages = [
+  {
+    url:'./gallery/1.jpg',
+    key: 1
+  },
+  {
+    url:'./gallery/2.jpg',
+    key:2
+  },
+  {
+    url:'./gallery/3.jpg',
+    key: 3
+  },
+  {
+    url:'./gallery/4.jpg',
+    key: 4
+  },
+  {
+    url:'./gallery/5.jpg',
+    key: 5,
+  },
+  {
+    url:'./gallery/6.jpg',
+    key: 6
   }
 ]
 
 const Gallery = () => {
   return (
     <div className ={styles.gallery}>
-          <h1>Section 1</h1>
+
+     
       <section className={styles.section} >
-    
-       
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
+      <h1>InCoFIBS 2010</h1>
+        <div className={styles.imageGrid}>
+        {sectionOneImages.map(image=>{
+          return(
+            <div key={image.key}>
+              <img src={image.url} alt="" />
+            </div>
+          )
+        })}
         </div>
         
-      </section>
-      <h1>Section 2</h1>
-      <section className={styles.section}>
        
-     
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
-        <div>
-          <img src="./IMAGE.png" alt="Alternate text" />
-        </div>
       </section>
+      <section className={styles.section} >
+      <h1>InCoFIBS 2015</h1>
+        <div className={styles.imageGrid}>
+        {sectionTwoImages.map(image=>{
+          return(
+            <div key={image.key}>
+              <img src={image.url} alt="" />
+            </div>
+          )
+        })}
+        </div>
+        
+       
+      </section>
+    
+    
     </div>
   )
 }
