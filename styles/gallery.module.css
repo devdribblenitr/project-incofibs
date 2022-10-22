@@ -3,19 +3,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;;
+    width: 100%;
 }
 
 .section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
     width: 100%;
-    justify-content: space-around;
-    align-items: ;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+
 }
 
 
 .section div{
-    width: 30%;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.section div img{
+    transition: all 250ms;
+}
+
+.section div img:hover{
+    transform: scale(105%);
+
 }
