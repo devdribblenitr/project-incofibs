@@ -63,7 +63,7 @@ footer{
 }
 footer .card{
     position: bottom;
-width: 375px;
+width: 340px;
 height: 280px;
 left: 102px;
 top: 73px;
@@ -71,6 +71,18 @@ top: 73px;
 background: #01212b;
 border-radius: 12px;
 }
+@media screen and (min-width: 350px){
+    footer .card {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 390px){
+    footer .card {
+        width: 375px;
+    }
+}
+
 footer .base-box{
     position: relative;
 width: 100%;
