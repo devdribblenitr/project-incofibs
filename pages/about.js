@@ -1,5 +1,5 @@
 import Incofibs from '../components/Incofibs'
-import Nitr from './components/Nitr';
+import Nitr from '../components/Nitr';
 
 function about() {
   return (
