@@ -9,7 +9,7 @@ function PastKeynoteSpeakers({heading, speakers}) {
                 {
                     speakers.map((item)=>{
                         return(
-                        <Speaker name={item.name} designation={item.designation} image={item.image}></Speaker>
+                        <Speaker name={item.name} designation={item.designation} image={item.image} key={speakers.indexOf(item)}></Speaker>
                         )
                     })
                 }

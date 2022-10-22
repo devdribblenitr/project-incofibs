@@ -10,7 +10,7 @@ export default function PastEvents({events}) {
                 <ul>
                     {events.map((item)=>{
                         return(
-                            <li>
+                            <li key={events.indexOf(item)}>
                                 <SinglePastEvent image={item.image} name={item.name} desc={item.desc} date={item.date} venue={item.venue}></SinglePastEvent>
                             </li>
                         )

@@ -13,14 +13,14 @@ export default function Events() {
         },
         {
             image: "https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            name: "Conference on Genetically Modified Organisms",
+            name: "Conference on Genetically Modified Fishes",
             desc: "A conference on GMO, their implications and ways to reduce concerns",
             venue: "Rajendra Mishra Hall",
             date: "12/01/2023"
         },
         {
             image: "https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            name: "Conference on Genetically Modified Organisms",
+            name: "Conference on Genetically Modified Seeds",
             desc: "A conference on GMO, their implications and ways to reduce concerns",
             venue: "Rajendra Mishra Hall",
             date: "12/01/2023"
@@ -40,13 +40,13 @@ export default function Events() {
             image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            name: "Isaac Newton",
+            name: "Albert Einstein",
             designation: "HOD Mechanical Department, IISER Kolkata",
             image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            name: "Nicolas Tesla",
-            designation: "HOD Electrical department",
+            name: "Charles Babbage",
+            designation: "HOD Computer Science department",
             image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
     ]
