@@ -13,7 +13,8 @@ export default function Events() {
                     <EventCard></EventCard>
                 </div> */}
                 
-                <PastKeynoteSpeakers></PastKeynoteSpeakers>
+                <PastKeynoteSpeakers heading="Keynote speakers"></PastKeynoteSpeakers>
+                <PastKeynoteSpeakers heading="Speakers and faculty"></PastKeynoteSpeakers>
                 <PastEvents></PastEvents>
             </div>
         </div>

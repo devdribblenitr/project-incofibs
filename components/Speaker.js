@@ -6,7 +6,7 @@ export default function Speaker(){
                 <img src="https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className=" rounded-t-lg" style={{borderTopLeftRadius: "0.75rem", borderTopRightRadius: "0.75rem"}} />
                 </div>
                 <div className="text-center pt-3 pb-6">
-                    <h2 className="text-xl font-semibold text-white">Isaac Newton</h2>
+                    <h2 className="text-xl font-semibold" style={{color: "rgb(232, 76, 61)"}}>Isaac Newton</h2>
                     <p className="text-gray-300">HOD Mechanical Department, NIT Rourkela</p>
                 </div>
             </div>
