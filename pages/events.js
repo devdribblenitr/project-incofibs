@@ -5,21 +5,21 @@ import PastKeynoteSpeakers from "../components/PastKeynoteSpeakers"
 export default function Events() {
     const pastEvent = [
         {
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            image: "https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             name: "Conference on Genetically Modified Organisms",
             desc: "A conference on GMO, their implications and ways to reduce concerns",
             venue: "Rajendra Mishra Hall",
             date: "12/01/2023"
         },
         {
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            image: "https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             name: "Conference on Genetically Modified Organisms",
             desc: "A conference on GMO, their implications and ways to reduce concerns",
             venue: "Rajendra Mishra Hall",
             date: "12/01/2023"
         },
         {
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            image: "https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             name: "Conference on Genetically Modified Organisms",
             desc: "A conference on GMO, their implications and ways to reduce concerns",
             venue: "Rajendra Mishra Hall",
