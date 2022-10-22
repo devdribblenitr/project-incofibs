@@ -9,6 +9,8 @@ function PastKeynoteSpeakers() {
                 <Speaker></Speaker>
                 <Speaker></Speaker>
                 <Speaker></Speaker>
+                <Speaker></Speaker>
+                
             </div>
 
         </div>
