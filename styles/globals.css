@@ -18,9 +18,12 @@
 .playfair {
     font-family: 'Playfair Display', serif;
 }
-
+html {
+    scroll-behavior: smooth !important;
+  }
 body{
     overflow-x: hidden !important;
+    scroll-behavior: smooth !important; 
 }
 .account_userprofile{
     position: absolute;
@@ -130,8 +133,8 @@ flex-basis: 50%;
 font-family: 'Arial';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
-line-height: 17px;
+font-size: 16px;
+line-height: 20px;
 text-align: justify;
 
 color: rgba(255, 255, 255, 0.4);
@@ -144,8 +147,12 @@ position: bottom;
 width: 25px;
 height: 25px;
 left: 166px;
+cursor: pointer;
 top: 263px;
 color: #EEEEEE;
+}
+footer .card .social-links:hover{
+    color: #ffffff7d !important;
 }
 footer .card .social-links a                                    /* --social links that i added */
 {
@@ -297,4 +304,20 @@ footer .card .social-links a:hover
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.button_cards:hover{
+    border: 2px solid rgb(232, 76, 61);
+    background-color: #e84c3dd1;
+    color: #fff !important;
+}
+.ConferenceProgram {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.ConferenceProgram button > p, .ConferenceProgram_button{
+    border-radius: 12px;
+}
+.ConferenceProgram_container{
+    border-radius: 24px;
 }

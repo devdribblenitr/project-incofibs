@@ -108,7 +108,7 @@ const Registration = () => {
       {one && (
         <div class="container mx-auto">
           <div class="container mx-auto">
-            <div class="flex justify-center px-6 my-2">
+            <div class="flex justify-center md:px-6 my-2">
               <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                 <div class="w-full bg-white  rounded-lg lg:rounded-l-none">
                   <form class="px-8 pt-6 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
@@ -240,7 +240,7 @@ const Registration = () => {
                           {(key === "gender" ||
                             key === "accomodation" ||
                             key === "presentation") && (
-                            <div class="md:ml-2">
+                            <div class="ml-4">
                               <label class="block mb-2 text-sm font-bold text-gray-700">
                                 {heading[key]}
                               </label>
@@ -288,10 +288,10 @@ const Registration = () => {
                                 >
                                   {heading[key]}
                                 </label>
-                                <button onClick={(e)=>{e.preventDefault(); const edit2 = {...edit}; edit2[key] = !edit2[key]; setEdit(edit2)}} className=" py-1 font-semibold px-4  text-white hover:bg-green-600 active:bg-gradient-to-r duration-200 active:from-emerald-500 active:to-green-600" style={{borderRadius: "0.5rem", backgroundColor: "#58b393"}}>{edit[key]?"done":"edit"}</button>
+                                {/* <button onClick={(e)=>{e.preventDefault(); const edit2 = {...edit}; edit2[key] = !edit2[key]; setEdit(edit2)}} className=" py-1 font-semibold px-4  text-white hover:bg-green-600 active:bg-gradient-to-r duration-200 active:from-emerald-500 active:to-green-600" style={{borderRadius: "0.5rem", backgroundColor: "#58b393"}}>{edit[key]?"done":"edit"}</button> */}
                               </div>
                               <div style={{height: "68px"}} className="px-2 flex flex-col">
-                              {edit[key] ? (
+                              {/* {edit[key] ? (
                                 <input
                                   class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-600 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" style={{borderRadius: "1.2rem"}}
                                   id="name"
@@ -300,10 +300,10 @@ const Registration = () => {
                                   value={inpval[key]}
                                   onChange = {getData}
                                 />
-                              ) : (
+                              ) : ( */}
                                   <p className="pt-2">{inpval[key]}</p>
                                 
-                              )}
+                              {/* )} */}
                               </div>
                             </div>
                           )}
@@ -311,6 +311,15 @@ const Registration = () => {
                       );
                     })}
                   </form>
+                  <div class=" flex justify-center py-4">
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-600 font-bold py-2 px-4 duration-200 ease-in-out hover:text-black" style={{borderRadius: "8px"}}
+                     onClick={()=>{
+                      setOne(true);
+                      setTwo(false);
+                    }}>
+                      Prev
+                    </button>
+                  </div>
                   <div class="mb-6 text-center px-4">
                     <button
                       class="w-full px-4 py-2 font-bold text-white bg-cyan-500 rounded-full hover:bg-cyan-600 focus:outline-none focus:shadow-outline"

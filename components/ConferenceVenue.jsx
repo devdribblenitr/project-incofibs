@@ -8,7 +8,7 @@ const Conference = () => {
     boxShadow:'50px',
   }
   return (
-    <div className="w-full white px-4 my-16">
+    <div id="conference_venue" className="w-full white px-4 my-16">
       <div>
         <div className="aboutinco">
           <h1 className="capitalize heading_title pb-3 playfair max-w-[1440px] text-[#000000bf] mx-auto text-center my-2 text-4xl  mb-2 font-normal ">
@@ -34,18 +34,16 @@ const Conference = () => {
       </div>
       <div className="flex flex-col py-2 xl:pt-6 mt-2 divide-y px-6">
           <p className="text-[#474747] font-normal md:text-lg text-lg mx-6 my-4   ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, quidem asperiores pariatur assumenda architecto ullam culpa unde dolor, amet suscipit nulla  Lorem ipsum dolor sit amet.
+          NIT Rourkela is one of the countrys premier national-level institutions for technical education and is funded by the Government of India.
           </p>
           <p className="text-[#474747] font-normal md:text-lg text-lg mx-6 my-4  ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odit dolore natus, officia maiores possimus deleniti unde fugiat maxime facilis Lorem ipsum dolor sit amet.
+          The campus is located at the eastern end of the Steel city of Rourkela amid the lush green hills of Sundergarh, at the confluence of river South Koel and Sankh forming Brahmani.
           </p>
           <p className="text-[#474747] font-normal md:text-lg text-lg my-4 mx-6">
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi debitis dolor numquam nesciunt aliquam repellat hic alias ut dignissimos corrupti 
-           Lorem ipsum dolor sit amet.
+          The Bhubaneswar Behera Auditorium (BBA), at the heart of the campus, boasts 700 seating capacity with centralised air conditioning.
           </p>
           <p className="text-[#474747] font-normal md:text-lg text-lg my-4 mx-6">
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi debitis dolor numquam nesciunt aliquam repellat hic alias ut dignissimos corrupti 
-           Lorem ipsum dolor sit amet.
+          The TIIR Conference Hall, PK Parija Hall and RM Hall too boast various workshops and conferences held in the past. 
           </p>
         </div>
     </div>

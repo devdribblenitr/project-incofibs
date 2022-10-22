@@ -1,33 +1,32 @@
 import { StylesContext } from "@material-ui/styles"
 import { SelectUnstyledContext } from "@mui/base"
-import React from "react"
-
+import React, { useEffect, useState } from "react"
+import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
 import styles from '../styles/RegistrationCards.module.css'
 
 const early = [
   {
-    title: 'Member Student' ,
-    price: 'Rs. 300',
+    title: 'Research Scholars / Graduate Students',
+    price: 'Rs. 5,000',
   
 }, 
   {
-    title: 'Member Faculty',
-    price:'Rs. 4000',
+    title: 'Academics Delegates',
+    price:'Rs. 10,000',
     
 }, 
   {
-    title: 'Non Member Student',
-    price:   'Rs. 3500',
+    title: 'Industry & RnD Participants',
+    price:   'Rs. 12,000',
   
 }, 
   {
-    title: 'Non Member Faculty',
-    price:
-      'Rs. 500',
+    title: 'Foreign Delegates',
+    price:  '$300',
     
 }, 
   {
-    title: 'Foriegn Delegates',
+    title: 'Foreign delegates (online)',
     price:'$100',
     
 }
@@ -35,63 +34,59 @@ const early = [
 
 const regular = [
   {
-    title: 'Member Student' ,
-    price: 'Rs. 3500'
-   
+    title: 'Research Scholars / Graduate Students',
+    price: 'Rs. 5,500',
+  
 }, 
   {
-    title: 'Member Faculty',
-    price:
-    'Rs. 500',
+    title: 'Academics Delegates',
+    price:'Rs. 11,000',
     
 }, 
   {
-    title: 'Non Member Student',
-    price: 
-    'Rs. 4000',
-   
+    title: 'Industry & RnD Participants',
+    price:   'Rs. 13,000',
+  
 }, 
   {
-    title: 'Non Member Faculty',
-    price:
-     'Rs. 6000',
+    title: 'Foreign Delegates',
+    price:  '$350',
+    
 }, 
   {
-    title: 'Foriegn Delegates',
-    price:
-     '$150',
+    title: 'Foreign delegates (online)',
+    price:'$150',
     
 }
 ]
 
 const late = [
   
-    {
-      title: 'Member Student' ,
-      price: 'Rs. 4000' 
-    }, 
-    {
-      title: 'Member Faculty',
-      price:
-      'Rs. 6000'
-  }, 
-    {
-      title: 'Non Member Student',
-      price:
-      'Rs. 500'
-  }, 
-    {
-      title: 'Non Member Faculty',
-      price:
-       'Rs. 7000'
-    
-  }, 
-    {
-      title: 'Foriegn Delegates',
-      price:
-       '$200'
-  }
+  {
+    title: 'Research Scholars / Graduate Students',
+    price: 'Rs. 6,000',
   
+}, 
+  {
+    title: 'Academics Delegates',
+    price:'Rs. 12,000',
+    
+}, 
+  {
+    title: 'Industry & RnD Participants',
+    price:   'Rs. 15,000',
+  
+}, 
+  {
+    title: 'Foreign Delegates',
+    price:  '$400',
+    
+}, 
+  {
+    title: 'Foreign delegates (online)',
+    price:'$200',
+    
+}
 ]
 
 
@@ -127,16 +122,28 @@ const Card = ({title, validity, object})=>{
 }
 
 const RegistrationCards = () => {
+  const [ providers, setproviders ] = useState();
+  const { data: session, status } = useSession();
+  console.log("session", session);
+  console.log("status", status);
+  useEffect(() => {
+    const setTheProviders = async () => {
+        const setupProviders = await getProviders();
+        setproviders(setupProviders);
+    };
+    setTheProviders();
+  }, []);
+
   return (
 
-    <div className={styles.registration}>
+    <div id="register" className={styles.registration}>
       
         <div className={styles.title}>
           <div className="flex flex-col">
           <h2>
-            Tickets Pricing
+            REGISTRATION
           </h2>
-          <p className="md:flex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, explicabo?</p>
+          <p className="md:flex"> Click the botton bellow to Register for conference and Submit your abstract</p>
           </div>
           <span className={styles.icon}>
             <h1></h1>
@@ -146,11 +153,11 @@ const RegistrationCards = () => {
         
       <div className={styles.registrationCards}>
       
-        <Card title='Early Bird' validity='Till Oct 15th, 2022' object={early}/>
-        <Card title='Regular' validity='Till Oct 31st, 2022' object={regular}/>
-        <Card title='Late/on Spot' validity='Nov 01, 2022 Onwards' object={late}/>
+        <Card title='Early Bird' validity='Till Nov 30th, 2022' object={early}/>
+        <Card title='Regular' validity='Dec 1st to Dec 20th, 2022' object={regular}/>
+        <Card title='Late/on Spot' validity='Dec 21st, 2022 Onwards' object={late}/>
       </div>
-         
+        <button className="button_cards" style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginTop: "-50px", marginBottom: "75px"}} onClick={() => signIn(providers.google.id)}>Click Here to Register</button>
       </div>
   )
 }
