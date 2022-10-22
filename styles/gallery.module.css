@@ -3,4 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: ;
+}
+
+
+.section div{
+    width: 30%;
 }
