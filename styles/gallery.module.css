@@ -23,13 +23,15 @@
     display: grid;
     width: 100%;
     grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
     align-items: center;
 
 }
 
 
 .imageGrid div{
-    padding: 2%;
+    /* padding: 2%; */
     overflow: hidden;
 }
 
