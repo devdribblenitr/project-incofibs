@@ -25,69 +25,68 @@ const LoginButton = () => {
 
     if (status === 'loading') {
         return <Button
-        sx={{
-            borderRadius: "40px",
-            fontSize: "0.7rem",
-            borderColor: "#ffffffba",
-            color: "#ffffffba",
-            "&:hover": {
-              borderColor: "#ffffff",
-              color: "white",
-            },
-        }}
-        variant="outlined"
+            sx={{
+                borderRadius: "40px",
+                fontSize: "0.7rem",
+                borderColor: "#ffffffba",
+                color: "#ffffffba",
+                "&:hover": {
+                    borderColor: "#ffffff",
+                    color: "white",
+                },
+            }}
+            variant="outlined"
         >
-           Loading...
+            Loading...
         </Button>;
     }
 
     console.log({ providers });
     if (session) {
         return (
-                <div>
-                    <Button
-                // onClick={() => signOut()}
-                onClick={()=>{setActive(!active)}}
-                sx={{
-                    borderRadius: "40px",
-                    fontSize: "0.7rem",
-                    borderColor: "#ffffffba",
-                    color: "#ffffffba",
-                    "&:hover": {
-                      borderColor: "#ffffff",
-                      color: "white",
-                    },
-                }}
-                variant="outlined"
+            <div>
+                <Button
+                    onClick={() => { setActive(!active) }}
+                    sx={{
+                        borderRadius: "40px",
+                        fontSize: "0.7rem",
+                        borderColor: "#ffffffba",
+                        color: "#ffffffba",
+                        "&:hover": {
+                            borderColor: "#ffffff",
+                            color: "white",
+                        },
+                    }}
+                    variant="outlined"
                 // disabled={true}
                 >
-                   <>Profile{active ? <ExpandLessIcon/> : <ExpandMoreIcon/>}</>
+                    <>Profile{active ? <ExpandLessIcon /> : <ExpandMoreIcon />}</>
                 </Button>
-            <Account logOut={() => signOut()} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image}/>
-                </div>
+                <Account logOut={() => signOut({ callbackUrl: '/' })} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image} />
+            </div>
             // <ProfileHover/>
         );
     }
 
-    
+
 
     return (
         <Button
-        onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}
-        sx={{
-            borderRadius: "40px",
-            fontSize: "0.7rem",
-            borderColor: "#ffffffba",
-            color: "#ffffffba",
-            "&:hover": {
-              borderColor: "#ffffff",
-              color: "white",
-            },
-        }}
-        variant="outlined"
+            onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}
+            sx={{
+                borderRadius: "40px",
+                fontSize: "0.7rem",
+                borderColor: "#ffffffba",
+                color: "#ffffffba",
+                "&:hover": {
+                    borderColor: "#ffffff",
+                    color: "white",
+                },
+            }}
+            variant="outlined"
         // disabled={true}
         >
-           Log In
+            Log In
         </Button>
     )
 }

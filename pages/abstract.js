@@ -4,84 +4,29 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
 
-const Registration = () => {
+const Abstract = () => {
     const { data: session, status } = useSession();
   const [inpval, setInpval] = useState({
     designation: "",
     organisation: "",
     address: "",
     title: "",
-    accomodation: "",
     gender: "",
-    presentation: "",
     phonenumber: "",
-    accompany: "",
-    amount: "",
-    draft: "",
-    drawn: "",
-    bank: "",
-    place: "",
-    date: "",
-    transaction: "",
-    transfer: "",
-    Date: "",
-    account: "",
+    abstract: "",
   });
   const heading = {
-    name: "Name",
-    email: "Email",
     designation: "Designation",
     organisation: "Organisation",
     address: "Address",
-    title: "Title",
-    accomodation: "Accomodation Required",
+    title: "Title of the Abstract",
     gender: "Gender",
-    presentation: "Are you submitting any paper for presentation?",
     phonenumber: "Phone number",
-    accompany: "Details of accompanying person ,if any:",
-    amount: "Amount(INR/USD)",
-    draft: "Demand draft No.",
-    drawn: "Drawn on",
-    bank: "in the bank",
-    place: "Place",
-    date: "Date",
-    transaction: "Online transaction on",
-    transfer: "Transfer ID/No.",
-    Date: "Date",
-    account: "Account No. from which transfer was made",
+    abstract: "Upload Your Abstract",
   };
 
   const options = {
     gender: ["male", "female"],
-    accomodation: ["yes", "no"],
-    presentation: ["yes", "no"],
-  };
-
-  const [edit, setEdit] = useState({
-    name: false,
-    email: false,
-    designation: false,
-    address: false,
-    title: false,
-    accomodation: false,
-    gender: false,
-    presentation: false,
-    phonenumber: false,
-    accompany: false,
-    amount: false,
-    draft: false,
-    drawn: false,
-    bank: false,
-    place: false,
-    date: false,
-    transaction: false,
-    transfer: false,
-    Date: false,
-    account: false
-  });
-
-  const func1 = (e) => {
-    e.preventDefault();
   };
 
   const getData = (e) => {
@@ -97,7 +42,7 @@ const Registration = () => {
 
   const addData = (e) => {
     e.preventDefault();
-
+    var userName = session?.user?.email?.split("@")[0];
     const sessionDetails = {
         name: session?.user?.name,
         email: session?.user?.email,
@@ -106,6 +51,7 @@ const Registration = () => {
     const res = {...inpval, ...sessionDetails}
 
     console.log("data added succesfully", res);
+    console.log("userName", userName);
     localStorage.setItem("user", JSON.stringify([inpval]));
   };
 
@@ -118,7 +64,8 @@ const Registration = () => {
             <div class="flex justify-center md:px-6 my-2">
               <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                 <div class="w-full bg-white  rounded-lg lg:rounded-l-none">
-                  <form class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
+                <form onSubmit={addData} action="">
+                  <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
                   <div class="lg:px-2">
                     <label class="block mb-2 text-sm font-bold text-gray-700">
                                     Name
@@ -142,9 +89,28 @@ const Registration = () => {
                     {Object.keys(inpval).map((key) => {
                       return (
                         <div key={key}>
-                          {(key === "gender" ||
-                            key === "accomodation" ||
-                            key === "presentation") && (
+                          {!( key === "gender" || key === "abstract" ) && (
+                            <div class="mb-4 lg:px-2">
+                              <div className="flex justify-between p-2">
+                                <label class="block mb-2 text-sm font-bold text-gray-700">
+                                  {heading[key]}
+                                </label>
+                              </div>
+                              {
+                                (
+                                <input
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  type="text"
+                                  name={`${key}`}
+                                  onChange={getData}
+                                  style={{borderRadius: "1.2rem"}}
+                                  required
+                                />
+                                )
+                              }
+                            </div>
+                          )}
+                          {(key === "gender") && (
                             <div class="lg:px-2">
                               <label class="block mb-2 text-sm font-bold text-gray-700">
                                 {heading[key]}
@@ -157,6 +123,7 @@ const Registration = () => {
                                     name={`${key}`}
                                     value={options[key][0]}
                                     onChange={getData}
+                                    required
                                   />
                                   <label class="form-check-label inline-block text-gray-800 capitalize">
                                     {options[key][0]}
@@ -169,6 +136,7 @@ const Registration = () => {
                                     name={`${key}`}
                                     value={options[key][1]}
                                     onChange={getData}
+                                    required
                                   />
                                   <label class="form-check-label inline-block text-gray-800 capitalize">
                                     {options[key][1]}
@@ -177,12 +145,7 @@ const Registration = () => {
                               </div>
                             </div>
                           )}
-
-                          {!(
-                            key === "gender" ||
-                            key === "accomodation" ||
-                            key === "presentation"
-                          ) && (
+                          {(key === "abstract") && (
                             <div class="mb-4 lg:px-2">
                               <div className="flex justify-between p-2">
                                 <label class="block mb-2 text-sm font-bold text-gray-700">
@@ -190,29 +153,14 @@ const Registration = () => {
                                 </label>
                               </div>
                               {
-                                ( key === 'email'?
+                                (
                                 <input
                                   class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
-                                  type="email"
+                                  type="file"
                                   name={`${key}`}
                                   onChange={getData}
                                   style={{borderRadius: "1.2rem"}}
-                                />
-                                : (key === 'date' || key== 'Date')?
-                                <input
-                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
-                                  type="date"
-                                  name={`${key}`}
-                                  onChange={getData}
-                                  style={{borderRadius: "1.2rem"}}
-                                />
-                                :
-                                <input
-                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
-                                  type="text"
-                                  name={`${key}`}
-                                  onChange={getData}
-                                  style={{borderRadius: "1.2rem"}}
+                                  required
                                 />
                                 )
                               }
@@ -221,30 +169,18 @@ const Registration = () => {
                         </div>
                       );
                     })}
-                  </form>
+                  </div>
                   <div class="mb-10 text-center px-4">
                     <button
                       class="w-full px-4 py-2 font-bold text-white bg-[#002834] rounded-full hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
-                      type="button"
-                      onClick={addData}
+                      type="submit"
                       style={{borderRadius: "999px"}}
+                    //   onSubmit={addData}
                     >
                       Submit Your Abstract
                     </button>
                   </div>
-
-                  {/* <div class=" flex justify-center">
-                    <button
-                      class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r"
-                      onClick={() => {
-                        setOne(false);
-                        setTwo(true);
-                      }}
-                      style={{borderRadius: "1.8rem"}}
-                    >
-                      Next
-                    </button>
-                  </div> */}
+                </form>
                 </div>
               </div>
             </div>
@@ -256,4 +192,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default Abstract;

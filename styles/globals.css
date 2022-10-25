@@ -333,3 +333,51 @@ footer .card .social-links a:hover
 .ConferenceProgram_container{
     border-radius: 24px;
 }
+.login_comp{
+    background-color: #EEEEEE;
+}
+.log_comp{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 30px 20px;
+    width: 60%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+.log_comp_first{
+    display: flex;
+    justify-content: end;
+}
+.log_comp_second{
+    display: flex;
+    justify-content: start;
+}
+
+.log_comp > div {
+    padding: 0 0 0 10px;
+}
+.log_comp img{
+    height: 70px;
+    opacity: 0.8;
+}
+.log_comp h3{
+    font-size: 24px;
+    color: #022a36;
+}
+.log_comp p{
+    font-size: 17px;
+    color: #022a36d4;
+}
+.log_comp:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: 250ms ease-in-out;
+}
+.registration_box{
+    padding: 30px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
