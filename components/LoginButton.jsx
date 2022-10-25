@@ -73,7 +73,7 @@ const LoginButton = () => {
 
     return (
         <Button
-        onClick={() => signIn(providers.google.id)}
+        onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}
         sx={{
             borderRadius: "40px",
             fontSize: "0.7rem",
