@@ -8,16 +8,15 @@ const Community = () => {
     boxShadow:'50px',
     width:'200px',
     margin:'4px 0px',
-    
   }
   return (
-    <div className="w-full bg-white py-4 px-4">
+    <div className="w-full  py-4 px-4">
       <div>
       <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">Our Dignitaries</h1>
       <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
       </div>
-      <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2">
 
+      <div className="max-w-[1440px]  mx-auto grid lg:grid-cols-2">
       <div className="max-w-[802px] md:h-[200px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2 xl:my-8 md:my-4 lg:my-12  gap-x-3 ">
         <Image className="w-[200px] h-[200px] mx-auto border-4 border-communityColor2 " style={commStyle} src={teacher} alt='oops'/>
         <div className="flex flex-col justify-center mx-auto">
@@ -69,6 +68,9 @@ const Community = () => {
         </div>
       </div>
       </div>
+
+      
+
     </div>
     
       
