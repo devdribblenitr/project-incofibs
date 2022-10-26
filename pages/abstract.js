@@ -7,10 +7,20 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import {v4} from 'uuid';
 import uploadImage from "../components/uploadImage";
+import axios from "axios";
 
 
 
-
+// "name": "name",
+// "email": "345ou353544u3o5@gmail.com",
+// "photoUrl": "photoUrl",
+// "designation": "Designation",
+// "organisation": "Organisation",
+// "address": "Address",
+// "abstractTitle": "Title of the Abstract",
+// "gender": "Gender",
+// "contact": "Phone number",
+// "abstractUrl": "Upload Your Abstract"
 const Abstract = () => {
     const { data: session, status } = useSession();
     const [fileUp, setFileUp] = useState(null);
@@ -29,7 +39,7 @@ const Abstract = () => {
     address: "Address",
     title: "Title of the Abstract",
     gender: "Gender",
-    phonenumber: "Phone number",
+    phonenumber: "Phone number (With country code)",
     abstract: "Upload Your Abstract",
   };
 
@@ -48,44 +58,63 @@ const Abstract = () => {
     console.log(inpval);
   };
 
-  const getFileData = async (e) => {
+  const getFileData = (e) => {
     let fileUpload = e.target.files[0];
     console.log("fileUpload",fileUpload);
-
-   try {
-    var userName = session?.user?.email?.split("@")[0];
-
-    let image = fileUpload;
-    console.log("image",image);
-    console.log("image.name",image.name);
-    let toastId = toast.loading("Uploading your abstract...Please wait!");
-    const iconUrl = await uploadImage(image, "abstract/" + userName + "_" + v4() + image.name, toastId);
-    console.log("iconUrl", iconUrl);
-
-   } catch (error) {
-    console.log(error);
-   }
-    // setFileUp(fileUpload);
+    setFileUp(fileUpload);
   }
 
-  const addData = (e) => {
+  const addData = async (e) => {
     e.preventDefault();
     var userName = session?.user?.email?.split("@")[0];
 
     const sessionDetails = {
-        name: session?.user?.name,
-        email: session?.user?.email,
-        image: session?.user?.image,
+      name: session?.user?.name,
+      email: session?.user?.email,
+      image: session?.user?.image,
     }
     const res = {...inpval, ...sessionDetails}
 
     console.log("data added succesfully", res);
     console.log("userName", userName);
     localStorage.setItem("user", JSON.stringify([inpval]));
+
+
+    let image = fileUp;
+    console.log("image",image);
+    console.log("image.name",image.name);
+    
+    let toastId = toast.loading("Uploading your abstract...Please wait!");
+    console.log("toastId",toastId);
+    const iconUrl = await uploadImage(image, "abstract/" + userName + "_" + v4() + image.name, toastId);
+
+    try {
+      const response = await axios.post("https://us-central1-incofibs-a001d.cloudfunctions.net/app/user/v2/abstract", {
+        name: res.name,
+        email: res.email,
+        photoUrl: res.image,
+        designation: res.designation,
+        organisation: res.organisation,
+        address: res.address,
+        abstractTitle: res.title,
+        gender: res.gender,
+        contact: res.phonenumber,
+        abstractUrl: iconUrl,
+      });
+      console.log("response", response.data);
+      toast.success('Abstract uploaded successfully');
+
+    } catch (error) {
+      console.log("error",error);
+      toast.error(error);
+    }
+    
   };
 
   return (
+
     <>
+      <ToastContainer />
       <Navbar/>
       <div className="registration_box bg-gray-100">
         <div class="container mx-auto">
