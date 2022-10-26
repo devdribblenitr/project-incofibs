@@ -8,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import {v4} from 'uuid';
 import uploadImage from "../components/uploadImage";
 import axios from "axios";
+import { useRouter } from 'next/router'
 
 
 
@@ -24,6 +25,8 @@ import axios from "axios";
 const Abstract = () => {
     const { data: session, status } = useSession();
     const [fileUp, setFileUp] = useState(null);
+    const router = useRouter()
+
   const [inpval, setInpval] = useState({
     designation: "",
     organisation: "",
@@ -103,10 +106,10 @@ const Abstract = () => {
       });
       console.log("response", response.data);
       toast.success('Abstract uploaded successfully');
-
+      router.push("/")
     } catch (error) {
       console.log("error",error);
-      toast.error(error);
+      toast.error(error.response.data.message);
     }
     
   };
