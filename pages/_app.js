@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-
+import 'react-toastify/dist/ReactToastify.css';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from '../components/Navbar'; // requires a loader
