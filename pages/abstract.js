@@ -3,9 +3,17 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
+import { ToastContainer, toast } from 'react-toastify';
+
+import {v4} from 'uuid';
+import uploadImage from "../components/uploadImage";
+
+
+
 
 const Abstract = () => {
     const { data: session, status } = useSession();
+    const [fileUp, setFileUp] = useState(null);
   const [inpval, setInpval] = useState({
     designation: "",
     organisation: "",
@@ -40,9 +48,30 @@ const Abstract = () => {
     console.log(inpval);
   };
 
+  const getFileData = async (e) => {
+    let fileUpload = e.target.files[0];
+    console.log("fileUpload",fileUpload);
+
+   try {
+    var userName = session?.user?.email?.split("@")[0];
+
+    let image = fileUpload;
+    console.log("image",image);
+    console.log("image.name",image.name);
+    let toastId = toast.loading("Uploading your abstract...Please wait!");
+    const iconUrl = await uploadImage(image, "abstract/" + userName + "_" + v4() + image.name, toastId);
+    console.log("iconUrl", iconUrl);
+
+   } catch (error) {
+    console.log(error);
+   }
+    // setFileUp(fileUpload);
+  }
+
   const addData = (e) => {
     e.preventDefault();
     var userName = session?.user?.email?.split("@")[0];
+
     const sessionDetails = {
         name: session?.user?.name,
         email: session?.user?.email,
@@ -158,7 +187,7 @@ const Abstract = () => {
                                   class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
                                   type="file"
                                   name={`${key}`}
-                                  onChange={getData}
+                                  onChange={getFileData}
                                   style={{borderRadius: "1.2rem"}}
                                   required
                                 />
