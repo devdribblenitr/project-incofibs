@@ -15,12 +15,13 @@ export default async function uploadImage(image, path_to_be_uploaded, toastId) {
         function error(err) {
           toast.dismiss(toastId);
           toast.error(err.message);
+          console.log("err", err);
           reject();
         },
         function complete() {
             getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
               toast.dismiss(toastId);
-              toast.success('Image uploaded successfully');
+              toast.success('File uploaded successfully');
               resolve(downloadURL);
             });
         }
