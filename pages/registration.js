@@ -126,10 +126,10 @@ const Registration = () => {
 
     try {
       console.log("executing axios");
-      const response = await axios.post("http://localhost:5000/incofibs-a001d/us-central1/app/user/v2/abstract", {
+      const response = await axios.post("https://us-central1-incofibs-a001d.cloudfunctions.net/app/user/v2/abstract", {
           name: res.name,
           email: res.email,
-          // email: "55555555555@gmail.com",
+          // email: "1111111111@gmail.com",
           photoUrl: res.image,
 
           designation: res.designation,
