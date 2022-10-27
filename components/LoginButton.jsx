@@ -42,31 +42,31 @@ const LoginButton = () => {
     }
 
     console.log({ providers });
-    if (session) {
-        return (
-            <div>
-                <Button
-                    onClick={() => { setActive(!active) }}
-                    sx={{
-                        borderRadius: "40px",
-                        fontSize: "0.7rem",
-                        borderColor: "#ffffffba",
-                        color: "#ffffffba",
-                        "&:hover": {
-                            borderColor: "#ffffff",
-                            color: "white",
-                        },
-                    }}
-                    variant="outlined"
-                // disabled={true}
-                >
-                    <>Profile{active ? <ExpandLessIcon /> : <ExpandMoreIcon />}</>
-                </Button>
-                <Account logOut={() => signOut({ callbackUrl: '/' })} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image} />
-            </div>
-            // <ProfileHover/>
-        );
-    }
+    // if (session) {
+    //     return (
+    //         <div>
+    //             <Button
+    //                 onClick={() => { setActive(!active) }}
+    //                 sx={{
+    //                     borderRadius: "40px",
+    //                     fontSize: "0.7rem",
+    //                     borderColor: "#ffffffba",
+    //                     color: "#ffffffba",
+    //                     "&:hover": {
+    //                         borderColor: "#ffffff",
+    //                         color: "white",
+    //                     },
+    //                 }}
+    //                 variant="outlined"
+    //             // disabled={true}
+    //             >
+    //                 <>Profile{active ? <ExpandLessIcon /> : <ExpandMoreIcon />}</>
+    //             </Button>
+    //             <Account logOut={() => signOut({ callbackUrl: '/' })} active={active} name={session.user?.name} email={session.user?.email} image={session.user?.image} />
+    //         </div>
+    //         // <ProfileHover/>
+    //     );
+    // }
 
 
 
