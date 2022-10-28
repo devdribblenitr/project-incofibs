@@ -20,7 +20,7 @@ function ConferenceProgram() {
             </button></Link>
         </div>
         <div className='px-2'>
-        <div style={{ backgroundColor: "rgba(16, 44, 58, 1)", minHeight: "320px" }} className='text-white text-center flex flex-col py-4 ConferenceProgram_container items-center justify-center md:w-[78%] m-auto md:rounded-xl rounded-none
+        <div style={{ backgroundColor: "rgba(16, 44, 58, 1)", minHeight: "320px" }} className='text-white text-center flex flex-col py-4 ConferenceProgram_container items-center justify-center md:w-[78%] w-[96%] m-auto md:rounded-xl rounded-none
         '>
                 <h1 className='text-2xl md:text-3xl  mt-6'>CONFERENCE PROGRAM</h1>
                 <div style={{ backgroundColor: "rgba(255, 255, 255, 0.3)" }} className=' h-1 w-1/5 my-4'></div>
