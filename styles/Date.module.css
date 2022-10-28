@@ -13,11 +13,28 @@
         text-align: center;
     }
 }
+@media screen and (min-width: 400px){
+    .dateHeading{
+        font-size: 28px;
+    color: #fff;
+    transition-duration: 500ms;
+    }
+}
 .dateHeading{
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     transition-duration: 500ms;
 }
 .rounded-lg{
     border-radius: 0.5rem;
+}
+
+.datah3{
+    font-size: 16px;
+}
+
+@media screen and (min-width:480px){
+    .datah3{
+        font-size: 18px;
+    }
 }

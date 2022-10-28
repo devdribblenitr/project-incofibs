@@ -2,6 +2,7 @@ import EventCard from "../components/EventCard"
 import Navbar from "../components/Navbar"
 import PastEvents from "../components/PastEvents"
 import PastKeynoteSpeakers from "../components/PastKeynoteSpeakers"
+import Footer from "../components/Footer";
 
 export default function Events() {
     const pastEvent = [
@@ -71,6 +72,7 @@ export default function Events() {
                 <PastEvents events={pastEvent}></PastEvents>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
