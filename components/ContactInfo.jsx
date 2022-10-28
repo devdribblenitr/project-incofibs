@@ -9,7 +9,7 @@ const ContactInfo = () => {
   };
   return (
     <div className="bg-bgColor w-[100%] text-white pt-[4.5rem] pb-[4.8rem]">
-      <h1 className="playfair md:text-[36px] md:tracking-wider text-center pb-3">
+      <h1 className="playfair text-3xl md:tracking-wider text-center pb-3">
         Contact Info
       </h1>
       <div className="flex justify-center">
@@ -23,7 +23,7 @@ const ContactInfo = () => {
           <path d="M0 0H117V3H0V0Z" fill="#184353" />
         </svg>
       </div>
-      <div className="flex mt-6 justify-center align-middle">
+      <div className="md:flex mt-6 justify-center align-middle">
         <div className="px-5 pt-8 xl:ml-20 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6885.651819019208!2d84.89957687894!3d22.250107339616974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201f72bbd561c3%3A0xab5c70e76a7b5a!2sNational%20Institute%20of%20Technology%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1665677952037!5m2!1sen!2sin"
@@ -31,7 +31,7 @@ const ContactInfo = () => {
             style={{ borderRadius: "25px" }}
           ></iframe>
         </div>
-        <div className="px-4 pt-4">
+        <div className="pt-4">
           <div style={boxStyle} className=" lg:w-[500px] h-24 m-4">
             <div className="flex pl-7 pt-5">
               <svg
