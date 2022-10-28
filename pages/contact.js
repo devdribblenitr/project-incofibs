@@ -8,9 +8,9 @@ function contactUs() {
   return (
     <>
       <Navbar />
+      <ContactCards />
       <ContactInfo />
       <Contactus />
-      <ContactCards />
       <Footer />
     </>
   );
