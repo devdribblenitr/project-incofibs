@@ -17,6 +17,9 @@ module.exports = {
         ConferencePadding:'15px',
 
       },
+      screens:{
+        comm:'611px',
+      },
       colors: {
         conferenceColor: "#204b55",
         communityColor: "#c59d5f",
