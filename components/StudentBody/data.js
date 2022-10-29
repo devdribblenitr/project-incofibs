@@ -1,31 +1,31 @@
 const data=[
     {   
         id:1,
-        title:'Virat Kohli',
+        title:'Virat',
         mail:'viratkohli123@gmail.com',
         Contact:'9937775273',
     },
     {   
         id:2,
-        title:'Rohit Sharma',
+        title:'Rohit ',
         mail:'rohitsharma@gmail.com',
         Contact:'9898753689',
     },
     {   
         id:3,
-        title:'Surya Kumar ',
+        title:'Surya ',
         mail:'suryayadav@hotmail.com',
         Contact:'8978654783',
     },
     {   
         id:4,
-        title:'Hardik Pandya',
+        title:'Hardik ',
         mail:'hardikpandya@yahoo.com',
         Contact:'8796578489',
     },
     {   
         id:5,
-        title:'Dinesh Karthik',
+        title:'Dinesh ',
         mail:'dineshkarthik@gmail.com',
         Contact:'8709857688',
     },
