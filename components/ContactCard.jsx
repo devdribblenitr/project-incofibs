@@ -22,14 +22,14 @@ const ContactCard = ({ name, email, contact }) => {
             href={`mailto:${email}`}
             className="inline-flex items-center py-2 px-4 text-sm font-medium text-center bg-orange-600 rounded-lg hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
-            <EmailIcon />
+            <EmailIcon style={{ color: "white" }} />
           </a>
 
           <a
             href={`tel:${contact}`}
             className="inline-flex items-center py-2 px-4 text-sm font-medium text-center  bg-orange-600 rounded-lg hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
-            <PhoneIcon />
+            <PhoneIcon style={{ color: "white" }} />
           </a>
         </div>
       </div>
