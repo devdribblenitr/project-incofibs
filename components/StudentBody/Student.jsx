@@ -10,7 +10,7 @@ const Student=()=>{
            <h1 className="w-full max-w-[1440px] mx-auto text-center py-2 text-4xl text-[#102c3a] font-bold">Core Student Body</h1>
          <div className="w-32 h-1 bg-[#102c3a]  mx-auto my-3"></div>
          </div>
-         <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-16 place-content-center">
+         <div className="w-full grid grid-cols-2 lg:grid-cols-3 comm:gap-y-3 comm:gap-x-16 gap-y-0 gap-x-4 place-content-center">
             {student.map((data)=>{return (<Body key={data.id} title={data.title} mail={data.mail} Contact={data.Contact}/>) })}
          </div>
 
