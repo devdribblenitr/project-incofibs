@@ -157,7 +157,7 @@ const RegistrationCards = () => {
         <Card title='Regular' validity='Dec 1st to Dec 20th, 2022' object={regular}/>
         <Card title='Late/on Spot' validity='Dec 21st, 2022 Onwards' object={late}/>
       </div>
-        <button className="button_cards" style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginTop: "-50px", marginBottom: "75px"}} onClick={() => signIn(providers.google.id)}>Click Here to Register</button>
+        <button className="button_cards" style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginTop: "-50px", marginBottom: "75px"}} onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register</button>
       </div>
   )
 }

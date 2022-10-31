@@ -18,8 +18,8 @@ const Conference = () => {
         {/* <div className='w-28 h-1 bg-red-700 mx-auto mb-8'></div> */}
     </div>
     <div className='max-w-[1440px] mx-auto grid xl:grid-cols-2 '>
-      <div className= 'grid lg:gap-x-4 lg:gap-y-4  gap-x-6 gap-y-8 xl:gap-x-4 xl:gap-y-0 grid-cols-2 mx-auto mt-12 '>
-        <div className='lg:w-80 sm:w-3/4   mx-auto '>
+      <div className= 'grid lg:gap-x-4 lg:gap-y-4  gap-x-6 gap-y-8 xl:gap-x-4 xl:gap-y-0 grid-cols-1 md:grid-cols-2 mx-auto mt-12 '>
+        <div className='lg:w-80 sm:w-3/4 mx-auto '>
           <Image src={teacher} alt=""  style={conStyle} />
         </div>
         <div className='lg:w-80 sm:w-3/4   mx-auto' >
