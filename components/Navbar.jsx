@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/styles";
 import LoginButton from "./LoginButton";
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
+import axios from "axios";
 
 const NavMenu = [
   { title: "Home", url: "/" },
