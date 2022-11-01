@@ -396,12 +396,12 @@ footer .card .social-links a:hover
 @media(max-width: 768px){
 
     .CarouselCards, .CarouselCards img{
-        height: calc(100vh - 454px) !important;
+        height: calc(100vh - 320px) !important;
     }
     .countDownCards {
         margin-top: 40px;
     }
     .herosection_new {
-        margin-bottom: calc(100vh - 454px) !important;
+        margin-bottom: calc(100vh - 314px) !important;
     }
 }

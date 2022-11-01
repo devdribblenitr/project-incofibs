@@ -59,7 +59,7 @@ const Countdownclock = () => {
         <div className="playfair text-2xl lg:text-6xl mt-6 flex justify-center pl-4 sm:pl-0 mb-1">
           InCoFIBS  2<div className="text-[#e84c3d] font-bold">k</div>23
         </div>
-        <div className="text-lg w-4/5 flex justify-center mb-1">
+        <div className="text-lg w-4/5 flex text-center justify-center mb-1">
          International Conference on Frontier in Biological Sciences
         </div>
       </div>
@@ -103,7 +103,7 @@ const Countdownclock = () => {
         
       </div>
       <div className="flex justify-center">
-        <button style={{color: "#ffff",backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px"}} className="button_cards2 mt-6"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register or Upload Your Abstract</button>
+        <button style={{color: "#ffff",backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px"}} className="button_cards2 mt-6"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Register Now</button>
       </div>
     </div>
   );
