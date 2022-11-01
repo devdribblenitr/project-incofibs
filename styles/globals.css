@@ -280,7 +280,7 @@ footer .card .social-links a:hover
 }
 .countDownCards{
     /* mt-14 mb-4 pb-2 */
-    margin-top: 100px;
+    margin-top: 220px;
 }
 .herosection_new{
     /* mb-calc(100vh - 100px) */
@@ -319,8 +319,13 @@ footer .card .social-links a:hover
 }
 
 .button_cards:hover{
-    border: 2px solid rgb(232, 76, 61);
+    border: 2px solid rgb(208, 74, 61);
     background-color: #e84c3dd1;
+    color: #fff !important;
+}
+.button_cards2:hover{
+    border: 2px solid rgb(255, 255, 255) !important;
+    background-color: transparent !important;
     color: #fff !important;
 }
 .ConferenceProgram {
@@ -384,4 +389,19 @@ footer .card .social-links a:hover
 .image_position_conference{
     margin-right: 0;
     margin-left: auto;
+}
+.CarouselCards, .CarouselCards img{
+    height: calc(100vh - 100px) !important;
+}
+@media(max-width: 768px){
+
+    .CarouselCards, .CarouselCards img{
+        height: calc(100vh - 454px) !important;
+    }
+    .countDownCards {
+        margin-top: 40px;
+    }
+    .herosection_new {
+        margin-bottom: calc(100vh - 454px) !important;
+    }
 }
