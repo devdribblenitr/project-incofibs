@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from "react";
+import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
 
 const Countdownclock = () => {
   const [days, setDays] = useState();
   const [hours, setHours] = useState();
   const [minutes, setMinutes] = useState();
   const [seconds, setSeconds] = useState();
+  const [ providers, setproviders ] = useState();
+  const { data: session, status } = useSession();
+  useEffect(() => {
+    const setTheProviders = async () => {
+        const setupProviders = await getProviders();
+        setproviders(setupProviders);
+    };
+    setTheProviders();
+  }, []);
 
   function padWithZeros(num, size) {
     var s = num + "";
@@ -91,6 +101,9 @@ const Countdownclock = () => {
           <div className="text-sm uppercase  flex justify-center">seconds</div>
         </div>
         
+      </div>
+      <div className="flex justify-center">
+        <button style={{color: "#ffff",backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px"}} className="button_cards2 mt-6"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register or Upload Your Abstract</button>
       </div>
     </div>
   );

@@ -64,7 +64,7 @@ const Registration = () => {
     accomodation: "Accomodation Required*",
     gender: "Gender*",
     presentation: "Are you submitting any paper for presentation?*",
-    title: "Title of the Paper*",
+    title: "Title of the Paper",
     phonenumber: "Phone number (with country code)*",
     country: "Country*",
     accompany: "Details of accompanying person ,if any:*",
@@ -154,10 +154,10 @@ const Registration = () => {
       });
       console.log("response", response.data);
       toast.success('You are successfully registered!');
-      router.push("/")
+      setTimeout(function(){router.push("/")},3000);
     } catch (error) {
       console.log("error",error);
-      // toast.error(error.response.data.message);
+      toast.error("something went wrong");
     }
 
   };

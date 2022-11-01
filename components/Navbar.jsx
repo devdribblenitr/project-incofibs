@@ -12,6 +12,8 @@ import logo from "../public/logoBranding.png";
 import { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/styles";
 import LoginButton from "./LoginButton";
+import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
+import axios from "axios";
 
 const NavMenu = [
   { title: "Home", url: "/" },
@@ -31,16 +33,31 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-
+ 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [userDetails, setUserDetails] = useState(null);
+  const { data: session, status } = useSession();
 
   // const [state, setState] = React.useState({
   //   open: false,
   //   vertical: 'top',
   //   horizontal: 'center',
   // });
+
+  const getUserDetails = async () => {
+    var userName = session?.user?.email?.split("@")[0];
+    const user = await axios.get(`https://us-central1-incofibs-a001d.cloudfunctions.net/app/user/v2/users/${userName}`);
+    setUserDetails(user.data);
+    console.log("userDetails",userDetails);
+  };
+
+  useEffect(() => {
+    if(session){
+      getUserDetails();
+    }
+  }, []);
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
