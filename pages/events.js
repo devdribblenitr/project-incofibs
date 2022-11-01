@@ -1,7 +1,6 @@
 import EventCard from "../components/EventCard"
 import Navbar from "../components/Navbar"
 import PastEvents from "../components/PastEvents"
-import Footer from "../components/Footer.jsx";
 import Head from 'next/head'
 import PastKeynoteSpeakers from "../components/PastKeynoteSpeakers"
 import Footer from "../components/Footer";
@@ -101,7 +100,6 @@ export default function Events() {
             </div>
             <Footer />
         </div>
-        <Footer />
         </>
     )
 }

@@ -381,3 +381,7 @@ footer .card .social-links a:hover
     padding: 30px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+.image_position_conference{
+    margin-right: 0;
+    margin-left: auto;
+}
