@@ -17,6 +17,10 @@ const incofibs2010 = [
     url: "./gallery/2010_3.jpg",
     key: 3,
   },
+  {
+    url: "./gallery/2010_4.jpg",
+    key: 4,
+  },
  
 ];
 
@@ -28,10 +32,6 @@ const incofibs2015 = [
   {
     url: "./gallery/2.jpg",
     key: 2,
-  },
-  {
-    url: "./gallery/3.jpg",
-    key: 3,
   },
   {
     url: "./gallery/4.jpg",
@@ -79,7 +79,7 @@ const Gallery = () => {
     <div className={styles.gallery}>
       <section className={styles.section}>
         <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">InCoFIBS 2010</h1>
-        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
+        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3 mb-12"></div>
         <div className={styles.imageGrid}>
           {incofibs2010.map((image) => {
             return (
@@ -92,7 +92,7 @@ const Gallery = () => {
       </section>
       <section className={styles.section}>
         <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">InCoFIBS 2015</h1>
-        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
+        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3 mb-12"></div>
         <div className={styles.imageGrid}>
           {incofibs2015.map((image) => {
             return (
@@ -105,7 +105,7 @@ const Gallery = () => {
       </section>
       <section className={styles.section}>
         <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">NIT ROURKELA</h1>
-        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
+        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3 mb-12"></div>
         <div className={styles.imageGrid}>
           {nitr.map((image) => {
             return (
