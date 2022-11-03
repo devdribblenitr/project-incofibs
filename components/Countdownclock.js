@@ -60,7 +60,7 @@ const Countdownclock = () => {
           InCoFIBS  2<div className="text-[#e84c3d] font-bold">k</div>23
         </div>
         <div className="text-lg w-4/5 flex text-center justify-center mb-1">
-         International Conference on Frontier in Biological Sciences
+         International Conference on Frontiers in Biological Sciences
         </div>
       </div>
       <div className="flex justify-center w-screen">

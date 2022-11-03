@@ -153,8 +153,8 @@ const RegistrationCards = () => {
         
       <div className={styles.registrationCards}>
       
-        <Card title='Early Bird' validity='Till Nov 30th, 2022' object={early}/>
-        <Card title='Late' validity='Dec 1st to Dec 15th, 2022' object={regular}/>
+        <Card title='Early Bird' validity='Till Dec 1st, 2022' object={early}/>
+        <Card title='Late' validity='Nov 2nd to Dec 15th, 2022' object={regular}/>
         <Card title='After Dec 15th' validity='Dec 16th, 2022 Onwards' object={late}/>
       </div>
         <button style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px"}} className="button_cards mt-6 md:-mt-10"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register</button>
