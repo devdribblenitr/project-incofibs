@@ -22,7 +22,7 @@ const data = [
     id: 2,
     img: binod,
     designation: "Co-Convenor",
-    name: "Dr. Dr. Binod Bihari Sahu Nayak ",
+    name: "Dr. Binod Bihari Sahu",
     email: "viratkohli123@gmail.com",
     contact: "9937775273",
   },
