@@ -29,7 +29,7 @@
     "react-icons": "^4.6.0",
     "react-mui-fileuploader": "^0.2.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-toastify": "^9.0.8",
+    "react-toastify": "^9.1.1",
     "styled-components": "^5.3.6",
     "tailwindcss-pseudo": "^1.0.3",
     "uuid": "^9.0.0"
