@@ -1,6 +1,17 @@
 import React from "react";
 
 function ContactUs() {
+  document.getElementById("submit").addEventListener("click", function () {
+    var userData = {
+      email: document.getElementById("email").value,
+      name: document.getElementById("name").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    console.log(userData);
+  });
+
   return (
     <section className="bg-white">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -10,7 +21,7 @@ function ContactUs() {
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl">
           Got an issue? Want to send feedback ? Let us know.
         </p>
-        <form action="#" className="space-y-8">
+        <form className="space-y-8">
           <div>
             <label
               for="email"
@@ -28,14 +39,13 @@ function ContactUs() {
           </div>
           <div>
             <label
-              for="email"
+              for="name"
               className="block mb-2 text-sm font-medium text-gray-900 "
             >
               Your Name
             </label>
             <input
-              type="email"
-              id="email"
+              id="name"
               className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
               placeholder="Harry Potter"
               required
@@ -71,6 +81,7 @@ function ContactUs() {
             ></textarea>
           </div>
           <button
+            id="submit"
             type="submit"
             className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 "
           >

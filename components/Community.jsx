@@ -4,69 +4,78 @@ import Image from 'next/image';
 
 const Community = () => {
   const commStyle={
-    borderRadius:'20px',
-    boxShadow:'50px',
+    
+   
     width:'200px',
-    margin:'20px 0px'
+    margin:'4px 0px',
   }
   return (
     <div className="w-full bg-white py-4 px-4">
       <div>
-      <h1 className="max-w-[1240px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">Our Dignitaries</h1>
+      <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">Our Dignitaries</h1>
       <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
       </div>
 
-      <div className="max-w-[1024px] mx-auto grid md:grid-cols-2 my-10 gap-x-20  ">
-        <Image className="w-wid mx-auto  border-4 border-communityColor2 " style={commStyle} src={teacher} alt='oops'/>
-        <div className="flex flex-col justify-center">
-          <p className="mx-3 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. Officia mollitia sed, dolore eum distinctio repudiandae ratione fugiat deserunt aliquid consequatur numquam, neque dolores suscipit reprehenderit?</p>
-          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-3">Name of Director</h1>
-          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-3 ">DIRECTOR</h1>
+      <div className="max-w-[1440px]  mx-auto grid lg:grid-cols-2 ">
+      <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4 my-4  gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
+        <Image className="w-[200px] h-[200px] mx-auto " style={commStyle} src={teacher} alt='oops'/>
+        <div className="flex flex-col justify-center mx-auto ">
+          <p className="mx-1 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. </p>
+          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-1">Name of Director</h1>
+          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-1 ">DIRECTOR</h1>
         </div>
       </div>
 
 
-      <div className="max-w-[1024px] mx-auto grid md:grid-cols-2 my-10 gap-x-20 ">
-      <Image className="w-[500px] mx-auto   border-4 border-communityColor2 " style={commStyle}  src={teacher} alt='oops'/>
-        <div className="flex flex-col justify-center">
-          
-          <p className="mx-3 transition:0.4s my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. Officia mollitia sed, dolore eum distinctio repudiandae ratione fugiat deserunt aliquid consequatur numquam, neque dolores suscipit reprehenderit? </p>
-          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-3">Name of the HOD</h1>
-          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-3 ">HOD</h1>
-       
+      <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4 my-4  gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
+        <Image className="w-[200px] h-[200px] mx-auto " style={commStyle} src={teacher} alt='oops'/>
+        <div className="flex flex-col justify-center mx-auto ">
+          <p className="mx-1 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. </p>
+          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-1">Name of Director</h1>
+          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-1 ">DIRECTOR</h1>
         </div>
       </div>
-      <div className="max-w-[1024px] mx-auto grid md:grid-cols-2 my-10 gap-x-20 ">
-      <Image className="w-[500px] mx-auto  border-4 border-communityColor2 "style={commStyle}  src={teacher} alt='oops'/>
-        <div className="flex flex-col justify-center">
-          
-          <p className="mx-3 transition:0.4s my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. Officia mollitia sed, dolore eum distinctio repudiandae ratione fugiat deserunt aliquid consequatur numquam, neque dolores suscipit reprehenderit? </p>
-          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-3">Name of the Convenor</h1>
-          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-3  ">CONVENOR</h1>
-       
+      <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4 my-4  gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
+        <Image className="w-[200px] h-[200px] mx-auto " style={commStyle} src={teacher} alt='oops'/>
+        <div className="flex flex-col justify-center mx-auto ">
+          <p className="mx-1 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. </p>
+          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-1">Name of Director</h1>
+          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-1 ">DIRECTOR</h1>
         </div>
       </div>
-      <div className="max-w-[1024px] mx-auto grid md:grid-cols-2 my-10 gap-x-20 ">
-      <Image className="w-[500px] mx-auto  border-4 border-communityColor2 "style={commStyle} src={teacher} alt='oops'/>
-        <div className="flex flex-col justify-center">
-          
-          <p className="mx-3 transition:0.4s my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. Officia mollitia sed, dolore eum distinctio repudiandae ratione fugiat deserunt aliquid consequatur numquam, neque dolores suscipit reprehenderit? </p>
-          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-3">Name of the CO-CONVENOR</h1>
-          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-3  ">CO-CONVENOR</h1>
-       
+      <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4 my-4   gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
+        <Image className="w-[200px] h-[200px] mx-auto " style={commStyle} src={teacher} alt='oops'/>
+        <div className="flex flex-col justify-center mx-auto ">
+          <p className="mx-1 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. </p>
+          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-1">Name of Director</h1>
+          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-1 ">DIRECTOR</h1>
         </div>
       </div>
-      <div className="max-w-[1024px] mx-auto grid md:grid-cols-2 my-10 gap-x-20 ">
-      <Image className="w-[500px] mx-auto   border-4 border-communityColor2 "style={commStyle} src={teacher} alt='oops'/>
-        <div className="flex flex-col justify-center">
-          
-          <p className="mx-3 transition:0.4s my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. Officia mollitia sed, dolore eum distinctio repudiandae ratione fugiat deserunt aliquid consequatur numquam, neque dolores suscipit reprehenderit? </p>
-          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-3">Name of the TREASURER</h1>
-          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-3 ">TREASURER</h1>
-       
+      <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4  my-4  gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
+        <Image className="w-[200px] h-[200px] mx-auto " style={commStyle} src={teacher} alt='oops'/>
+        <div className="flex flex-col justify-center mx-auto ">
+          <p className="mx-1 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. </p>
+          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-1">Name of Director</h1>
+          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-1 ">DIRECTOR</h1>
         </div>
       </div>
+      <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4 my-4   gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
+        <Image className="w-[200px] h-[200px] mx-auto " style={commStyle} src={teacher} alt='oops'/>
+        <div className="flex flex-col justify-center mx-auto ">
+          <p className="mx-1 transition-0.4s my-4 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptates nesciunt dignissimos sit, neque, eius modi iusto natus nobis quo enim ab omnis sunt optio tempora consectetur nulla labore, dolore fugiat. </p>
+          <h1 className="text-communityColor2 font-bold md-text-4xl sm:3xl text-2xl  mx-1">Name of Director</h1>
+          <h1 className="text-communityColor2 font-bold md-text-2xl sm:xl text-lg mx-1 ">DIRECTOR</h1>
+        </div>
+      </div>
+      </div>
+
+      
+
     </div>
+    
+      
+
+  
   );
 };
 

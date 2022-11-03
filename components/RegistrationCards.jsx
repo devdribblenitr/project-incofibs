@@ -35,17 +35,17 @@ const early = [
 const regular = [
   {
     title: 'Research Scholars / Graduate Students',
-    price: 'Rs. 5,500',
+    price: 'Rs. 6,000',
   
 }, 
   {
     title: 'Academics Delegates',
-    price:'Rs. 11,000',
+    price:'Rs. 12,000',
     
 }, 
   {
     title: 'Industry & RnD Participants',
-    price:   'Rs. 13,000',
+    price:   'Rs. 15,000',
   
 }, 
   {
@@ -64,17 +64,17 @@ const late = [
   
   {
     title: 'Research Scholars / Graduate Students',
-    price: 'Rs. 6,000',
+    price: 'Rs. 7,000',
   
 }, 
   {
     title: 'Academics Delegates',
-    price:'Rs. 12,000',
+    price:'Rs. 15,000',
     
 }, 
   {
     title: 'Industry & RnD Participants',
-    price:   'Rs. 15,000',
+    price:   'Rs. 17,000',
   
 }, 
   {
@@ -154,10 +154,10 @@ const RegistrationCards = () => {
       <div className={styles.registrationCards}>
       
         <Card title='Early Bird' validity='Till Nov 30th, 2022' object={early}/>
-        <Card title='Regular' validity='Dec 1st to Dec 20th, 2022' object={regular}/>
-        <Card title='Late/on Spot' validity='Dec 21st, 2022 Onwards' object={late}/>
+        <Card title='Late' validity='Dec 1st to Dec 15th, 2022' object={regular}/>
+        <Card title='After Dec 15th' validity='Dec 16th, 2022 Onwards' object={late}/>
       </div>
-        <button className="button_cards" style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginTop: "-50px", marginBottom: "75px"}} onClick={() => signIn(providers.google.id)}>Click Here to Register</button>
+        <button style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px"}} className="button_cards mt-6 md:-mt-10"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register</button>
       </div>
   )
 }

@@ -1,0 +1,7 @@
+.cardSpeak{
+    background-color: rgba(42,84,98,0.1);
+}
+
+.cardSpeak:hover{
+    background-color: rgba(0,0,0,0);
+}

@@ -1,11 +1,17 @@
 import React from "react";
 import teacher from "../public/teacher.jpg";
+import one from '../public/venue/images01.png';
+// import one from '../public/venue/images01.jfif';
+import two from '../public/venue/images02.png';
+import three from '../public/venue/images03.png';
+import four from '../public/venue/images04.jpeg';
 import Image from 'next/image';
 
 const Conference = () => {
   const conStyle={
     borderRadius:'15px',
     boxShadow:'50px',
+    width: '70%',
   }
   return (
     <div id="conference_venue" className="w-full white px-4 my-16">
@@ -18,18 +24,18 @@ const Conference = () => {
         {/* <div className='w-28 h-1 bg-red-700 mx-auto mb-8'></div> */}
     </div>
     <div className='max-w-[1440px] mx-auto grid xl:grid-cols-2 '>
-      <div className= 'grid lg:gap-x-4 lg:gap-y-4  gap-x-6 gap-y-8 xl:gap-x-4 xl:gap-y-0 grid-cols-2 mx-auto mt-12 '>
-        <div className='lg:w-80 sm:w-3/4   mx-auto '>
-          <Image src={teacher} alt=""  style={conStyle} />
+      <div className= 'grid gap-10 grid-cols-1 md:grid-cols-2 mx-auto mt-12 '>
+        <div className='lg:w-80 sm:w-3/4 mx-auto '>
+          <img src={one.src} className='image_position_conference' alt=""  style={conStyle} />
         </div>
         <div className='lg:w-80 sm:w-3/4   mx-auto' >
-          <Image src={teacher} alt="" style={conStyle} />
+          <img src={two.src} alt="" style={conStyle} />
         </div>
         <div className='lg:w-80 sm:w-3/4  mx-auto' >
-          <Image src={teacher} alt="" style={conStyle}/>
+          <img src={three.src} className='image_position_conference' alt="" style={conStyle}/>
         </div>
         <div className='lg:w-80 sm:w-3/4  mx-auto' >
-          <Image src={teacher} alt="" style={conStyle}/>
+          <img src={four.src} alt="" style={conStyle}/>
         </div>
       </div>
       <div className="flex flex-col py-2 xl:pt-6 mt-2 divide-y px-6">
