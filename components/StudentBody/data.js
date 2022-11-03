@@ -4,7 +4,7 @@ import samchita from "../../public/student/noimage.jpg";
 import parthipan from "../../public/student/parthipan.jpg";
 import sambit from "../../public/student/noimage.jpg";
 import bibhuti from "../../public/student/bibhuti.png";
-import rinkesh from "../../public/student/rinkesh.jpg";
+import rinkesh from "../../public/student/noimage.jpg";
 import suman from "../../public/student/Suman.jpg";
 import sneha from "../../public/student/Sneha.jpeg";
 
