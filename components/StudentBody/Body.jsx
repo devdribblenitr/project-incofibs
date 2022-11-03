@@ -18,7 +18,7 @@ const Body = ({ title, mail, Contact, img, designation }) => {
         <h5 class="my-1 text-xl font-bold text-gray-900 dark:text-[#102c3a]">
           {title}
         </h5>
-        <span class="text-md text-gray-200 dark:text-[#102c3a] font-bold ">
+        <span class="text-md text-gray-500 dark:text-[#102c3a] font-bold ">
           {designation}
         </span>
         <div class="md:flex mt-4 space-x-4 md:mt-6 pb-6">

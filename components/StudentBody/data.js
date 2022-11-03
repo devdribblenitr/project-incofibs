@@ -1,10 +1,10 @@
 import Sahil from "../../public/student/Sahil.jpg";
 import venu from "../../public/student/venu.jpeg";
-import samchita from "../../public/student/Sahil.jpg";
+import samchita from "../../public/student/noimage.jpg";
 import parthipan from "../../public/student/parthipan.jpg";
-import sambit from "../../public/student/Sahil.jpg";
+import sambit from "../../public/student/noimage.jpg";
 import bibhuti from "../../public/student/bibhuti.png";
-import rinkesh from "../../public/student/Rinkesh.jpg";
+import rinkesh from "../../public/student/rinkesh.jpg";
 import suman from "../../public/student/Suman.jpg";
 import sneha from "../../public/student/Sneha.jpeg";
 
@@ -14,8 +14,8 @@ const data = [
     designation: "Technical Lead",
     img: Sahil,
     title: "Mohammad Sahil",
-    mail: "viratkohli123@gmail.com",
-    Contact: "9937775273",
+    mail: "sahilmejakhas@gmail.com",
+    Contact: "7607861998",
   },
   {
     id: 2,

@@ -18,7 +18,7 @@ const Core = ({ name, email, contact, img, designation }) => {
         <h5 class="my-1 text-xl font-bold text-gray-900 dark:text-white">
           {name}
         </h5>
-        <span class="text-sm text-gray-200 dark:text-gray-200 font-bold">
+        <span class="text-sm text-gray-500 dark:text-gray-200 font-bold">
           {designation}
         </span>
         <div class="md:flex mt-4 space-x-4 md:mt-6 pb-6">
