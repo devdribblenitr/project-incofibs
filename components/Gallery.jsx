@@ -62,7 +62,8 @@ const Gallery = () => {
   return (
     <div className={styles.gallery}>
       <section className={styles.section}>
-        <h1>InCoFIBS 2010</h1>
+        <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">InCoFIBS 2010</h1>
+        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
         <div className={styles.imageGrid}>
           {sectionOneImages.map((image) => {
             return (
@@ -74,7 +75,8 @@ const Gallery = () => {
         </div>
       </section>
       <section className={styles.section}>
-        <h1>InCoFIBS 2015</h1>
+        <h1 className="max-w-[1440px] mx-auto text-center my-2 text-4xl text-communityColor2 font-bold">InCoFIBS 2015</h1>
+        <div className="w-24 h-1 bg-communityColor2 mx-auto my-3"></div>
         <div className={styles.imageGrid}>
           {sectionTwoImages.map((image) => {
             return (
