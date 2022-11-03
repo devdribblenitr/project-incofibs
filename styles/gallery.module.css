@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #eee;
+    /* background-color: #eee; */
+    margin: 5rem 0;
 }
 
 .section{
@@ -26,8 +27,23 @@
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
     align-items: center;
-
 }
+
+@media(max-width: 920px)
+{
+    .imageGrid{
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+@media(max-width: 720px)
+{
+    .imageGrid{
+        grid-template-columns: 100%;
+    }
+    
+}
+
 
 
 .imageGrid div{
@@ -36,6 +52,7 @@
 }
 
 .imageGrid div img{
+    width: 100%;
     transition: all 250ms;
 }
 
@@ -43,3 +60,4 @@
     transform: scale(110%);
 
 }
+
