@@ -3,8 +3,8 @@ import Nitr from '../components/Nitr';
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Lscience from './components/Lscience';
-import Art from './components/Art';
+import Lscience from '../components/Lscience';
+import Art from '../components/Art';
 
 
 function about() {
