@@ -3,17 +3,17 @@ const Nitr = () => {
   return (
     <>
       <div className="mt-10 flex flex-col items-center lg:my-10">
-        <div className="mx-4 ">
+        <div>
           <div className="flex flex-col items-center lg:items-end lg:mr-[100px]">
             <img
-              className="center z-10 w-[400px] lg:absolute h-72 lg:h-96 rounded-3xl shadow-2xl"
+              className="center z-10 w-[320px] md:w-[400px] lg:absolute h-72 lg:h-96 rounded-3xl shadow-2xl"
               src="https://res.cloudinary.com/dzbax077h/image/upload/v1665156071/nitr_o5jm74.jpg"
               alt="nitr"
             />
           </div>
-          <div className="rounded-3xl mt-10 lg:mr-[400px] md:m-20 lg:mb-20 ">
-            <div className="flex flex-col space-y-4 bg-slate-100 p-5 py-20 lg:pl-20 lg:pr-44 lg:text-justify  text-center text-sm md:text-2xl rounded-3xl h-fit max-w-5xl shadow-xl text-[#184353dc]">
-              <div className="mx-4 bg-white font-serif text-2xl md:text-6xl text-center text-bold">
+          <div className="rounded-3xl mt-10 lg:mr-[400px] m-2 md:m-20 lg:mb-20">
+            <div className="flex flex-col space-y-4 bg-slate-100 p-5 py-20 lg:pl-20 lg:pr-44 lg:text-justify text-center text-xl rounded-3xl h-fit max-w-5xl shadow-xl text-[#184353dc]">
+              <div className="mx-4 bg-white font-serif text-5xl text-center text-bold">
                 About NIT Rourkela
               </div>
               <div>
