@@ -3,6 +3,9 @@ import Nitr from '../components/Nitr';
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Lscience from './components/Lscience';
+import Art from './components/Art';
+
 
 function about() {
   return (
@@ -32,8 +35,13 @@ function about() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
           <Navbar />
-      <Nitr/>
+      
+      <div className='flex flex-col justify-around items-center'>
       <Incofibs/>
+      <Lscience/>
+      <Nitr/>
+      <Art/>
+      </div>
       <Footer/>
     </div>
   )
