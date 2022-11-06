@@ -5,9 +5,12 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Lscience from '../components/Lscience';
 import Art from '../components/Art';
+import { useState } from 'react';
+import ToBeUpdated from '../components/ToBeUpdated';
 
 
-function about() {
+function About() {
+  const [show, setShow] = useState(false);
   return (
     <div>
     <Head>
@@ -35,16 +38,15 @@ function about() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
           <Navbar />
-      
-      <div className='flex flex-col justify-around items-center'>
+      {show ? <div className='flex flex-col justify-around items-center'>
       <Incofibs/>
       <Lscience/>
       <Nitr/>
       <Art/>
-      </div>
+      </div> : <ToBeUpdated /> }
       <Footer/>
     </div>
   )
 }
 
-export default about
+export default About
