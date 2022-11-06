@@ -405,3 +405,10 @@ footer .card .social-links a:hover
         margin-bottom: calc(100vh - 314px) !important;
     }
 }
+.speakers_card{
+    transition: all .4s;
+}
+.speakers_card:hover{
+    transform: translateY(-5px);
+    transition: all .4s;
+}
