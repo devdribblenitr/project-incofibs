@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 
 const Communityy = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <div>
      <Head>
