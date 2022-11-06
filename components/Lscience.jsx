@@ -2,7 +2,7 @@ import React from "react";
 const Lscience = () => {
   return (
     <>
-      <div className="mb-10 flex flex-col items-center lg:my-8">
+      {/* <div className="mb-10 flex flex-col items-center lg:my-8">
         <div className="mx-4 justify-center ">
           <div className="flex flex-col mt-20 items-center  lg:items-start lg:ml-[100px]">
             <img
@@ -34,7 +34,13 @@ const Lscience = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="mt-[-20px] aboutinco_outer md:px-[170px] px-[20px]">
+      <div className="aboutinco">
+        <h1 className="playfair heading_title">About Life Science</h1>
+        <p className="py-12 text-justify">The National Institute of Technology, Rourkela is one of the leading brands in technical education In India and an Institute of National Importance. The institute is situated at the North Western tip of Odisha (a state of eastern India), in a scenic environment surrounded by majestic hills and lash of greens. The Department of Life Science was established in 2009 in pursuance of the development of Intellectual resources for sustainable growth and betterment of the society. The department is involved in generating quality human resources through its various academic and research programs. The department currently offers 5 years Integrated M.Sc. in Life Science, 2 years M.Sc. in Life Science, and Ph.D. in Life Science. The department has received financial assistance from DBT, DST, CSIR, ICMR, ICAR for R&D projects</p>
       </div>
+    </div>
     </>
   );
 };
