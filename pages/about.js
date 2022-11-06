@@ -10,7 +10,7 @@ import ToBeUpdated from '../components/ToBeUpdated';
 
 
 function About() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   return (
     <div>
     <Head>
@@ -39,10 +39,10 @@ function About() {
       </Head>
           <Navbar />
       {show ? <div className='flex flex-col justify-around items-center'>
-      <Incofibs/>
+      {/* <Incofibs/> */}
+      <Art/>
       <Lscience/>
       <Nitr/>
-      <Art/>
       </div> : <ToBeUpdated /> }
       <Footer/>
     </div>

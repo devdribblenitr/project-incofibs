@@ -2,7 +2,7 @@ import React from "react";
 const Nitr = () => {
   return (
     <>
-      <div className="mt-10 flex flex-col items-center lg:my-10">
+      {/* <div className="mt-10 flex flex-col items-center lg:my-10">
         <div>
           <div className="flex flex-col items-center lg:items-end lg:mr-[100px]">
             <img
@@ -34,7 +34,14 @@ const Nitr = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="mt-[10px] aboutinco_outer md:px-[170px] px-[20px]">
+      <div className="aboutinco">
+        <h1 className="playfair heading_title">About NIT Rourkela</h1>
+        <p className="pt-12 pb-3 text-justify">NIT Rourkela is one of the premier national level institutions for technical education in the country and is funded by the Government of India. Government of India has elevated the Regional Engineering College, Rourkela to a deemed university under the name of National Institute of Technology, Rourkela.</p>
+        <p className="pb-12 text-justify">The main objective of the Institute is to produce quality Engineers and Scientists in Graduate and Post-Graduate levels in various branches of Engineering and Science. The Institute is managed by the Board of Governors of National Institute of Technology (Rourkela) Society and vested with significant degree of administrative and financial autonomy. Government of India have recognized the Institute as a premier institution of repute and have developed it as a center of excellence under plan funding.</p>
       </div>
+    </div>
     </>
   );
 };
