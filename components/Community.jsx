@@ -18,12 +18,12 @@ const Community = () => {
 
       <div className="max-w-[1440px]  mx-auto grid lg:grid-cols-2 ">
         <div className="max-w-[802px] md:h-[350px] sm:h-[400px] mx-auto grid lg:mr-6 md:grid-cols-2  md:my-2 lg:my-4 my-4  gap-x-3 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] py-6 px-6 ">
-          <Image
+          {/* <Image
             className="w-[200px] h-[200px] mx-auto "
             style={commStyle}
             src={teacher}
             alt="oops"
-          />
+          /> */}
           <div className="flex flex-col justify-center mx-auto ">
             <p className="mx-1 transition-0.4s my-4 ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
