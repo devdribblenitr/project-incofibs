@@ -1,13 +1,15 @@
-import React from 'react'
 import Community from '../components/Community'
 import Team from '../components/CoreTeam/Team'
 import Student from '../components/StudentBody/Student'
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import ToBeUpdated from '../components/ToBeUpdated'
+import { useState } from 'react'
 
 
-const community = () => {
+const Communityy = () => {
+  const [show, setShow] = useState(false);
   return (
     <div>
      <Head>
@@ -35,6 +37,7 @@ const community = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar />
+      {show ? <div>
       <div>
         <Community/>
       </div>
@@ -44,9 +47,10 @@ const community = () => {
       <div>
       <Student/>
       </div>
+      </div> : <ToBeUpdated/>}
       <Footer/>
     </div>
     )
 }
 
-export default community
+export default Communityy

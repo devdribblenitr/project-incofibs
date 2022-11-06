@@ -4,8 +4,11 @@ import PastEvents from "../components/PastEvents"
 import Head from 'next/head'
 import PastKeynoteSpeakers from "../components/PastKeynoteSpeakers"
 import Footer from "../components/Footer";
+import ToBeUpdated from "../components/ToBeUpdated"
+import { useState } from "react"
 
 export default function Events() {
+    const [show, setShow] = useState(false);
     const pastEvent = [
         {
             image: "https://images.pexels.com/photos/12303537/pexels-photo-12303537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -81,7 +84,7 @@ export default function Events() {
       </Head>
             <div className="bg-gray-200">
             <Navbar />
-            <div className="px-2 lg:px-0 mx-auto w-full lg:w-5/6 md:py-6">
+            {show ? <div className="px-2 lg:px-0 mx-auto w-full lg:w-5/6 md:py-6">
                 {/* <h1 className="text-6xl font-semibold text-center py-6">Events</h1>
                 <h2 className="text-4xl font-semibold bg-sky-500 py-4 px-2 rounded-lg text-white text-center">Upcoming events
                 </h2> */}
@@ -97,7 +100,8 @@ export default function Events() {
                 <div className="bg-slate-100">
                 <PastEvents events={pastEvent}></PastEvents>
                 </div>
-            </div>
+            </div> : <ToBeUpdated />}
+            
             <Footer />
         </div>
         </>

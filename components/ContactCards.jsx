@@ -12,7 +12,7 @@ const ContactCards = () => {
           return (
             <ContactCard
               key={data.id}
-              img={data.img}
+              // img={data.img}
               designation={data.designation}
               name={data.name}
               email={data.email}
