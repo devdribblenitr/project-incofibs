@@ -412,3 +412,22 @@ footer .card .social-links a:hover
     transform: translateY(-5px);
     transition: all .4s;
 }
+.payment_details p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.payment_details ul li{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.payment_details p span{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+.abstract_temp{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+.abstract_temp:hover{
+    text-decoration: underline;
+}
