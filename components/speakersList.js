@@ -54,12 +54,12 @@ const speakersList = [
     designation1: "Division of Genetics",
     name: "Dr. Ye Ding",
   },
-  {
-    id: 10,
-    designation2: "Campus Drive Beckman Stanford, California",
-    designation1: "Department of Genetics",
-    name: "Dr. Leonore Herzenberg",
-  },
+  // {
+  //   id: 10,
+  //   designation2: "Campus Drive Beckman Stanford, California",
+  //   designation1: "Department of Genetics",
+  //   name: "Dr. Leonore Herzenberg",
+  // },
 
 
 
