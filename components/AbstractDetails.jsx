@@ -16,7 +16,7 @@ const AbstractDetails = () => {
   }, []);
   return (
     <>
-        <div className="py-[3.5rem] bg-[#eee]">
+        <div  className="py-[3.5rem] bg-[#eee]">
             <div className="grid grid-cols-12 mx-auto">
             <div className="col-span-1 md:col-span-2 mx-auto"></div>
                 <div className="col-span-10 md:col-span-8 mx-auto">
