@@ -9,6 +9,7 @@ import {v4} from 'uuid';
 import uploadImage from "../components/uploadImage";
 import axios from "axios";
 import { useRouter } from 'next/router'
+import Link from "next/link";
 
 
 
@@ -125,7 +126,7 @@ const Abstract = () => {
             <div class="flex justify-center md:px-6 my-2">
               <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                 <div class="w-full bg-white  rounded-lg lg:rounded-l-none">
-                <form onSubmit={addData} action="">
+                {/* <form onSubmit={addData} action="">
                   <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
                   <div class="lg:px-2">
                     <label class="block mb-2 text-sm font-bold text-gray-700">
@@ -241,7 +242,8 @@ const Abstract = () => {
                       Submit Your Abstract
                     </button>
                   </div>
-                </form>
+                </form> */}
+                <h1 style={{fontSize: "24px", color: "#000000b8"}} className="text-center p-12">Click here to <Link href={'/registration'}><a style={{color: "rgb(232 76 61)", textDecoration: "underline"}} className="decoration-none">Register</a></Link> to Submit your Abstract</h1>
                 </div>
               </div>
             </div>

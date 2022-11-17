@@ -343,6 +343,62 @@ const Registration = () => {
                       );
                     })}
                   </div>
+                  {/* <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
+                    <h2 className="underline payment_section block mb-2 text-sm font-bold text-gray-800">Submit Your Abstract</h2>
+                  </div>
+                  <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
+                  {Object.keys(inpval).map((key) => {
+                      return (
+                        <div key={key}>
+        
+                        {(key === "amount" ||
+                            key === "bankAccountHolderName" ||
+                            key === "bankName" ||
+                            key === "paymentDate" ||
+                            key === "transactionId" ||
+                            key === "uploadReciept") && (
+                              <div class="mb-4 lg:px-2">
+                              <div className="flex justify-between p-2">
+                                <label class="block mb-2 text-sm font-bold text-gray-700">
+                                  {heading[key]}
+                                </label>
+                              </div>
+                              {
+                                ( key === 'uploadReciept'?
+                                <input
+                                  required
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  type="file"
+                                  name={`${key}`}
+                                  onChange={getFileData}
+                                  style={{borderRadius: "1.2rem"}}
+                                />
+                                : (key === 'paymentDate')?
+                                <input
+                                  required
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  type="date"
+                                  name={`${key}`}
+                                  onChange={getData}
+                                  style={{borderRadius: "1.2rem"}}
+                                />
+                                :
+                                <input
+                                  required
+                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
+                                  type="text"
+                                  name={`${key}`}
+                                  onChange={getData}
+                                  style={{borderRadius: "1.2rem"}}
+                                />
+                                )
+                              }
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div> */}
                   <div class="mb-10 text-center px-4">
                     <button
                       class="w-full px-4 py-2 font-bold text-white bg-[#002834] rounded-full hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
