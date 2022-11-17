@@ -36,19 +36,21 @@ import { useRouter } from 'next/router'
 
 const Registration = () => {
     const { data: session, status } = useSession();
-    const [fileUp, setFileUp] = useState(null);
+    const [fileUp, setFileUp1] = useState(null);
+    const [fileUp2, setFileUp2] = useState(null);
     const router = useRouter()
   const [inpval, setInpval] = useState({
+    title: "",
+    abstract: "",
+
     designation: "",
     organisation: "",
     address: "",
     accomodation: "",
     gender: "",
     presentation: "",
-    title: "",
     phonenumber: "",
     country: "",
-    accompany: "",
     
     amount: "",
     bankAccountHolderName: "",
@@ -56,18 +58,21 @@ const Registration = () => {
     paymentDate: "",
     transactionId: "",
     uploadReciept: "",
+
+    accompany: "",
   });
   const heading = {
+    title: "Title of the Abstract*",
+    abstract: "Upload Your Abstract*",
+
     designation: "Designation*",
     organisation: "Organisation*",
     address: "Address*",
     accomodation: "Accomodation Required*",
     gender: "Gender*",
     presentation: "Are you submitting any paper for presentation?*",
-    title: "Title of the Paper",
     phonenumber: "Phone number (with country code)*",
     country: "Country*",
-    accompany: "Details of accompanying person ,if any:*",
 
     amount: "Amount(INR/USD)*",
     bankAccountHolderName: "Name of the Bank Account Holder*",
@@ -75,6 +80,8 @@ const Registration = () => {
     paymentDate: "Payment Date*",
     transactionId: "Transaction ID/No.*",
     uploadReciept: "Upload Your Reciept*",
+
+    accompany: "Details of accompanying person ,if any:*",
   };
 
   const options = {
@@ -94,10 +101,15 @@ const Registration = () => {
     console.log(inpval);
   };
 
-  const getFileData = (e) => {
+  const getFileData1 = (e) => {
     let fileUpload = e.target.files[0];
     console.log("fileUpload",fileUpload);
-    setFileUp(fileUpload);
+    setFileUp1(fileUpload);
+  }
+  const getFileData2 = (e) => {
+    let fileUpload = e.target.files[0];
+    console.log("fileUpload",fileUpload);
+    setFileUp2(fileUpload);
   }
 
   const addData = async (e) => {
@@ -124,6 +136,15 @@ const Registration = () => {
     const iconUrl = await uploadImage(image, "register/" + userName + "_" + v4() + image.name, toastId);
     console.log("iconUrl",iconUrl);
 
+    let image2 = fileUp2;
+    console.log("image2",image2);
+    console.log("image2.name",image2.name);
+    
+    let toastId2 = toast.loading("Uploading your Abstract...Please wait!");
+    console.log("toastId",toastId2);
+    const iconUrl2 = await uploadImage(image2, "abstract/" + userName + "_" + v4() + image2.name, toastId2);
+    console.log("iconUrl",iconUrl2);
+
     try {
       console.log("executing axios");
       const response = await axios.post("https://us-central1-incofibs-a001d.cloudfunctions.net/app/user/v2/abstract", {
@@ -139,7 +160,6 @@ const Registration = () => {
           contact: res.phonenumber,
 
           submittingPaper: res.presentation,
-          paperTitle: res.title || null,
           accommodationRequirement: res.accomodation,
           country: res.country,
           accompanyingPerson: res.accompany,
@@ -150,6 +170,9 @@ const Registration = () => {
           bankAccountHolderName: res.bankAccountHolderName,
           paymentRecieptUrl: iconUrl,
           bankName: res.bankName,
+
+          paperTitle: res.title || null,
+          abstractUrl: iconUrl2,
           register: "created",
       });
       console.log("response", response.data);
@@ -243,7 +266,9 @@ const Registration = () => {
                             key === "bankName" ||
                             key === "paymentDate" ||
                             key === "transactionId" ||
-                            key === "uploadReciept"
+                            key === "uploadReciept" ||
+                            key === "title" ||
+                            key === "abstract"
                           ) && (
                             <div class="mb-4 lg:px-2">
                               <div className="flex justify-between p-2">
@@ -314,7 +339,7 @@ const Registration = () => {
                                   class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
                                   type="file"
                                   name={`${key}`}
-                                  onChange={getFileData}
+                                  onChange={getFileData1}
                                   style={{borderRadius: "1.2rem"}}
                                 />
                                 : (key === 'paymentDate')?
@@ -343,7 +368,7 @@ const Registration = () => {
                       );
                     })}
                   </div>
-                  {/* <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
+                  <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
                     <h2 className="underline payment_section block mb-2 text-sm font-bold text-gray-800">Submit Your Abstract</h2>
                   </div>
                   <div class="px-8 pt-8 pb-8  bg-white rounded grid grid-cols-1 lg:grid-cols-2">
@@ -351,12 +376,8 @@ const Registration = () => {
                       return (
                         <div key={key}>
         
-                        {(key === "amount" ||
-                            key === "bankAccountHolderName" ||
-                            key === "bankName" ||
-                            key === "paymentDate" ||
-                            key === "transactionId" ||
-                            key === "uploadReciept") && (
+                        {(key === "title" ||
+                            key === "abstract") && (
                               <div class="mb-4 lg:px-2">
                               <div className="flex justify-between p-2">
                                 <label class="block mb-2 text-sm font-bold text-gray-700">
@@ -364,22 +385,13 @@ const Registration = () => {
                                 </label>
                               </div>
                               {
-                                ( key === 'uploadReciept'?
+                                ( key === 'abstract'?
                                 <input
                                   required
                                   class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
                                   type="file"
                                   name={`${key}`}
-                                  onChange={getFileData}
-                                  style={{borderRadius: "1.2rem"}}
-                                />
-                                : (key === 'paymentDate')?
-                                <input
-                                  required
-                                  class="w-full px-3 py-4 mb-3 text-sm leading-tight text-gray-700 border shadow appearance-none focus:outline-none focus:shadow-outline"
-                                  type="date"
-                                  name={`${key}`}
-                                  onChange={getData}
+                                  onChange={getFileData2}
                                   style={{borderRadius: "1.2rem"}}
                                 />
                                 :
@@ -398,7 +410,7 @@ const Registration = () => {
                         </div>
                       );
                     })}
-                  </div> */}
+                  </div>
                   <div class="mb-10 text-center px-4">
                     <button
                       class="w-full px-4 py-2 font-bold text-white bg-[#002834] rounded-full hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
