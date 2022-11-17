@@ -17,7 +17,7 @@ import axios from "axios";
 
 const NavMenu = [
   { title: "Home", url: "/" },
-  { title: "Events", url: "/events" },
+  { title: "Speakers", url: "/speakers" },
   { title: "About us", url: "/about" },
   { title: "Community", url: "/community" },
   { title: "Gallery", url: "/gallery" },
