@@ -21,7 +21,7 @@ export default function ConferenceTracks() {
         "Environmental Sciences and Marine Biology"
     ]
     const arr2=[
-        "Developmental Biology and Nerurobiology",
+        "Developmental Biology and Neurobiology",
         "Immunology,Disease Biology and Vaccine Approaches",
         "Stem Cell and Regenerative medicine",
         "Pharmaceutical Science and Nanotechnology",

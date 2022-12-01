@@ -180,7 +180,7 @@ const Navbar = () => {
                     variant="contained"
                     // disabled={true}
                   >
-                    Log In
+                    Register Now
                   </Button>
                 }
               </MenuItem>
