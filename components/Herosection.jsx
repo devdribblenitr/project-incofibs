@@ -7,6 +7,9 @@ const HeroSection = () => {
     <div className="herosection_new">
       <div className="absolute CarouselCards w-full">
         <CarouselCards />
+        <div className='herosection_marquee'>
+        <marquee behavior="scroll" direction="left">Last date of Abstract Submition and Registration extended till December 30th</marquee>
+      </div>
       </div>
 
       <div className="absolute z-100 lg:flex lg:flex-col lg:h-screen">
