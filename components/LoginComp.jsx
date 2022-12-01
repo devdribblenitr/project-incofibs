@@ -10,7 +10,7 @@ const LoginComp = () => {
                 <img src='https://www.nicepng.com/png/detail/280-2801903_click-the-register-now-button-on-the-account.png' alt='icon_login'/>
                 <div className='login_second_comp'>
                   <h3>Registration</h3>
-                  <p>Till December 1st, 2022</p>
+                  <p>Till December 31st, 2022</p>
                 </div>
               </div>
             </Link>
@@ -21,7 +21,7 @@ const LoginComp = () => {
                 <img src='https://icons.veryicon.com/png/o/education-technology/big-data/submit-order.png' alt='icon_login'/>
                 <div className='login_second_comp'>
                   <h3>Submit Your Abstract</h3>
-                  <p>Till November 30th, 2022</p>
+                  <p>Till December 31st, 2022</p>
                 </div>
             </div>
         </Link>
