@@ -9,17 +9,17 @@ import AbstractDetails from "./AbstractDetails";
 const early = [
   {
     title: 'Research Scholars / Graduate Students',
-    price: 'Rs. 5,000',
+    price: 'Rs. 4,000',
   
 }, 
   {
     title: 'Academics Delegates',
-    price:'Rs. 10,000',
+    price:'Rs. 6,000',
     
 }, 
   {
     title: 'Industry & RnD Participants',
-    price:   'Rs. 12,000',
+    price:   'Rs. 7,000',
   
 }, 
   {
@@ -156,9 +156,9 @@ const RegistrationCards = () => {
       
     <div className={styles.registrationCards}>
     
-      <Card title='Early Bird' validity='Till Dec 1st, 2022' object={early}/>
-      <Card title='Late' validity='Nov 2nd to Dec 15th, 2022' object={regular}/>
-      <Card title='After Dec 15th' validity='Dec 16th, 2022 Onwards' object={late}/>
+      <Card title='Early Bird' validity='Till Dec 31st, 2022' object={early}/>
+      {/* <Card title='Late' validity='Nov 2nd to Dec 15th, 2022' object={regular}/> */}
+      {/* <Card title='After Dec 15th' validity='Dec 16th, 2022 Onwards' object={late}/> */}
     </div>
       <button style={{color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px"}} className="button_cards mt-6 md:-mt-10"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register</button>
     </div>
