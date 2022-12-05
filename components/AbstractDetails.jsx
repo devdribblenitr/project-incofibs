@@ -26,7 +26,7 @@ const AbstractDetails = () => {
                         </div>
                         <p className="mt-8 mb-6 text-center">You will be asked to submit an abstract so kindly keep it handy prior to starting the registration process. Followings are the Abstract Submission Guidelines</p>
                         <ul className="list-disc">
-                            <li className="py-2">Interested registered participants are invited to submit their Abstracts by November 30th, 2022</li>
+                            <li className="py-2">Interested registered participants are invited to submit their Abstracts by December 31st, 2022 (extended)</li>
                             <li className="py-2">Abstracts not exceeding 350 words (excluding title, author/s affiliation/s) should be typed in English in the given text box and structured into sections: Introduction, Methodology, Results and Conclusion only. No figures or tables should be included.</li>
                             <li className="py-2">Abstracts should be submitted only in the ONLINE mode on the conference portal and should NOT be sent via email or post.</li>
                             <li className="py-2">Registration to conference is mandatory for submitting an abstract.</li>
