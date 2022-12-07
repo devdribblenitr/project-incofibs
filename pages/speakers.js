@@ -7,8 +7,11 @@ import Footer from "../components/Footer";
 import ToBeUpdated from "../components/ToBeUpdated"
 import { useState } from "react"
 import Speakers from "../components/Speakers"
-import speakersList from "../components/speakersList"
-import speakerInternationalsList from "../components/speakerInternationalsList"
+// import speakersList from "../components/speakersList"
+import speakersList from "../components/speakersNationalList1"
+// import speakerInternationalsList from "../components/speakerInternationalsList"
+import speakerInternationalsList from "../components/speakerInternationalsList1"
+
 
 export default function Events() {
     const [show, setShow] = useState(true);

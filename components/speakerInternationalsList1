@@ -1,0 +1,66 @@
+
+const speakerInternationalsList = [
+  {
+    id: 1,
+    designation2: "Texas A&M University, USA",
+    designation1: "Stem cell technology in human and public health: Current applications and future promise",
+    name: "Dr. Ahmed El-Hashash ",
+  },
+  {
+    id: 2,
+    designation2: "PAPRSB Institute of Health Sciences, Brunei Darussalam",
+    designation1: "Battling the bacterial biofilm threat!",
+    name: "Dr. Jagjit Singh Dhaliwal",
+  },
+  {
+    id: 3,
+    designation2: "University of Connecticut, USA",
+    designation1: "protein structure, folding, evolution, dynamics, and association",
+    name: "Dr. Andrei Alexandrescu",
+  },
+  {
+    id: 4,
+    designation2: "Andong National University, Korea",
+    designation1: "Insects as Food and Medicine - a Resource we Must not Overlook",
+    name: "Dr. Victor Benno Meyer- Rochow",
+  },
+  {
+    id: 5,
+    designation2: "University of Ibadan, Nigeria",
+    designation1: "Cancer Research and molecular biology",
+    name: "Dr.Solomon E. Owumi",
+  },
+  {
+    id: 6,
+    designation2: "Department of Pediatric Endocrinology and Diabetes,Sisli Hamidiye  Etfal Training and Research Hospital Istanbul, Turkey",
+    designation1: "Stem cell therapies in Type 1 Diabetes",
+    name: "Dr. Ahmet Ucar",
+  },
+  {
+    id: 7,
+    designation2: "Department of Agronomy, Iowa State University, USA",
+    designation1: "Molecular basis of soybean diseases",
+    name: " Dr. Madan K Bhattacharya",
+  },
+  {
+    id: 8,
+    designation2: "Division of Genetics, Wadsworth Center, New York State Department of Health, New York, USA",
+    designation1: "RNA secondary structure prediction by Statistical Sampling and Applications to Studies of Regulatory RNAs",
+    name: "Dr. Ye Ding",
+  }, 
+  {
+    id: 9,
+    designation2: "School of Medical and Life Sciences, Sunway University,47500 Bandar Sunway, Malaysia",
+    designation1: "Machine learning in natural products cheminformatics: current update and future perspectives",
+    name: "Dr.Long Chiau Ming",
+  },
+  // {
+  //   id: 10,
+  //   designation2: "Campus Drive Beckman Stanford, California",
+  //   designation1: "Department of Genetics",
+  //   name: "Dr. Leonore Herzenberg",
+  // },
+  
+];
+
+export default speakerInternationalsList;
