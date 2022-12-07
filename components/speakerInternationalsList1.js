@@ -15,7 +15,7 @@ const speakerInternationalsList = [
   {
     id: 3,
     designation2: "University of Connecticut, USA",
-    designation1: "protein structure, folding, evolution, dynamics, and association",
+    designation1: "Protein structure, Folding, evolution, Dynamics, and Association",
     name: "Dr. Andrei Alexandrescu",
   },
   {
@@ -27,8 +27,8 @@ const speakerInternationalsList = [
   {
     id: 5,
     designation2: "University of Ibadan, Nigeria",
-    designation1: "Cancer Research and molecular biology",
-    name: "Dr.Solomon E. Owumi",
+    designation1: "Cancer Research and Molecular Biology",
+    name: "Dr. Solomon E. Owumi",
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const speakerInternationalsList = [
     id: 9,
     designation2: "School of Medical and Life Sciences, Sunway University,47500 Bandar Sunway, Malaysia",
     designation1: "Machine learning in natural products cheminformatics: current update and future perspectives",
-    name: "Dr.Long Chiau Ming",
+    name: "Dr. Long Chiau Ming",
   },
   // {
   //   id: 10,

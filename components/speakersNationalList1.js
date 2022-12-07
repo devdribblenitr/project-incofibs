@@ -125,7 +125,7 @@ const speakersList = [
     id: 30,
     designation2: "NISER Bhubaneswar",
     designation1: "Cancer Cell Signaling",
-    name: "Dr.Mohammed Saleem",
+    name: "Dr. Mohammed Saleem",
   },
   {
     id: 31,
@@ -136,8 +136,8 @@ const speakersList = [
   {
     id: 32,
     designation2: "ILS Bhubaneswar",
-    designation1: "Evaluation of therapeutic role of N-acetyl cysteine (NAC) for the treatment and/or  management of SARS-CoV-2 induced lung damage in hamster model",
-    name: "Dr.Shantibhusan Senapati",
+    designation1: "Evaluation of therapeutic role of N-acetyl cysteine (NAC) for the treatment and/or management of SARS-CoV-2 induced lung damage in hamster model",
+    name: "Dr. Shantibhusan Senapati",
   },
   {
     id: 33,
@@ -154,7 +154,7 @@ const speakersList = [
   {
     id: 35,
     designation2: "Allahabad University",
-    designation1: "Understanding the regulatory network landscape in human embryonic stem  cells: a systems biology prespective",
+    designation1: "Understanding the regulatory network landscape in human embryonic stem  cells: A systems biology prespective",
     name: "Dr. Anup Som",
 
   },
