@@ -117,6 +117,7 @@ export default function Events() {
                                 name={data.name}
                                 designation1={data.designation1}
                                 designation2={data.designation2}
+                                img={data.img}
                             />
                         );
                         })}
@@ -150,6 +151,7 @@ export default function Events() {
                                 name={data.name}
                                 designation1={data.designation1}
                                 designation2={data.designation2}
+                                img={data.img}
                             />
                         );
                         })}
