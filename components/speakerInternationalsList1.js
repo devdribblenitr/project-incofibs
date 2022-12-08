@@ -1,12 +1,12 @@
 import image1 from '../public/international photo/1.ahmed.jpg'
 import image2 from '../public/international photo/2.jagjit.jpg'
 import image3 from '../public/international photo/3.andrei.jpg'
-import image4 from '../public/international photo/4.victor.jpeg'
-import image5 from '../public/international photo/5.solomon.jpeg'
+import image4 from '../public/international photo/4.victor.jpg'
+import image5 from '../public/international photo/5.solomon.png'
 import image6 from '../public/international photo/6.ahmet.jpg'
-import image7 from '../public/international photo/7.madan.jpeg'
+import image7 from '../public/international photo/7.madan.jpg'
 import image8 from '../public/international photo/8.ye ding.jpeg'
-import image9 from '../public/international photo/9.long chiau.jpeg'
+import image9 from '../public/international photo/9.long chiau.png'
 
 
 
