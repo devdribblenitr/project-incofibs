@@ -5,9 +5,9 @@ import Footer from "../../components/Footer"
 const index = () => {
   return (
     <>
-        <Navbar/>
-        <Dashboard/>
-        <Footer/>
+      <Navbar />
+      <Dashboard />
+      <Footer />
     </>
   )
 }
