@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-const login = () => {
+const Login = () => {
   const [providers, setproviders] = useState();
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -57,4 +57,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
