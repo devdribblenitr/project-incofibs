@@ -221,7 +221,7 @@ const speakersList = [
     img: image36.src,
     name: "Dr. Smrutisanjita Behera ",
   }
-  
+
 ];
 
 export default speakersList;
