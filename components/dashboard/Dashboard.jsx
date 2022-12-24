@@ -51,10 +51,6 @@ const Dashboard = () => {
     getUserDetails(userName);
   }, [userName && userName !== undefined && userName !== null]);
 
-  if (!session && typeof window !== 'undefined') {
-    alert("Please login to continue");
-  }
-
 
   return (
     <div className="py-[2.5rem] dashboard_profile">
