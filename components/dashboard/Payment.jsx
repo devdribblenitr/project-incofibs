@@ -91,7 +91,7 @@ const Payment = () => {
             bankAccountHolderName: null,
             paymentRecieptUrl: null, */}
         <div className="dashboard_content bg-white p-[35px] col-span-12 md:col-span-9">
-          <p style={{ textTransform: "capitalize" }} className="paymentStatus">Your payment has not been verified yet !</p>
+          <p style={{ textTransform: "capitalize" }} className="paymentStatus">{userData?.paymentVerification ? 'Your payment has been verified !' : 'Your payment has not been verified yet !'}</p>
           <div className="grid gap-2 grid-cols-12">
             <div className="mt-5 inside_dashboard_span col-span-6 md:col-span-6">
               <span className="">Account Holder Name:</span>{userData?.bankAccountHolderName}
