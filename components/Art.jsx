@@ -74,16 +74,15 @@ const Nitr = () => {
         </div>
       </div> */}
       <div className="aboutinco_outer py-[50px] md:px-[170px] px-[20px]">
-      <div className="aboutinco">
-        <h1 className="playfair heading_title">State of Art</h1>
-        <p className="pt-12 text-justify">The 3rd International Conference on Frontiers in Biological Sciences (InCoFIBS-2023)
-will be held in <strong>Department of Life Science, NIT Rourkela, India, from 2nd to 4th
-February, 2023.</strong></p>
-<p className="py-3 text-justify">InCoFIBS, an international conference organized by the department of Life Science, NIT Rourkela every five years, addresses the advances made in the various fields of Biological Sciences. The conference aims to provide a global platform for exchanging ideas and works by multiple scientists, researchers, and international experts. It also offers a rostrum for young researchers to showcase and share their ideas with peers working in their field. These advances and efforts have unleashed many global players on the platform, bringing to the fore exciting and equally enthralling technologies that have led to the emergence of specializations and interdisciplinary fields.</p>
-<p className="py-3 text-justify">Research is in a unique position to confront uncertainty. The dire grievances brought on by Covid-19 and the climate crisis demand more than utopic gestures or hopeful technologies. Challenged by the tensions of our times, Researchers are tasked with applying diverse forms of embodied knowledge to craft new tools for post-crisis conviviality and radical kindness. We are seeking future-oriented responses to current social, cultural, ecological and economic challenges through the manifold means of high-level practice and reflection. The conference proposes three attractors to advance understanding of new directions of research and stimulate new collaborative capacities and interdisciplinary scholarship.</p>
-<p className="pb-12 pt-3 text-justify">The 3rd International Conference on Frontiers in Biological Sciences (InCoFIBS-2023) will savor the respective potentialities of digital and physical modes of co-presence, manifesting in two different modes: A 40minute lecture hour “long conversation” online offering a variety of successive presentations throughout different time zones, and a three-day gathering, providing the opportunity for focused sessions, exchange and brainstorming sessions in physical presence. For the “long conversation”, presenters are asked to moderate the discussion of the speaker immediately following their own, interweaving call and response elements of presenting. For the physical presence part of the conference, researchers of all disciplines are invited to meet and collaborate in sessions and posters during lunch time and other scheduled time within a spatially decentralized, socially-distanced and Covid-hygiene-approved program</p>
+        <div className="aboutinco">
+          <h1 className="playfair heading_title">State of Art</h1>
+          <p className="pt-12 text-justify">The 3rd International Conference on Frontiers in Biological Sciences (InCoFIBS-2023)
+            will be held in <strong>Department of Life Science, NIT Rourkela, India, from 5th to 7th October 2023.</strong></p>
+          <p className="py-3 text-justify">InCoFIBS, an international conference organized by the department of Life Science, NIT Rourkela every five years, addresses the advances made in the various fields of Biological Sciences. The conference aims to provide a global platform for exchanging ideas and works by multiple scientists, researchers, and international experts. It also offers a rostrum for young researchers to showcase and share their ideas with peers working in their field. These advances and efforts have unleashed many global players on the platform, bringing to the fore exciting and equally enthralling technologies that have led to the emergence of specializations and interdisciplinary fields.</p>
+          <p className="py-3 text-justify">Research is in a unique position to confront uncertainty. The dire grievances brought on by Covid-19 and the climate crisis demand more than utopic gestures or hopeful technologies. Challenged by the tensions of our times, Researchers are tasked with applying diverse forms of embodied knowledge to craft new tools for post-crisis conviviality and radical kindness. We are seeking future-oriented responses to current social, cultural, ecological and economic challenges through the manifold means of high-level practice and reflection. The conference proposes three attractors to advance understanding of new directions of research and stimulate new collaborative capacities and interdisciplinary scholarship.</p>
+          <p className="pb-12 pt-3 text-justify">The 3rd International Conference on Frontiers in Biological Sciences (InCoFIBS-2023) will savor the respective potentialities of digital and physical modes of co-presence, manifesting in two different modes: A 40minute lecture hour “long conversation” online offering a variety of successive presentations throughout different time zones, and a three-day gathering, providing the opportunity for focused sessions, exchange and brainstorming sessions in physical presence. For the “long conversation”, presenters are asked to moderate the discussion of the speaker immediately following their own, interweaving call and response elements of presenting. For the physical presence part of the conference, researchers of all disciplines are invited to meet and collaborate in sessions and posters during lunch time and other scheduled time within a spatially decentralized, socially-distanced and Covid-hygiene-approved program</p>
 
-        {/* <Button
+          {/* <Button
           style={{marginBottom: "20px"}}
           sx={{
               borderRadius: "40px",
@@ -99,8 +98,8 @@ February, 2023.</strong></p>
           >
             About NIT Rourkela
           </Button> */}
+        </div>
       </div>
-    </div>
     </>
   );
 };

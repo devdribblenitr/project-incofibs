@@ -6,12 +6,12 @@ const Countdownclock = () => {
   const [hours, setHours] = useState();
   const [minutes, setMinutes] = useState();
   const [seconds, setSeconds] = useState();
-  const [ providers, setproviders ] = useState();
+  const [providers, setproviders] = useState();
   const { data: session, status } = useSession();
   useEffect(() => {
     const setTheProviders = async () => {
-        const setupProviders = await getProviders();
-        setproviders(setupProviders);
+      const setupProviders = await getProviders();
+      setproviders(setupProviders);
     };
     setTheProviders();
   }, []);
@@ -54,13 +54,13 @@ const Countdownclock = () => {
     <div className="flex flex-col ">
       <div className="flex flex-col items-center justify-center text-white mb-4">
         <button className="bg-primary-60 rounded-tl-bye rounded-br-bye text-lg py-2 px-4">
-          2nd February 2023
+          5th October 2023
         </button>
         <div className="playfair text-2xl lg:text-6xl mt-6 flex justify-center pl-4 sm:pl-0 mb-1">
           InCoFIBS  2<div className="text-[#e84c3d] font-bold">k</div>23
         </div>
         <div className="text-lg w-4/5 flex text-center justify-center mb-1">
-         International Conference on Frontiers in Biological Sciences
+          International Conference on Frontiers in Biological Sciences
         </div>
       </div>
       <div className="flex justify-center w-screen">
@@ -100,10 +100,10 @@ const Countdownclock = () => {
           </div>
           <div className="text-sm uppercase  flex justify-center">seconds</div>
         </div>
-        
+
       </div>
       <div className="flex justify-center">
-        <button style={{color: "#ffff",backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px"}} className="button_cards2 mt-6"  onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Register Now</button>
+        <button style={{ color: "#ffff", backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px" }} className="button_cards2 mt-6" onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Register Now</button>
       </div>
     </div>
   );
