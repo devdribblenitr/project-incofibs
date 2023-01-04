@@ -19,8 +19,8 @@ export default function ImportantDate() {
 
 
         <div className='' style={{ fontSize: "28px", color: "white", marginTop: "45px" }}>
-          <marquee behavior="scroll" direction="left">Last date of Abstract Submission and Registration
-            deadline soon to be announced
+          <marquee behavior="scroll" direction="left">
+            The Conference date has been shifted to 5th - 7th October, 2023. Abstract submission and registration will remain continue till further announcement
             {/* extended till December 31st */}
           </marquee>
         </div>

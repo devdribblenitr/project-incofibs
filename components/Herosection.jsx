@@ -8,9 +8,11 @@ const HeroSection = () => {
       <div className="absolute CarouselCards w-full">
         <CarouselCards />
         <div className='herosection_marquee'>
-          <marquee behavior="scroll" direction="left">Last date of Abstract Submission and Registration
-            deadline soon to be announced
+          <marquee behavior="scroll" direction="left">
+            {/* Last date of Abstract Submission and Registration
+            deadline soon to be announced */}
             {/* extended till December 31st */}
+            The Conference date has been shifted to 5th - 7th October, 2023. Abstract submission and registration will remain continue till further announcement
           </marquee>
         </div>
       </div>
