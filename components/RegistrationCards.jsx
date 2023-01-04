@@ -161,7 +161,8 @@ const RegistrationCards = () => {
 
         <div className={styles.registrationCards}>
 
-          <Card title='Early Bird' validity='Till Dec 31st, 2022' object={early} />
+          {/* <Card title='Early Bird' validity='Till Dec 31st, 2022' object={early} /> */}
+          <Card title='Early Bird' validity='Deadline soon to be announced' object={early} />
           {/* <Card title='Late' validity='Nov 2nd to Dec 15th, 2022' object={regular}/> */}
           {/* <Card title='After Dec 15th' validity='Dec 16th, 2022 Onwards' object={late}/> */}
         </div>
