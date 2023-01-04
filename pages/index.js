@@ -46,7 +46,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutIncofibs />
-      {/* <ImportantDate/> */}
+      <ImportantDate />
       <RegistrationCards />
       <ConferenceTracks />
       <ConferenceVenue />
