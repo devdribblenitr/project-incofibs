@@ -24,7 +24,8 @@ const Countdownclock = () => {
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("February 2,2023").getTime();
+    const countDownDate = new Date("October 5,2023").getTime();
+    // const countDownDate = new Date("February 2,2023").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
