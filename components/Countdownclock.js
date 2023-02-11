@@ -55,7 +55,7 @@ const Countdownclock = () => {
     <div className="flex flex-col ">
       <div className="flex flex-col items-center justify-center text-white mb-4">
         <button className="bg-primary-60 rounded-tl-bye rounded-br-bye text-lg py-2 px-4">
-          5th October 2023
+          5th - 7th October
         </button>
         <div className="playfair text-2xl lg:text-6xl mt-6 flex justify-center pl-4 sm:pl-0 mb-1">
           InCoFIBS  2<div className="text-[#e84c3d] font-bold">k</div>23
