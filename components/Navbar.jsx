@@ -14,6 +14,7 @@ import { makeStyles } from "@material-ui/styles";
 import LoginButton from "./LoginButton";
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
 import axios from "axios";
+import { useRouter } from 'next/router';
 
 const NavMenu = [
   { title: "Home", url: "/" },
@@ -33,12 +34,13 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 }));
- 
+
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
   const [userDetails, setUserDetails] = useState(null);
   const { data: session, status } = useSession();
+  const router = useRouter();
 
   // const [state, setState] = React.useState({
   //   open: false,
@@ -50,11 +52,11 @@ const Navbar = () => {
     var userName = session?.user?.email?.split("@")[0];
     const user = await axios.get(`https://us-central1-incofibs-a001d.cloudfunctions.net/app/user/v2/users/${userName}`);
     setUserDetails(user.data);
-    console.log("userDetails",userDetails);
+    console.log("userDetails", userDetails);
   };
 
   useEffect(() => {
-    if(session){
+    if (session) {
       getUserDetails();
     }
   }, []);
@@ -179,6 +181,11 @@ const Navbar = () => {
                     }}
                     variant="contained"
                     // disabled={true}
+                    onClick={() => {
+                      // https://forms.gle/nVdV4L6KXWXRYvAa7
+                      // window.location.href = "https://forms.gle/nVdV4L6KXWXRYvAa7";
+                      router.push('https://forms.gle/nVdV4L6KXWXRYvAa7');
+                    }}
                   >
                     Register Now
                   </Button>
@@ -232,7 +239,28 @@ const Navbar = () => {
               </Button>
             }
           </Box> */}
-          <LoginButton />
+          {/* <LoginButton /> */}
+          <Button
+            onClick={() => {
+              // https://forms.gle/nVdV4L6KXWXRYvAa7
+              // window.location.href = "https://forms.gle/nVdV4L6KXWXRYvAa7";
+              router.push('https://forms.gle/nVdV4L6KXWXRYvAa7');
+            }}
+            sx={{
+              borderRadius: "40px",
+              fontSize: "0.7rem",
+              borderColor: "#ffffffba",
+              color: "#ffffffba",
+              "&:hover": {
+                borderColor: "#ffffff",
+                color: "white",
+              },
+            }}
+            variant="outlined"
+          // disabled={true}
+          >
+            Register
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

@@ -38,7 +38,7 @@ const AbstractDetails = () => {
                             </ul>
                             <p className="text-center pt-8 pb-3">Click here to <Link href={'/abstract_format_InCoFIBS.pdf'}><a className="abstract_temp">View the Template for Abstract</a></Link> and click on the button below to Register or Submit an Abstract</p>
                             <div className="flex justify-center">
-                                <button style={{ color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "15px" }} className="button_cards mt-6" onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Register or Submit an Abstract Now</button>
+                                {/* <button style={{ color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "15px" }} className="button_cards mt-6" onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Register or Submit an Abstract Now</button> */}
                             </div>
                         </div>
                     </div>

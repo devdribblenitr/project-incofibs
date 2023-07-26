@@ -5,6 +5,8 @@ import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralU
 import styles from '../styles/RegistrationCards.module.css'
 import PaymentDetails from "./PaymentDetails";
 import AbstractDetails from "./AbstractDetails";
+import { useRouter } from 'next/router';
+import imgQR from '../public/registerImg.svg'
 
 const early = [
 
@@ -127,6 +129,7 @@ const Card = ({ title, validity, object }) => {
 const RegistrationCards = () => {
   const [providers, setproviders] = useState();
   const { data: session, status } = useSession();
+  const router = useRouter();
   console.log("session", session);
   console.log("status", status);
   useEffect(() => {
@@ -166,7 +169,16 @@ const RegistrationCards = () => {
             object={late} />
         </div>
         <p style={{ marginBottom: "92px", marginTop: "-35px", color: "#000000b3" }}><b>Partipation fee without presention is Rs. 4,000</b></p>
-        <button style={{ color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px" }} className="button_cards mt-6 md:-mt-10" onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Click Here to Register</button>
+        <button style={{ color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px" }} className="button_cards mt-6 md:-mt-10"
+          // onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}
+          onClick={() => {
+            // https://forms.gle/nVdV4L6KXWXRYvAa7
+            // window.location.href = "https://forms.gle/nVdV4L6KXWXRYvAa7";
+            router.push('https://forms.gle/nVdV4L6KXWXRYvAa7');
+          }}
+        >Click Here to Register or Scan QR bellow</button>
+        <hr />
+        <img style={{ height: "300px", width: "300px", marginBottom: "30px" }} src={imgQR.src} alt="Register QR" />
       </div>
       <PaymentDetails />
       <AbstractDetails />
