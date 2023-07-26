@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSession, getProviders, signOut, signIn, ClientSafeProvider, LiteralUnion } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 const Countdownclock = () => {
   const [days, setDays] = useState();
@@ -8,6 +9,7 @@ const Countdownclock = () => {
   const [seconds, setSeconds] = useState();
   const [providers, setproviders] = useState();
   const { data: session, status } = useSession();
+  const router = useRouter();
   useEffect(() => {
     const setTheProviders = async () => {
       const setupProviders = await getProviders();
@@ -104,9 +106,16 @@ const Countdownclock = () => {
 
       </div>
       <div className="flex justify-center">
-        <button style={{ color: "#ffff", backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px" }} className="button_cards2 mt-6" onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}>Register Now</button>
+        <button style={{ color: "#ffff", backgroundColor: 'rgb(232 76 61)', borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "75px", width: "300px" }} className="button_cards2 mt-6"
+          // onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })
+          onClick={() => {
+            // https://forms.gle/nVdV4L6KXWXRYvAa7
+            // window.location.href = "https://forms.gle/nVdV4L6KXWXRYvAa7";
+            router.push('https://forms.gle/nVdV4L6KXWXRYvAa7');
+          }}
+        >Register Now</button>
       </div>
-    </div>
+    </div >
   );
 };
 
