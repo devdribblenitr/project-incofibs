@@ -19,13 +19,13 @@ const speakerInternationalsList = [
     img: image1.src,
     name: "Dr. Ahmed El-Hashash ",
   },
-  {
-    id: 2,
-    designation2: "PAPRSB Institute of Health Sciences, Brunei Darussalam",
-    designation1: "Battling the bacterial biofilm threat!",
-    img: image2.src,
-    name: "Dr. Jagjit Singh Dhaliwal",
-  },
+  // {
+  //   id: 2,
+  //   designation2: "PAPRSB Institute of Health Sciences, Brunei Darussalam",
+  //   designation1: "Battling the bacterial biofilm threat!",
+  //   img: image2.src,
+  //   name: "Dr. Jagjit Singh Dhaliwal",
+  // },
   {
     id: 3,
     designation2: "University of Connecticut, USA",
@@ -67,7 +67,7 @@ const speakerInternationalsList = [
     designation1: "RNA secondary structure prediction by Statistical Sampling and Applications to Studies of Regulatory RNAs",
     img: image8.src,
     name: "Dr. Ye Ding",
-  }, 
+  },
   {
     id: 9,
     designation2: "School of Medical and Life Sciences, Sunway University,47500 Bandar Sunway, Malaysia",
@@ -81,7 +81,7 @@ const speakerInternationalsList = [
   //   designation1: "Department of Genetics",
   //   name: "Dr. Leonore Herzenberg",
   // },
-  
+
 ];
 
 export default speakerInternationalsList;
