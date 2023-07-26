@@ -27,7 +27,7 @@ export default function Home() {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
 
         {/* *********** Meta SEO***********  */}
-        <meta property="og:title" content="InCoFIBS-2023 will be held from 2nd to 4th February 2023, providing a platform for global experts and researchers to exchange ideas and recent advances in the various fields of Biological Sciences" />
+        <meta property="og:title" content="InCoFIBS-2023 will be held from 5th - 7th October 2023, providing a platform for global experts and researchers to exchange ideas and recent advances in the various fields of Biological Sciences" />
         <meta name="keywords" content="incofibsnitr,incofibsnitrkl,incofibsnitrourkela, incofibs,incofibs nitr, fest nitr, fest, festnitr, festnitrkl, nitr,nitrkl,nitrourkela,nit,rourkela,nit rourkela,LS nitrkl, life science, bio,bioscience, science, science nitr" />
         <meta name="description" content="InCoFIBS 2023 International Conference" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
