@@ -14,6 +14,7 @@ import ContactInfo from '../components/ContactInfo'
 import ConferenceVenue from '../components/ConferenceVenue'
 import RegistrationCards from '../components/RegistrationCards'
 import AboutIncofibs from '../components/AboutIncofibs'
+import SponsorshipCategory from '../components/SponsorshipCategory'
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
       <ConferenceVenue />
       <ContactInfo />
       <ConferenceProgram />
+      <SponsorshipCategory />
       <Footer />
     </div>
   )

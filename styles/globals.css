@@ -529,3 +529,34 @@ footer .card .social-links a:hover {
     color: #01212b;
     font-size: 30px;
 }
+
+
+/* *************table css************* */
+
+.MuiPaper-root {
+    background-color: transparent;
+    margin-top: 51px;
+    margin-bottom: 20px;
+}
+
+/* Add border to the Table component */
+.MuiTable-root {
+    border: 1px solid #102c3a;
+}
+
+/* Add border to TableHead component */
+.MuiTableHead-root {
+    border-bottom: 1px solid #102c3a;
+}
+
+/* Add border to TableCell component */
+.MuiTableCell-root {
+    border-right: 1px solid #102c3a;
+    padding: 19px 71px;
+    /* Optional: Add padding to cells */
+}
+
+/* Remove border from the last TableCell in each row */
+.MuiTableCell-root:last-child {
+    border-right: none;
+}
