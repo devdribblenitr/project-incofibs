@@ -169,7 +169,7 @@ const RegistrationCards = () => {
             validity=' '
             object={late} />
         </div>
-        <p style={{ marginBottom: "10px", marginTop: "-35px", color: "#000000b3" }}><b>Partipation fee without presention is Rs. 4,000</b></p>
+        <p style={{ marginBottom: "50px", marginTop: "-35px", color: "#000000b3" }}><b>Partipation fee without presention is Rs. 4,000</b></p>
         <button style={{ color: "#E84C3D", borderRadius: "40px", padding: "12px 35px", border: "2px solid #E84C3D", marginBottom: "40px" }} className="button_cards mt-6 md:-mt-10"
           // onClick={() => signIn(providers.google.id, { callbackUrl: '/login' })}
           onClick={() => {
@@ -183,7 +183,7 @@ const RegistrationCards = () => {
         <p style={{ marginBottom: "30px", marginTop: "10px" }}><b>Scan QR to Register</b></p>
         <h2 style={{ marginTop: "35px", marginBottom: "10px" }}>Registeration fee includes</h2>
         <p style={{ color: "#000000b3" }}>Lunch, Dinner coupon</p>
-        <p style={{ color: "#000000b3" }}>Registration kits</p>
+        <p style={{ color: "#000000b3", marginBottom: "30px" }}>Registration kits</p>
 
       </div>
       <PaymentDetails />
