@@ -28,12 +28,7 @@ const CommunityDetails = () => {
                 <p className="py-1">Account Name : <span>CONFERENCE, NIT ROURKELA</span></p>
                 <p className="py-1">Account Number : <span>36734418111</span></p>
               </div> */}
-              <Paper elevation={0} style={paperStyle}>
-                <List style={listStyle}>
-                  <ListItem>Prof. K. Umamaheshwar Rao, Director, NIT Rourkela</ListItem>
-                  {/* Add more list items as needed */}
-                </List>
-              </Paper>
+              <p style={{ textAlign: "center", marginTop: "30px", fontSize: "25px" }}>Prof. K. Umamaheshwar Rao, Director, NIT Rourkela</p>
             </div>
             <div className="payment_details mx-auto">
               <div className="heading aboutinco">
@@ -97,7 +92,7 @@ const CommunityDetails = () => {
                   <ListItem>Prof. Dipankar Chatterji, IISc Banglore</ListItem>
                   <ListItem>Prof Ratan Kumar Dey, Central University of Jharkhand</ListItem>
                   <ListItem>Dr. Bhabani K Satapathy, IIT Delhi </ListItem>
-                  <ListItem>Dr. Alok Prasad Das, Ramadevi Women's University </ListItem>
+                  <ListItem>Dr. Alok Prasad Das, Ramadevi Women&apos;s University </ListItem>
 
                   {/* Add more list items as needed */}
                 </List>
