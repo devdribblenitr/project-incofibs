@@ -30,7 +30,7 @@ const CommunityDetails = () => {
               </div> */}
               <p style={{ textAlign: "center", marginTop: "30px", fontSize: "25px" }}>Prof. K. Umamaheshwar Rao, Director, NIT Rourkela</p>
             </div>
-            <div className="payment_details mx-auto">
+            <div className="payment_details mx-auto" style={{ marginTop: "35px" }}>
               <div className="heading aboutinco">
                 <h1 className="heading_title playfair text-center">organizing committee</h1>
               </div>
