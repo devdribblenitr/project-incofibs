@@ -176,9 +176,10 @@ const RegistrationCards = () => {
             // window.location.href = "https://forms.gle/nVdV4L6KXWXRYvAa7";
             router.push('https://forms.gle/nVdV4L6KXWXRYvAa7');
           }}
-        >Click Here to Register or Scan QR bellow</button>
+        >Click Here to Register & Submit Abstract</button>
         <hr />
-        <img style={{ height: "300px", width: "300px", marginBottom: "30px" }} src={imgQR.src} alt="Register QR" />
+        <img style={{ height: "300px", width: "300px" }} src={imgQR.src} alt="Register QR" />
+        <p style={{ marginBottom: "30px", marginTop: "10px" }}><b>Scan QR to Register</b></p>
       </div>
       <PaymentDetails />
       <AbstractDetails />
