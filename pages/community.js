@@ -48,7 +48,7 @@ const Communityy = () => {
           <Student />
         </div>
       </div> : <ToBeUpdated />} */}
-      <CommunityDetails />
+      {/* <CommunityDetails /> */}
       <Footer />
     </div>
   )
