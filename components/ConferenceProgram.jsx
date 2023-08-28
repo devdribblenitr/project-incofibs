@@ -27,9 +27,11 @@ function ConferenceProgram() {
                     <div style={{ backgroundColor: "rgba(255, 255, 255, 0.3)" }} className=' h-1 w-1/5 my-4'></div>
                     {/* <p className='my-2 mx-2'>TENTATIVE PROGRAM (AS ON January 15, 2022)</p> */}
                     <div className="mx-2 my-2">
-                        {/* <Link href={'/flyer.pdf'}> */}
-                        <a href='https://drive.google.com/file/d/1SfOYJ22BWfIdp2YrOJrcslatu2oXb2F3/view' rel="noopener noreferrer" style={{ backgroundColor: "rgba(24, 67, 83, 1)" }} className="ConferenceProgram_button py-2 px-5 rounded-lg mt-8 mb-7">click here <DownloadIcon /></a>
-                        {/* </Link> */}
+                        <Link href={'/InCoFIBS_2023.pdf'}>
+                        <a
+{/*                             href='https://drive.google.com/file/d/1SfOYJ22BWfIdp2YrOJrcslatu2oXb2F3/view' */}
+                            rel="noopener noreferrer" style={{ backgroundColor: "rgba(24, 67, 83, 1)" }} className="ConferenceProgram_button py-2 px-5 rounded-lg mt-8 mb-7">click here <DownloadIcon /></a>
+                        </Link>
                     </div>
                 </div>
             </div>
