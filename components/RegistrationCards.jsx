@@ -164,9 +164,9 @@ const RegistrationCards = () => {
           <Card title='Early Bird' validity='By 31st August' object={early} />
 
           {/* <Card title='Late' validity='Nov 2nd to Dec 15th, 2022' object={regular}/> */}
-          <Card title='After Aug 31st'
+          <Card title='Late Bird'
             // validity='soon to be announced'
-            validity=' '
+            validity='till 15th September'
             object={late} />
         </div>
         <p style={{ marginBottom: "50px", marginTop: "-35px", color: "#000000b3" }}><b>Partipation fee without presention is Rs. 4,000</b></p>
