@@ -21,7 +21,7 @@ export default function ImportantDate() {
         <div className='' style={{ fontSize: "28px", color: "white", marginTop: "45px" }}>
           {/* <marquee behavior="scroll" direction="left"> */}
           <p style={{ textAlign: "center" }}>
-            The last date of <b>Abstract Submission</b> and <b>Registration</b> is <b>31<sup>st</sup> August</b>
+            The last date of <b>Abstract Submission</b> and <b>Registration</b> is <b>15<sup>th</sup> September</b>
           </p>
           {/* extended till December 31st */}
           {/* </marquee> */}
