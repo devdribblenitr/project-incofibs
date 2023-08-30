@@ -13,7 +13,7 @@ const HeroSection = () => {
             deadline soon to be announced */}
             {/* extended till December 31st */}
 
-            The Conference is scheduled for 5th - 7th October, 2023 | Abstract submission is subject to peer review, and will be intimated by Sept 10 |
+            The Conference is scheduled for 5th - 7th October, 2023 | Abstract submission is subject to peer review, and will be intimated by Sept 15 |
 
             Selected papers will be called for full-length papers and oral presentations |
 
