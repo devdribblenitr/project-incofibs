@@ -538,7 +538,10 @@ footer .card .social-links a:hover {
     margin-top: 51px;
     margin-bottom: 20px;
 }
-
+header.MuiPaper-root {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 /* Add border to the Table component */
 .MuiTable-root {
     border: 1px solid #102c3a;
