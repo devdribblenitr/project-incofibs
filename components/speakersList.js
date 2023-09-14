@@ -1,12 +1,12 @@
 
 const speakersList = [
 
-  {
-    id: 11,
-    designation2: "Indraprastha Institute of Information Technology (IIIT), Delhi",
-    designation1: "Immunoinformatics",
-    name: "Dr. Gajendra P.S. Raghava",
-  },
+  // {
+  //   id: 11,
+  //   designation2: "Indraprastha Institute of Information Technology (IIIT), Delhi",
+  //   designation1: "Immunoinformatics",
+  //   name: "Dr. Gajendra P.S. Raghava",
+  // },
   {
     id: 12,
     designation2: "National Institute of Pharmaceutical Education and Research (NIPER), S.A.S Nagar, Punjab",
@@ -25,24 +25,24 @@ const speakersList = [
     designation1: "Synthesis of chiral drugs and drug intermediates",
     name: "Dr. Uttam Chand Banerjee",
   },
-  {
-    id: 15,
-    designation2: "IISc, Bangalore",
-    designation1: "Neuroscience",
-    name: "Dr. Smitha Karunakaran",
-  },
-  {
-    id: 3,
-    designation2: "IIT Kharagpur",
-    designation1: "Drug Delivery System",
-    name: "Dr. Sudip K Ghosh",
-  },
-  {
-    id: 16,
-    designation2: "IISc, Bangalore",
-    designation1: "Development and Neurobiology",
-    name: "Dr. Kavita Babu",
-  },
+  // {
+  //   id: 15,
+  //   designation2: "IISc, Bangalore",
+  //   designation1: "Neuroscience",
+  //   name: "Dr. Smitha Karunakaran",
+  // },
+  // {
+  //   id: 3,
+  //   designation2: "IIT Kharagpur",
+  //   designation1: "Drug Delivery System",
+  //   name: "Dr. Sudip K Ghosh",
+  // },
+  // {
+  //   id: 16,
+  //   designation2: "IISc, Bangalore",
+  //   designation1: "Development and Neurobiology",
+  //   name: "Dr. Kavita Babu",
+  // },
   {
     id: 17,
     designation2: "IIT Delhi",
@@ -55,54 +55,54 @@ const speakersList = [
     designation1: "Disease biology",
     name: "Dr. Suchi Goel",
   },
-  {
-    id: 19,
-    designation2: "BHU, Varanasi",
-    designation1: "Neurobiology",
-    name: "Dr. Surendra Kumar Trigun",
-  },
-  {
-    id: 20,
-    designation2: "JNU, New Delhi",
-    designation1: "Disease Biology and Vaccine Approaches",
-    name: "Dr. Chinmay K Mukhopadhyay",
-  },
-  {
-    id: 21,
-    designation2: "IIT Madras",
-    designation1: "Bioinformatics",
-    name: "Dr. M. Michael Gromiha",
-  },
-  {
-    id: 22,
-    designation2: "OUAT,Bhubaneswar",
-    designation1: "AgriculturalBiotechnology",
-    name: "Dr. Gyana Ranjan Rout",
-  },
+  // {
+  //   id: 19,
+  //   designation2: "BHU, Varanasi",
+  //   designation1: "Neurobiology",
+  //   name: "Dr. Surendra Kumar Trigun",
+  // },
+  // {
+  //   id: 20,
+  //   designation2: "JNU, New Delhi",
+  //   designation1: "Disease Biology and Vaccine Approaches",
+  //   name: "Dr. Chinmay K Mukhopadhyay",
+  // },
+  // {
+  //   id: 21,
+  //   designation2: "IIT Madras",
+  //   designation1: "Bioinformatics",
+  //   name: "Dr. M. Michael Gromiha",
+  // },
+  // {
+  //   id: 22,
+  //   designation2: "OUAT,Bhubaneswar",
+  //   designation1: "AgriculturalBiotechnology",
+  //   name: "Dr. Gyana Ranjan Rout",
+  // },
   {
     id: 23,
     designation2: "NISER,Bhubaneswar",
     designation1: "Host-pathogeninteraction",
     name: "Dr. Asima Bhattacharyya",
   },
-  {
-    id: 24,
-    designation2: "IIT Delhi",
-    designation1: "Drug Delivery",
-    name: "Dr. Alok Ray",
-  },
+  // {
+  //   id: 24,
+  //   designation2: "IIT Delhi",
+  //   designation1: "Drug Delivery",
+  //   name: "Dr. Alok Ray",
+  // },
   {
     id: 25,
     designation2: "National Institute of Animal Biotechnology, Hyderabad",
     designation1: "Stem Cell and Regenerative medicine",
     name: "Dr. G. Taru Sharma",
   },
-  {
-    id: 26,
-    designation2: "IIT Jodhpur",
-    designation1: "Theranostic Nanomedicines",
-    name: "Dr. Raviraj Vankayala",
-  },
+  // {
+  //   id: 26,
+  //   designation2: "IIT Jodhpur",
+  //   designation1: "Theranostic Nanomedicines",
+  //   name: "Dr. Raviraj Vankayala",
+  // },
   {
     id: 27,
     designation2: "IISER Kolkata",
@@ -121,12 +121,12 @@ const speakersList = [
     designation1: "Tissue engineering",
     name: "Dr. Biman B Mandal",
   },
-  {
-    id: 30,
-    designation2: "NISER Bhubaneswar",
-    designation1: "Cancer Cell Signaling",
-    name: "Dr.Mohammed Saleem",
-  },
+  // {
+  //   id: 30,
+  //   designation2: "NISER Bhubaneswar",
+  //   designation1: "Cancer Cell Signaling",
+  //   name: "Dr.Mohammed Saleem",
+  // },
   {
     id: 31,
     designation2: "IISER Mohali",
@@ -139,12 +139,12 @@ const speakersList = [
     designation1: "Cancer pathogenesis and metastasis",
     name: "Dr.Shantibhusan Senapati",
   },
-  {
-    id: 33,
-    designation2: "AIIMS Delhi",
-    designation1: "Disease Biology and Vaccine",
-    name: "Dr. Pratima Ray",
-  },
+  // {
+  //   id: 33,
+  //   designation2: "AIIMS Delhi",
+  //   designation1: "Disease Biology and Vaccine",
+  //   name: "Dr. Pratima Ray",
+  // },
   {
     id: 34,
     designation2: "BHU, Varanasi",
