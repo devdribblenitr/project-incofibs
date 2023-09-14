@@ -24,7 +24,7 @@ const speakerInternationalsList = [
   //   designation1: "Comparative (freshwater, marine, terrestrial) animal ecophysiology, adaptation, and evolution",
   //   name: "Dr. Victor Benno Meyer- Rochow",
   // },
-  // {
+  {
     id: 5,
     designation2: "Iowa State University Ames, Iowa, USA",
     designation1: "Molecular basis of plant-pathogen interactions",
