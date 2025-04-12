@@ -217,7 +217,7 @@ const Navbar = () => {
               </Typography>
             ))}
           </Box>
-          {/* <Box
+          <Box
             sx={{
               fontSize: "24px",
               flexGrow: 0,
@@ -226,7 +226,7 @@ const Navbar = () => {
           >
             {
               <Button
-                // onClick={openOauth}
+                onClick={openOauth}
                 sx={{
                   borderRadius: "40px",
                   borderColor: "#ffffffba",
@@ -235,12 +235,12 @@ const Navbar = () => {
                 variant="outlined"
                 // disabled={true}
               >
-                Log In
+                Log In Now
               </Button>
             }
-          </Box> */}
+          </Box>
           {/* <LoginButton /> */}
-          <Button
+          {/* <Button
             onClick={() => {
               // https://forms.gle/nVdV4L6KXWXRYvAa7
               // window.location.href = "https://forms.gle/nVdV4L6KXWXRYvAa7";
@@ -260,7 +260,7 @@ const Navbar = () => {
           // disabled={true}
           >
             Register
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
     </div>
